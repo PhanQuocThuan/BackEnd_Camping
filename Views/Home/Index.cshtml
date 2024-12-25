@@ -1,0 +1,446 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@* slideder start*@
+<div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item">
+            <a asp-controller="" asp-action=""><img src="~/img/sakura-duong-2.jpg" class="d-block w-100" alt="img"></a>
+            <div class="carousel-caption d-none d-md-block text-black">
+                <h1>Du lịch</h1>
+                <h4>Sản phẩm du lịch</h4>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <a asp-controller="" asp-action=""><img src="~/img/camping_2.jpg" class="d-block w-100" alt="img"></a>
+            <div class="carousel-caption d-none d-md-block text-black">
+                <h1>Cắm trại</h1>
+                <h4>Sản phẩm cắm trại</h4>
+            </div>
+        </div>
+        <div class="carousel-item active">
+            <a asp-controller="" asp-action=""><img src="~/img/dap-xe-2.jpg" class="d-block w-100" alt="img"></a>
+            <div class="carousel-caption d-none d-md-block text-black">
+                <h1>Hoạt động ngoài trời</h1>
+                <h4>Sản phẩm hoạt động ngoài trời</h4>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+@* slideder end*@
+@* service start*@
+<div class="container my-5">
+    <div class="row d-flex justify-content-between">
+
+        @{
+            var features = ViewData["Features"] as List<Feature> ?? [];
+        }
+        @foreach (var feature in features)
+        {
+            <div class="col">
+                <div class="card-service">
+                    <div class="content-service">
+                        <p class="heading">
+                            <img src="~/data/features/@feature.Icon" alt="Alternate Text" style="width:100px; height:100px;" />
+                        </p>
+                        <p class="para fs-3">
+                            @feature.Title
+                        </p>
+                        <p class="para para-sm">
+                            @feature.Subtitle
+                        </p>
+                    </div>
+                </div>
+            </div>
+        }
+        @* <div class="col">
+        <div class="card-service">
+        <div class="content-service">
+        <p class="heading">
+        <i class="fs-1 fa-solid fa-car-side"></i>
+        </p>
+        <p class="para fs-3">
+        Giao Hàng miễn phí
+        </p>
+        <p class="para para-sm">
+        Miễn phí với đơn hàng từ 500.000đ
+        </p>
+        </div>
+        </div>
+        </div>
+        <div class="col">
+        <div class="card-service">
+        <div class="content-service">
+        <p class="heading">
+        <i class="fs-1 fa-solid fa-location-dot"></i>
+        </p>
+        <p class="para fs-3">
+        Hỗ trợ tìm vị trí đẹp
+        </p>
+        <p class="para para-sm">
+        Giúp các bạn tìm được nơi đẹp để cắm trại hoặc du lịch
+        </p>
+        </div>
+        </div>
+        </div>
+        <div class="col">
+        <div class="card-service">
+        <div class="content-service">
+        <p class="heading">
+        <i class="fs-1 fa-solid fa-right-left"></i>
+        </p>
+        <p class="para fs-3">
+        Hoàn trả sản phẩm
+        </p>
+        <p class="para para-sm">
+        Hoàn trả tiền lại nếu sản phẩm không vừa ý
+        </p>
+        </div>
+        </div>
+        </div>
+        <div class="col">>
+        <div class="card-service">
+        <div class="c
+        <div class="card-service">
+        <div class="content-service">
+        <p class="heading">
+        <i class="fs-1 fa-solid fa-phone"></i>
+        </p>
+        <p class="para fs-3">
+        Hỗ trợ 24/7
+        </p>
+        <p class="para para-sm">
+        Hỗ trợ mọi lúc
+        </p>
+        </div>
+        </div>
+        </div>
+        <div class="col">
+        <div class="card-service">
+        <div class="content-service">
+        <p class="heading">
+        <i class="fa-solid fa-user-shield"></i>
+        </p>
+        <p class="para fs-3">
+        Cam kết thanh toán
+        </p>
+        <p class="para para-sm">
+        100% cam kết thanh toán an toàn
+        </p>
+        </div>
+        </div>
+        </div>
+        <div class="col"ontent-service">
+        <p class="heading">
+        <i class="fa-solid fa-campground"></i>
+        </p>
+        <p class="para fs-3">
+        Cho thuê
+        </p>
+        <p class="para para-sm">
+        Cho thuê liều cắm trại
+        </p>
+        </div>
+        </div>
+        </div> *@
+    </div>
+</div>
+@* service end*@
+@* category start*@
+@{
+    var categories = ViewData["Categories"] as List<Category> ?? [];
+    var brands = ViewData["Brands"] as List<Brand> ?? [];
+}
+<div class="container-fluid fruite py-5">
+    <div class="container py-5">
+        <div class="tab-class text-center">
+            <div class="row g-4">
+                <div class="col-lg-4 text-start">
+                    <h1>Loại</h1>
+                </div>
+                <div class="col-lg-8 text-end">
+                    <ul class="nav nav-pills d-inline-flex text-center mb-5">
+                        <li class="nav-item">
+                            <a class="d-flex m-2 py-2 bg-light rounded-pill active text-decoration-none" data-bs-toggle="pill" href="#tab-0">
+                                <span class="text-dark" style="width: 130px;">Toàn bộ</span>
+                            </a>
+                        </li>
+                        @foreach (var category in categories)
+                        {
+                            <li class="nav-item">
+                                <a class="d-flex py-2 m-2 bg-light rounded-pill text-decoration-none" data-bs-toggle="pill" href="#tab-@category.CAT_ID">
+                                    <span class="text-dark" style="width: 130px;">@category.Name</span>
+                                </a>
+                            </li>
+                        }
+                    </ul>
+                </div>
+            </div>
+            <div class="tab-content">
+                <div id="tab-0" class="tab-pane fade show p-0 active">
+                    <div class="row g-4">
+                        <div class="col-lg-12">
+                            <div class="row g-4">
+                                @foreach (var product in ViewData["HostProducts"] as List<Product> ?? [])
+                                {
+                                    <div class="col-md-6 col-lg-4 col-xl-3">
+                                        <div class="rounded position-relative fruite-item">
+                                            <div class="fruite-img">
+                                                <img src="~/data/products/@product.Avatar" class="img-fluid w-100 rounded-top h-100 w-100 border" alt="">
+                                            </div>
+                                            <div class="text-black bg-success-subtle px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">@product.Category.Name</div>
+                                            <div class="p-4 border border-success-subtle border-top-0 rounded-bottom">
+                                                <h4 class="title-truncate-multiline"><a asp-action="detail" asp-controller="product" asp-route-id="@product.PRO_ID" class="text-decoration-none text-success">@product.Name</a></h4>
+                                                <p class="text-truncate-multiline">@product.Intro</p>
+                                                <div class="d-flex justify-content-between flex-lg-wrap">
+                                                    <p class="text-dark fs-5 fw-bold mb-0">@(product.Price.ToString("N00") + " $")</p>
+                                                    <button class="button-cart">
+                                                        <div class="svg-wrapper-1">
+                                                            <div class="svg-wrapper">
+                                                                <i class="fa-solid fa-cart-shopping"></i>
+                                                            </div>
+                                                        </div>
+                                                        <span>Giỏ hàng</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                @foreach (var category in categories)
+                {
+                    <div id="tab-@category.CAT_ID" class="tab-pane fade">
+                        <div class="row g-4">
+                            <div class="col-lg-12">
+                                <div class="row g-4">
+                                    @foreach (var product in category.Products ?? [])
+                                    {
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="~/data/products/@product.Avatar" class="img-fluid w-100 rounded-top h-100 w-100 border" alt="">
+                                                </div>
+                                                <div class="text-black bg-success-subtle px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">@category.Name</div>
+                                                <div class="p-4 border border-success-subtle border-top-0 rounded-bottom">
+                                                    <h4><a asp-action="detail" asp-controller="product" asp-route-id="@product.PRO_ID" class="text-decoration-none text-success">@product.Name</a></h4>
+                                                    <p class="text-truncate-multiline">@product.Intro</p>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">@(product.Price.ToString("N00") + " $")</p>
+                                                        <button class="button-cart">
+                                                            <div class="svg-wrapper-1">
+                                                                <div class="svg-wrapper">
+                                                                    <i class="fa-solid fa-cart-shopping"></i>
+                                                                </div>
+                                                            </div>
+                                                            <span>Giỏ hàng</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+@* category end*@
+@* feature start*@
+<div class="container-fluid service py-5">
+    <div class="container py-5">
+        <div class="row g-4 justify-content-center">
+            <div class="col-md-6 col-lg-4">
+                <a href="#" class="text-decoration-none">
+                    <div class="service-item bg-success-subtle rounded-5 border border-success">
+                        <img src="~/img/olive-camping.jpg" class="img-fluid rounded-top-5 w-100 h-100" alt="">
+                        <div class="px-4 rounded-bottom">
+                            <div class="service-content bg-success-subtle border border-success text-center p-4 rounded-5">
+                                <h5 class="text-black">Cắm trại</h5>
+                                <h3 class="mb-0">Discount 0%</h3>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <a href="#" class="text-decoration-none">
+                    <div class="service-item bg-dark-subtle rounded-5 border border-dark">
+                        <img src="~/img/istockphoto-1340571998-612x612.jpg" class="img-fluid rounded-top-5 w-100 h-100" alt="">
+                        <div class="px-4 rounded-bottom">
+                            <div class="service-content bg-dark-subtle border border-dark text-center p-4 rounded-5">
+                                <h5 class="text-black">Ngoài trời</h5>
+                                <h3 class="mb-0">Discount 0%</h3>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <a href="#" class="text-decoration-none">
+                    <div class="service-item bg-success-subtle rounded-5 border border-success">
+                        <img src="~/img/Sun-World-Ba-Na-Hills-in-Da-Nang--ce8d864c-da07-4dc0-91db-f320fa9fbbeb.webp" class="img-fluid rounded-top-5 w-100 h-100" alt="">
+                        <div class="px-4 rounded-bottom">
+                            <div class="service-content bg-success-subtle border border-success text-center p-4 rounded-5">
+                                <h5 class="text-black">Du lịch</h5>
+                                <h3 class="mb-0">Discount 0%</h3>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+@* service end*@
+@* banner start *@
+<div class="container-fluid banner bg-success-subtle my-5">
+    <div class="container py-5">
+        <div class="row g-4 align-items-center">
+            <div class="col-lg-6">
+                <div class="py-4">
+                    <h1 class="display-3 text-success-subtle">Title</h1>
+                    <p class="fw-normal display-3 text-dark mb-4">Cửa hàng của chúng tôi</p>
+                    <p class="mb-4 text-dark">Chúng tôi cam kết mang đến cho bạn những sản phẩm chất lượng, giá cả hợp lý và những sản phẩm phù hợp với nhu cầu của bạn</p>
+                    <a href="#" class="banner-btn btn border-2 border-white rounded-pill text-black py-3 px-5">BUY</a>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="position-relative">
+                    <img src="~/img/leu-tu-bung-gazelle-gl1668-background.jpg" class="img-fluid w-100 h-100 rounded bg-" style="mix-blend-mode: multiply;" alt="">
+                    <div class="d-flex align-items-center justify-content-center bg-white rounded-circle position-absolute" style="width: 5rem; height: 5rem; bottom: 0; left: 0;">
+                        <h1 style="font-size: 3rem;">1</h1>
+                        <div class="d-flex flex-column">
+                            <span class="h2 mb-0" style="font-size: 1rem;">50,1$</span>
+                            <span class="h4 text-muted mb-0" style="font-size: 1rem;">chiếc</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@* banner end *@
+@* brand start *@
+<div class="container-fluid fruite py-5">
+    <div class="container py-5">
+        <div class="tab-class text-center">
+            <div class="row g-4">
+                <div class="col-lg-4 text-start">
+                    <h1>Thương Hiệu</h1>
+                </div>
+                <div class="col-lg-8 text-end">
+                    <ul class="nav nav-pills d-inline-flex text-center mb-5">
+                        <li class="nav-item">
+                            <a class="d-flex m-2 py-2 bg-light rounded-pill active text-decoration-none" data-bs-toggle="pill" href="#tabb-0">
+                                <span class="text-dark" style="width: 130px;">Toàn bộ</span>
+                            </a>
+                        </li>
+                        @foreach (var brand in brands)
+                        {
+                            <li class="nav-item">
+                                <a class="d-flex py-2 m-2 bg-light rounded-pill text-decoration-none" data-bs-toggle="pill" href="#tabb-@brand.BRA_ID">
+                                    <span class="text-dark" style="width: 130px;">@brand.Name</span>
+                                </a>
+                            </li>
+                        }
+                    </ul>
+                </div>
+            </div>
+            <div class="tab-content">
+                <div id="tabb-0" class="tab-pane fade show p-0 active">
+                    <div class="row g-4">
+                        <div class="col-lg-12">
+                            <div class="row g-4">
+                                @foreach (var product in ViewData["HostProducts"] as List<Product> ?? [])
+                                {
+                                    <div class="col-md-6 col-lg-4 col-xl-3">
+                                        <div class="rounded position-relative fruite-item">
+                                            <div class="fruite-img">
+                                                <img src="~/data/products/@product.Avatar" class="img-fluid w-100 rounded-top h-100 w-100 border" alt="">
+                                            </div>
+                                            <div class="text-black bg-success-subtle px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">@product.Brand.Name</div>
+                                            <div class="p-4 border border-success-subtle border-top-0 rounded-bottom">
+                                                <h4 class="title-truncate-multiline"><a asp-action="detail" asp-controller="product" asp-route-id="@product.PRO_ID" class="text-decoration-none text-success">@product.Name</a></h4>
+                                                <p class="text-truncate-multiline">@product.Intro</p>
+                                                <div class="d-flex justify-content-between flex-lg-wrap">
+                                                    <p class="text-dark fs-5 fw-bold mb-0">@(product.Price.ToString("N00") + " $")</p>
+                                                    <button class="button-cart">
+                                                        <div class="svg-wrapper-1">
+                                                            <div class="svg-wrapper">
+                                                                <i class="fa-solid fa-cart-shopping"></i>
+                                                            </div>
+                                                        </div>
+                                                        <span>Giỏ hàng</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                @foreach (var brand in brands)
+                {
+                    <div id="tabb-@brand.BRA_ID" class="tab-pane fade">
+                        <div class="row g-4">
+                            <div class="col-lg-12">
+                                <div class="row g-4">
+                                    @foreach (var product in brand.Products ?? [])
+                                    {
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="~/data/products/@product.Avatar" class="img-fluid w-100 rounded-top h-100 w-100 border" alt="">
+                                                </div>
+                                                <div class="text-black bg-success-subtle px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">@brand.Name</div>
+                                                <div class="p-4 border border-success-subtle border-top-0 rounded-bottom">
+                                                    <h4><a asp-action="detail" asp-controller="product" asp-route-id="@product.PRO_ID" class="text-decoration-none text-success">@product.Name</a></h4>
+                                                    <p class="text-truncate-multiline">@product.Intro</p>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">@(product.Price.ToString("N00") + " $")</p>
+                                                        <button class="button-cart">
+                                                            <div class="svg-wrapper-1">
+                                                                <div class="svg-wrapper">
+                                                                    <i class="fa-solid fa-cart-shopping"></i>
+                                                                </div>
+                                                            </div>
+                                                            <span>Giỏ hàng</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+@* brand end *@

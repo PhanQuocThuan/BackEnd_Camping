@@ -1,0 +1,1039 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus,
+.btn:active:focus,
+.btn-link.nav-link:focus,
+.form-control:focus,
+.form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+/* From Uiverse.io by satyamchaudharydev */
+/* From uiverse.io by @satyamchaudharydev */
+/* removing default style of button */
+
+.form button {
+  border: none;
+  background: none;
+  color: #8b8ba7;
+}
+/* styling of whole input container */
+.form {
+  --timing: 0.3s;
+  --width-of-input: 200px;
+  --height-of-input: 40px;
+  --border-height: 2px;
+  --input-bg: #fff;
+  --border-color: #2f2ee9;
+  --border-radius: 30px;
+  --after-border-radius: 1px;
+  position: relative;
+  width: var(--width-of-input);
+  height: var(--height-of-input);
+  display: flex;
+  align-items: center;
+  padding-inline: 0.8em;
+  border-radius: var(--border-radius);
+  transition: border-radius 0.5s ease;
+  background: var(--input-bg, #fff);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.075);
+}
+/* styling of Input */
+.input {
+  font-size: 0.9rem;
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  padding-inline: 0.5em;
+  padding-block: 0.7em;
+  border: none;
+}
+/* styling of animated border */
+.form:before {
+  content: "";
+  position: absolute;
+  background: var(--border-color);
+  transform: scaleX(0);
+  transform-origin: center;
+  width: 100%;
+  height: var(--border-height);
+  left: 0;
+  bottom: 0;
+  border-radius: 1px;
+  transition: transform var(--timing) ease;
+}
+/* Hover on Input */
+.form:focus-within {
+  border-radius: var(--after-border-radius);
+}
+
+input:focus {
+  outline: none;
+}
+/* here is code of animated border */
+.form:focus-within:before {
+  transform: scale(1);
+}
+/* styling of close button */
+/* == you can click the close button to remove text == */
+.reset {
+  background: none;
+  opacity: 0;
+  visibility: hidden;
+}
+/* close button shown when typing */
+input:not(:placeholder-shown) ~ .reset {
+  opacity: 1;
+  visibility: visible;
+}
+/* sizing svg icons */
+.form svg {
+  width: 17px;
+  margin-top: 3px;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.link {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.img-fluid {
+  width: 10rem;
+  height: 10rem;
+}
+
+a.btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: #f0f0f0;
+}
+
+a.btn i {
+  font-size: 20px;
+  line-height: 1;
+}
+
+.twitter:hover {
+  color: #fff;
+  background-color: #000000;
+  border-color: #000000;
+}
+
+.github:hover {
+  color: #fff;
+  background-color: #000000;
+  border-color: #000000;
+}
+
+.facebook:hover {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.youtube:hover {
+  color: #ff0000;
+  background-color: #ffffff;
+  border-color: #ff0000;
+}
+
+.linkedin:hover {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+/* From Uiverse.io by 3bdel3ziz-T */
+.select {
+  width: fit-content;
+  cursor: pointer;
+  position: relative;
+  transition: 300ms;
+  color: white;
+  overflow: hidden;
+}
+
+.selected {
+  background-color: #2a2f3b;
+  padding: 5px;
+  margin-bottom: 3px;
+  border-radius: 5px;
+  position: relative;
+  z-index: 100000;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.arrow {
+  position: relative;
+  right: 0px;
+  height: 10px;
+  transform: rotate(-90deg);
+  width: 25px;
+  fill: white;
+  z-index: 100000;
+  transition: 300ms;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: #2a2f3b;
+  position: relative;
+  top: -100px;
+  opacity: 0;
+  transition: 300ms;
+}
+
+.select:hover > .options {
+  opacity: 1;
+  top: 0;
+}
+
+.select:hover > .selected .arrow {
+  transform: rotate(0deg);
+}
+
+.option {
+  border-radius: 5px;
+  padding: 5px;
+  transition: 300ms;
+  background-color: #2a2f3b;
+  width: 150px;
+  font-size: 15px;
+}
+.option:hover {
+  background-color: #323741;
+}
+
+.options input[type="radio"] {
+  display: none;
+}
+
+.options label {
+  display: inline-block;
+}
+.options label::before {
+  content: attr(data-txt);
+}
+
+.options input[type="radio"]:checked + label {
+  display: none;
+}
+
+.options input[type="radio"]#all:checked + label {
+  display: none;
+}
+
+.select:has(.options input[type="radio"]#all:checked) .selected::before {
+  content: attr(data-default);
+}
+.select:has(.options input[type="radio"]#option-1:checked) .selected::before {
+  content: attr(data-one);
+}
+.select:has(.options input[type="radio"]#option-2:checked) .selected::before {
+  content: attr(data-two);
+}
+.select:has(.options input[type="radio"]#option-3:checked) .selected::before {
+  content: attr(data-three);
+}
+
+.badge {
+  color: #ff0000;
+  font-size: 0.75rem;
+}
+
+.nav-item {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.nav-item .link:hover {
+  color: red;
+}
+/* From Uiverse.io by andrew-demchenk0 */
+.rating:not(:checked) > input {
+  position: absolute;
+  appearance: none;
+}
+
+.rating:not(:checked) > label {
+  float: right;
+  cursor: pointer;
+  font-size: 30px;
+  color: #666;
+}
+
+.rating:not(:checked) > label:before {
+  content: "★";
+}
+
+.rating > input:checked + label:hover,
+.rating > input:checked + label:hover ~ label,
+.rating > input:checked ~ label:hover,
+.rating > input:checked ~ label:hover ~ label,
+.rating > label:hover ~ input:checked ~ label {
+  color: #e58e09;
+}
+
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+  color: #ff9e0b;
+}
+
+.rating > input:checked ~ label {
+  color: #ffa723;
+}
+.rating {
+  width: 9rem;
+  height: 3rem;
+  justify-content: center;
+}
+.button-group {
+  flex-grow: 1;
+  margin: auto;
+}
+
+.button-group input[type="radio"] {
+  display: none;
+}
+
+.button-group label {
+  display: inline-block;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: 1px solid #2b426d;
+  background-color: #385c7e;
+  color: white;
+  border-radius: 15px;
+  transition: all ease 0.2s;
+  text-align: center;
+  flex-grow: 1;
+  flex-basis: 0;
+  width: 90px;
+  font-size: 13px;
+  margin: 5px;
+  box-shadow: 0px 0px 50px -15px #000000;
+}
+
+.button-group input[type="radio"]:checked + label {
+  background-color: white;
+  color: #02375a;
+  border: 1px solid #2b426d;
+}
+/* different */
+.select-color {
+  flex-grow: 1;
+  margin: auto;
+}
+
+.select-color input[type="radio"] {
+  display: none;
+}
+
+.select-color label {
+  display: inline-block;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: 1px solid #2b426d;
+  background-color: #385c7e;
+  color: white;
+  border-radius: 15px;
+  transition: all ease 0.2s;
+  text-align: center;
+  flex-grow: 1;
+  flex-basis: 0;
+  width: 90px;
+  font-size: 13px;
+  margin: 5px;
+  box-shadow: 0px 0px 50px -15px #000000;
+}
+
+.select-color input[type="radio"]:checked + label {
+  background-color: white;
+  color: #02375a;
+  border: 1px solid #2b426d;
+}
+
+fieldset {
+  border: 0;
+  display: flex;
+}
+
+.input-number {
+  width: 300px;
+  padding: 0.4rem;
+  display: flex;
+  align-items: flex-end;
+  gap: 1rem;
+  border-bottom: solid 4px #385c7e;
+}
+.input-number input {
+  width: 80%;
+  font-weight: 500;
+  font-size: 1.75rem;
+  color: #385c7e;
+}
+.input-number-actions {
+  display: flex;
+  gap: 0.6rem;
+  justify-content: space-between;
+}
+.input-number-actions button {
+  padding: 0.6rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #385c7e;
+  font-weight: 900;
+  color: #fff;
+}
+/*button {
+  position: relative;
+  overflow: hidden;
+  outline: none;
+  cursor: pointer;
+  border-radius: 0px;
+  border: none;
+  background-color: hsl(255deg 50% 40%);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  font-family: "Inter", sans-serif;
+}*/
+
+.default-btn {
+  background-image: linear-gradient(
+    90.1deg,
+    rgba(84, 212, 228, 1) 0.2%,
+    rgba(68, 36, 164, 1) 99.9%
+  );
+}
+
+.default-btn,
+.hover-btn {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 1em 3em;
+  border-radius: 0px;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.hover-btn {
+  position: absolute;
+  inset: 0;
+  font-size: 16px;
+  padding: 1em 3em;
+  text-align: center;
+  background: rgb(26, 35, 126);
+  background: linear-gradient(
+    63deg,
+    rgba(26, 35, 126, 1) 0%,
+    rgba(69, 39, 160, 1) 100%
+  );
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  transform: translate(0%, 100%);
+}
+
+.default-btn span {
+  color: hsl(0, 0%, 100%);
+}
+
+.hover-btn span {
+  color: hsl(0, 0%, 100%);
+}
+
+button:hover .default-btn {
+  transform: translate(0%, -100%);
+}
+
+button:hover .hover-btn {
+  transform: translate(0%, 0%);
+}
+
+/* From Uiverse.io by aaronross1 */
+.edit-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(20, 20, 20);
+    border: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.164);
+    cursor: pointer;
+    transition-duration: 0.3s;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none !important;
+}
+
+.edit-svgIcon {
+    width: 17px;
+    transition-duration: 0.3s;
+}
+
+.edit-button:hover {
+    width: 120px;
+    border-radius: 50px;
+    transition-duration: 0.3s;
+    background-color: #7cf05d;
+    align-items: center;
+}
+
+    .edit-button:hover .edit-svgIcon {
+        width: 20px;
+        transition-duration: 0.3s;
+        transform: translateY(60%);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+
+.edit-button::before {
+    display: none;
+    content: "Edit";
+    color: white;
+    transition-duration: 0.3s;
+    font-size: 2px;
+}
+
+.edit-button:hover::before {
+    display: block;
+    padding-right: 10px;
+    font-size: 17px;
+    opacity: 1;
+    transform: translateY(0px);
+    transition-duration: 0.3s;
+}
+
+.detail-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(20, 20, 20);
+    border: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.164);
+    cursor: pointer;
+    transition-duration: 0.3s;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none !important;
+}
+
+.detail-svgIcon {
+    width: 17px;
+    transition-duration: 0.3s;
+}
+
+
+.detail-button:hover {
+    width: 120px;
+    border-radius: 50px;
+    transition-duration: 0.3s;
+    background-color: #007bff;
+    align-items: center;
+}
+
+    .detail-button:hover .detail-svgIcon {
+        width: 20px;
+        transition-duration: 0.3s;
+        transform: translateY(60%);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+
+.detail-button::before {
+    display: none;
+    content: "Detail";
+    color: white;
+    transition-duration: 0.3s;
+    font-size: 2px;
+}
+
+.detail-button:hover::before {
+    display: block;
+    padding-right: 10px;
+    font-size: 17px;
+    opacity: 1;
+    transform: translateY(0px);
+    transition-duration: 0.3s;
+}
+
+.trash-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(20, 20, 20);
+    border: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.164);
+    cursor: pointer;
+    transition-duration: 0.3s;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none !important;
+}
+
+.trash-svgIcon {
+    width: 17px;
+    transition-duration: 0.3s;
+}
+
+
+.trash-button:hover {
+    width: 120px;
+    border-radius: 50px;
+    transition-duration: 0.3s;
+    background-color: #ff0000;
+    align-items: center;
+}
+
+    .trash-button:hover .trash-svgIcon {
+        width: 20px;
+        transition-duration: 0.3s;
+        transform: translateY(60%);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+
+.trash-button::before {
+    display: none;
+    content: "Delete";
+    color: white;
+    transition-duration: 0.3s;
+    font-size: 2px;
+}
+
+.trash-button:hover::before {
+    display: block;
+    padding-right: 10px;
+    font-size: 17px;
+    opacity: 1;
+    transform: translateY(0px);
+    transition-duration: 0.3s;
+}
+.back-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(20, 20, 20);
+    border: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.164);
+    cursor: pointer;
+    transition-duration: 0.3s;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none !important;
+}
+
+.back-svgIcon {
+    width: 17px;
+    transition-duration: 0.3s;
+}
+
+
+.back-button:hover {
+    width: 120px;
+    border-radius: 50px;
+    transition-duration: 0.3s;
+    background-color: #ccff00;
+    align-items: center;
+}
+
+    .back-button:hover .back-svgIcon {
+        width: 20px;
+        transition-duration: 0.3s;
+        transform: translateY(60%);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+
+.back-button::before {
+    display: none;
+    content: "Back";
+    color: white;
+    transition-duration: 0.3s;
+    font-size: 2px;
+}
+
+.back-button:hover::before {
+    display: block;
+    padding-right: 10px;
+    font-size: 17px;
+    opacity: 1;
+    transform: translateY(0px);
+    transition-duration: 0.3s;
+}
+/* From Uiverse.io by adamgiebl */
+.cssbuttons-io-button {
+    display: flex;
+    align-items: center;
+    font-family: inherit;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 0.7em 1.4em 0.7em 1.1em;
+    color: white;
+    background: #ad5389;
+    background: linear-gradient( 0deg, rgba(20, 167, 62, 1) 0%, rgba(102, 247, 113, 1) 100% );
+    border: none;
+    box-shadow: 0 0.7em 1.5em -0.5em #14a73e98;
+    letter-spacing: 0.05em;
+    border-radius: 20em;
+}
+
+    .cssbuttons-io-button:hover {
+        box-shadow: 0 0.5em 1.5em -0.5em #14a73e98;
+    }
+
+    .cssbuttons-io-button:active {
+        box-shadow: 0 0.3em 1em -0.5em #14a73e98;
+    }
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+/* From Uiverse.io by Bodyhc */
+.search {
+    display: inline-block;
+    position: relative;
+}
+
+    .search input[type="text"] {
+        width: 400px;
+        padding: 10px;
+        border: none;
+        border-radius: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .search button[type="submit"] {
+        background-color: #4e99e9;
+        border: none;
+        color: #fff;
+        cursor: pointer;
+        padding: 10px 20px;
+        border-radius: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        position: absolute;
+        top: 0;
+        right: 0;
+        transition: .9s ease;
+    }
+
+        .search button[type="submit"]:hover {
+            transform: scale(1.1);
+            color: rgb(255, 255, 255);
+            background-color: blue;
+        }
+text-truncate {
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    -webkit-line-clamp: 3; 
+    -webkit-box-orient: vertical;
+    max-height: calc(1.5em * 3); 
+}
+/*.text-truncate-multiline {
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;*/ /* Cho phép xuống dòng */
+    /*-webkit-line-clamp: 3;*/ /* Giới hạn số dòng hiển thị */
+    /*-webkit-box-orient: vertical;*/ /* Thiết lập để dùng cùng -webkit-line-clamp */
+    /*max-height: calc(1.5em * 3);*/ /* Giới hạn chiều cao dựa trên số dòng */
+/*}*/
+
+/*
+    HUY
+    /* Đảm bảo Navbar và các phần tử đứng riêng biệt */
+.container-header {
+    background-image: url('/img/nav2.jpg'); /* Đường dẫn tới ảnh */
+    background-size: cover; /* Để ảnh phủ toàn bộ vùng */
+    background-position: center; /* Căn giữa ảnh */
+    height: 100px; /* Chiều cao lớn hơn để tạo một header rõ ràng */
+    width: 100%; /* Độ rộng toàn màn hình */
+    position: sticky; /* Làm cho header có thể đứng im ở trên */
+    top: 0; /* Đặt header ở trên cùng */
+    z-index: 100; /* Đảm bảo header ở trên các phần tử khác nếu cần */
+}
+
+/* Container cho các khối carousel, giỏ hàng hoặc các phần tử cuộn khác */
+.wd-carousel {
+    display: flex;
+    overflow-x: auto; /* Thêm khả năng cuộn ngang */
+    gap: 20px; /* Khoảng cách giữa các phần tử trong carousel */
+    padding: 10px 0; /* Khoảng cách xung quanh carousel */
+    background-color: white; /* Màu nền cho carousel */
+    z-index: 10; /* Đảm bảo không bị đè lên bởi các phần tử khác */
+    scroll-snap-type: x mandatory; /* Cuộn dừng tại các phần tử */
+}
+
+    .wd-carousel::-webkit-scrollbar {
+        display: none; /* Ẩn thanh cuộn ngang */
+    }
+
+/* Cấu trúc bên trong của carousel */
+.wd-carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease; /* Thêm hiệu ứng khi di chuyển */
+}
+
+/* Mỗi phần tử trong carousel */
+.wd-carousel-wrap {
+    display: flex;
+    width: 100%;
+}
+
+/* Các mục carousel (từng thương hiệu) */
+.wd-carousel-item {
+    flex: 0 0 auto;
+    margin-right: 20px; /* Khoảng cách giữa các hình ảnh */
+    width: 150px; /* Kích thước hình ảnh */
+    scroll-snap-align: start; /* Đảm bảo các item dừng đúng vị trí khi cuộn */
+}
+
+/* Hình ảnh logo */
+.brand-logo {
+    width: 100%;
+    border-radius: 8px; /* Làm tròn các góc của hình ảnh */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Thêm bóng đổ cho hình ảnh */
+}
+
+/* Thêm hiệu ứng hover cho hình ảnh logo */
+.wd-carousel-item:hover .brand-logo {
+    transform: scale(1.05); /* Phóng to nhẹ khi hover */
+    transition: transform 0.3s ease;
+}
+
+/* Đảm bảo các hình ảnh hiển thị theo dạng ngang */
+.wd-carousel-item img {
+    border-radius: 8px;
+    width: 100%; /* Hình ảnh sẽ chiếm hết chiều rộng của item */
+    height: auto; /* Đảm bảo tỷ lệ hình ảnh không bị biến dạng */
+    transition: transform 0.3s ease;
+}
+
+.wd-carousel-item:hover img {
+    transform: scale(1.05); /* Phóng to nhẹ khi hover */
+}
+
+/* Đảm bảo rằng carousel hoạt động tốt trên màn hình nhỏ */
+@media (max-width: 768px) {
+    .wd-carousel {
+        gap: 15px; /* Khoảng cách giữa các phần tử nhỏ hơn trên màn hình nhỏ */
+    }
+
+    .wd-carousel-item {
+        width: 120px; /* Điều chỉnh kích thước item cho màn hình nhỏ */
+    }
+}
+
+
+/* General styling */
+/* Cấu trúc chung cho các khối thông tin */
+.info-box-wrapper {
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    transition: transform 0.3s ease;
+    z-index: 1; /* Đảm bảo các khối này luôn nằm trên các phần tử khác */
+}
+
+    .info-box-wrapper:hover {
+        transform: translateY(-10px); /* Tạo hiệu ứng di chuyển khi hover */
+    }
+
+.wd-text-block {
+    font-size: 16px;
+    color: #555;
+    margin-top: 10px;
+}
+
+/* Đảm bảo phần footer hoặc khối dưới cùng không bị đè lên */
+.bannercook-container {
+    width: 100%; /* Full width */
+    height: auto;
+    overflow: hidden; /* Ẩn phần thừa */
+    margin-top: 20px; /* Khoảng cách phía trên */
+}
+
+/* Đảm bảo hình ảnh trong khối này được hiển thị phù hợp */
+.bannercook-image {
+    width: 100%;
+    height: 500px;
+    object-fit: cover; /* Đảm bảo hình ảnh phủ toàn bộ vùng */
+}
+
+/* Đảm bảo phần cuộn đứng không bị che khuất */
+#cua-hang {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 40px 20px;
+    overflow: hidden; /* Giới hạn các phần tử không bị tràn */
+}
+
+.e-con-inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+}
+
+/* Phần hiển thị các khối cuộn như thông tin cửa hàng */
+.info-box-wrapper {
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    z-index: 1; /* Đảm bảo không bị che khuất bởi các phần tử khác */
+}
+
+    .info-box-wrapper:hover {
+        transform: translateY(-10px); /* Hiệu ứng hover */
+    }
+
+.info-box-title {
+    font-size: 25px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Điều chỉnh kiểu dáng cho các phần tử thông tin */
+.wd-text-block {
+    font-size: 16px;
+    color: #555;
+    margin-top: 10px;
+}
+
+/* Media query cho thiết bị di động */
+@media (max-width: 768px) {
+    .info-box-wrapper {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .e-con-inner {
+        flex-direction: column;
+    }
+
+    .wd-text-block {
+        font-size: 14px;
+    }
+}
+
+.ffbox {
+    position: relative;
+    padding-top: 100px; /* Khoảng cách 30px phía trên */
+}
+
+    .ffbox::before {
+        content: '';
+        position: absolute;
+        top: 0; /* Đảm bảo hình ảnh được đặt ở phía trên cùng */
+        left: 0;
+        width: 100%;
+        height: 200px; /* Chiều cao của ảnh, bạn có thể điều chỉnh */
+        background-image: url('/img//9.jpg'); /* Đường dẫn tới ảnh */
+        background-size: cover; /* Đảm bảo ảnh phủ toàn bộ chiều rộng */
+        background-position: center; /* Căn giữa ảnh */
+        z-index: -1; /* Đảm bảo ảnh không chồng lên các phần tử nội dung */
+    }
+
+.ffbox1 {
+    padding-top: 30px; /* Khoảng cách giữa ảnh và phần form */
+}
+
+button {
+    background-color: #198754; /* Màu nền của nút gửi */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+    button:hover {
+        background-color: #145c32; /* Màu nền khi hover */
+    }
+
+*/
