@@ -554,7 +554,66 @@ button:hover .hover-btn {
     transform: translateY(0px);
     transition-duration: 0.3s;
 }
+/**/
+.add-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(20, 20, 20);
+    border: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.164);
+    cursor: pointer;
+    transition-duration: 0.3s;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none !important;
+}
 
+.edit-svgIcon {
+    width: 17px;
+    transition-duration: 0.3s;
+}
+
+.add-button:hover {
+    width: 120px;
+    border-radius: 50px;
+    transition-duration: 0.3s;
+    background-color: #7cf05d;
+    align-items: center;
+}
+
+    .add-button:hover .edit-svgIcon {
+        width: 20px;
+        transition-duration: 0.3s;
+        transform: translateY(60%);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+
+.add-button::before {
+    display: none;
+    content: "Save";
+    color: white;
+    transition-duration: 0.3s;
+    font-size: 2px;
+}
+
+.add-button:hover::before {
+    display: block;
+    padding-right: 10px;
+    font-size: 17px;
+    opacity: 1;
+    transform: translateY(0px);
+    transition-duration: 0.3s;
+}
+/**/
 .detail-button {
     width: 40px;
     height: 40px;
@@ -733,6 +792,7 @@ button:hover .hover-btn {
     transform: translateY(0px);
     transition-duration: 0.3s;
 }
+
 /* From Uiverse.io by adamgiebl */
 .cssbuttons-io-button {
     display: flex;
@@ -1036,4 +1096,8 @@ button {
         background-color: #145c32; /* Màu nền khi hover */
     }
 
-*/
+.ck-editor__editable {
+    resize: none !important; /* Ngăn resize */
+    height: 400px !important; /* Chiều cao cố định */
+    width: 450px !important; /* Chiều rộng cố định */
+}

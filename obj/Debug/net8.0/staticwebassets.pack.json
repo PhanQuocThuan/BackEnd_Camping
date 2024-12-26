@@ -1161,6 +1161,38 @@
       "PackagePath": "staticwebassets\\css\\styles.css"
     },
     {
+      "Id": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\wwwroot\\data\\brands\\425bfb24-a381-43ff-9b20-67b2ce19a797.png",
+      "PackagePath": "staticwebassets\\data\\brands\\425bfb24-a381-43ff-9b20-67b2ce19a797.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\wwwroot\\data\\brands\\82ca35d4-ea41-4998-9d1e-6c2d5247bd3b.jpg",
+      "PackagePath": "staticwebassets\\data\\brands\\82ca35d4-ea41-4998-9d1e-6c2d5247bd3b.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\wwwroot\\data\\brands\\8cbe659b-3a39-4ffb-9bb6-6296655d21b6.jpg",
+      "PackagePath": "staticwebassets\\data\\brands\\8cbe659b-3a39-4ffb-9bb6-6296655d21b6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\wwwroot\\data\\brands\\a9c21014-be2c-4c04-a9dc-3324d363af1c.jpg",
+      "PackagePath": "staticwebassets\\data\\brands\\a9c21014-be2c-4c04-a9dc-3324d363af1c.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\wwwroot\\data\\brands\\c74d982c-d6cf-4ffd-87e0-f7d4a7902296.jpg",
+      "PackagePath": "staticwebassets\\data\\brands\\c74d982c-d6cf-4ffd-87e0-f7d4a7902296.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\wwwroot\\data\\brands\\d9ef441a-91c9-438b-aebf-4cfdea803c49.jpg",
+      "PackagePath": "staticwebassets\\data\\brands\\d9ef441a-91c9-438b-aebf-4cfdea803c49.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\wwwroot\\data\\brands\\ecb237f7-69da-4379-9e25-1ff269345548.png",
+      "PackagePath": "staticwebassets\\data\\brands\\ecb237f7-69da-4379-9e25-1ff269345548.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\wwwroot\\data\\brands\\fc1d023f-92a1-4ef0-aa4a-f127ec865c93.png",
+      "PackagePath": "staticwebassets\\data\\brands\\fc1d023f-92a1-4ef0-aa4a-f127ec865c93.png"
+    },
+    {
       "Id": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },

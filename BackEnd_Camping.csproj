@@ -17,7 +17,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Areas\Admin\DTOs\response\" />
     <Folder Include="wwwroot\data\banners\" />
     <Folder Include="wwwroot\data\brands\" />
     <Folder Include="wwwroot\data\features\" />

@@ -3,15 +3,28 @@
 @{
     ViewData["Title"] = "Index";
 }
-
-<h1>Index</h1>
-
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
+<div class="search my-3">
+    <form asp-action="Index" method="get">
+        <input name="searchQuery" placeholder="Search..." type="text">
+        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </form>
+</div>
+<div class="row d-flex justify-content-between">
+    <div class="col-1">
+        <h1>Brand</h1>
+    </div>
+    <div class="col-1 my-auto">
+        <a asp-action="create" asp-controller="Category" class="text-decoration-none">
+            <button class="cssbuttons-io-button">
+                <span><i class="fa-solid fa-plus"></i></span>
+                Add
+            </button>
+        </a>
+    </div>
+</div>
+<table class="table table-bordered">
     <thead>
-        <tr>
+        <tr class="text-center">
             <th>
                 @Html.DisplayNameFor(model => model.Name)
             </th>
@@ -30,19 +43,7 @@
             <th>
                 @Html.DisplayNameFor(model => model.MetaKeywords)
             </th>
-            <th>
-                @Html.DisplayNameFor(model => model.CreatedDate)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.CreatedBy)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.UpdatedDate)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.UpdatedBy)
-            </th>
-            <th></th>
+            <th style="width: 10rem;">Actions</th>
         </tr>
     </thead>
     <tbody>
@@ -66,22 +67,71 @@
             <td>
                 @Html.DisplayFor(modelItem => item.MetaKeywords)
             </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CreatedDate)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CreatedBy)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.UpdatedDate)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.UpdatedBy)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.CAT_ID">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.CAT_ID">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.CAT_ID">Delete</a>
+            <td class="text-center">
+                <div class="d-flex justify-content-center gap-2">
+                        <a asp-action="Edit" asp-route-id="@item.CAT_ID" class="text-decoration-none">
+                            <button type="button" class="edit-button">
+                                <i class="fa-solid fa-pen text-white edit-svgIcon"></i>
+                            </button>
+                        </a>
+                        <button type="button" class="detail-button" popovertarget="popover-detail-@item.CAT_ID">
+                            <i class="fa-solid fa-info text-white detail-svgIcon"></i>
+                        </button>
+                        <div id="popover-detail-@item.CAT_ID" popover class="popover-detail rounded rounded-3 border-success-subtle border-2">
+                            <div class="container bg-success-subtle" style="max-width: 1000px;">
+                                <div class="row py-2">
+                                    <h1>Thông tin chi tiết của Thể loại @item.Name</h1>
+                                    <div class="col-4 my-auto">
+                                        <dl class="row">
+                                            <dt class="col-sm-2">
+                                                @Html.DisplayNameFor(model => model.Name)
+                                            </dt>
+                                            <dd class="col-sm-10">
+                                                @item.Name
+                                            </dd>
+                                            <dt class="col-sm-2">
+                                                @Html.DisplayNameFor(model => model.DisplayOrder)
+                                            </dt>
+                                            <dd class="col-sm-10">
+                                                @item.DisplayOrder
+                                            </dd>
+                                            <dt class="col-sm-2">
+                                                @Html.DisplayNameFor(model => model.Status)
+                                            </dt>
+                                            <dd class="col-sm-10">
+                                                @item.Status
+                                            </dd>
+                                            <dt class="col-sm-2">
+                                                @Html.DisplayNameFor(model => model.MetaTitle)
+                                            </dt>
+                                            <dd class="col-sm-10">
+                                                @item.MetaTitle
+                                            </dd>
+                                            <dt class="col-sm-2">
+                                                @Html.DisplayNameFor(model => model.MetaDescription)
+                                            </dt>
+                                            <dd class="col-sm-10">
+                                                @item.MetaDescription
+                                            </dd>
+                                            <dt class="col-sm-2">
+                                                @Html.DisplayNameFor(model => model.MetaKeywords)
+                                            </dt>
+                                            <dd class="col-sm-10">
+                                                @item.MetaKeywords
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                                <div class="position-absolute top-0 end-0">
+                                    <button type="button" class="close-button" onclick="location.reload()">
+                                        <i class="fa-solid fa-times text-white"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    <a asp-action="Details" asp-route-id="@item.CAT_ID">Details</a> 
+                    <a asp-action="Delete" asp-route-id="@item.CAT_ID">Delete</a>
+                </div>
             </td>
         </tr>
 }

@@ -3,65 +3,55 @@
 @{
     ViewData["Title"] = "Index";
 }
+<div class="search my-3">
+    <form asp-action="Index" method="get">
+        <input name="searchQuery" placeholder="Search..." type="text">
+        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </form>
+</div>
+<div class="row d-flex justify-content-between">
+    <div class="col-1">
+        <h1>Brand</h1>
+    </div>
+    <div class="col-1 my-auto">
+        <a asp-action="create" asp-controller="Brand" class="text-decoration-none">
+            <button class="cssbuttons-io-button" >
+                <span><i class="fa-solid fa-plus"></i></span>
+                Add
+            </button>
+        </a>
+    </div>
+</div>
+<table class="table table-bordered">
 
-<h1>Index</h1>
-
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
     <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Name)
-            </th>
+        <tr class="text-center">
             <th>
                 @Html.DisplayNameFor(model => model.Avatar)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Phone)
+        @Html.DisplayNameFor(model => model.Name)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Email)
+        @Html.DisplayNameFor(model => model.Phone)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Address)
+        @Html.DisplayNameFor(model => model.Email)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Description)
+        @Html.DisplayNameFor(model => model.Address)
             </th>
-            <th>
-                @Html.DisplayNameFor(model => model.MetaTitle)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.MetaDescription)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.MetaKeywords)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.CreatedDate)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.CreatedBy)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.UpdatedDate)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.UpdatedBy)
-            </th>
-            <th></th>
+            <th style="width: 10rem;">Actions</th>
         </tr>
     </thead>
     <tbody>
 @foreach (var item in Model) {
-        <tr>
+        <tr class="text-center">
             <td>
-                @Html.DisplayFor(modelItem => item.Name)
+                <img src="~/data/brands/@item.Avatar" alt="avatar" width="100px" />
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Avatar)
+                @Html.DisplayFor(modelItem => item.Name)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Phone)
@@ -72,36 +62,165 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Address)
             </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Description)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.MetaTitle)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.MetaDescription)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.MetaKeywords)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CreatedDate)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CreatedBy)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.UpdatedDate)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.UpdatedBy)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.BRA_ID">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.BRA_ID">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.BRA_ID">Delete</a>
-            </td>
+                <td class="text-center">
+                    <div class="d-flex justify-content-center gap-2">
+                        <a asp-action="Edit" asp-route-id="@item.BRA_ID" class="text-decoration-none">
+                        <button type="button" class="edit-button" >
+                             <i class="fa-solid fa-pen text-white edit-svgIcon"></i>
+                        </button>
+                        </a>
+                        <button type="button" class="detail-button" popovertarget="popover-detail-@item.BRA_ID">
+                             <i class="fa-solid fa-info text-white detail-svgIcon"></i>
+                        </button>
+                        <div id="popover-detail-@item.BRA_ID" popover class="popover-detail rounded rounded-3 border-success-subtle border-2">
+                            <div class="container bg-success-subtle" style="max-width: 1000px;">
+                                <div class="row py-2">
+                                    <h1>Thông tin chi tiết của Thương Hiệu @item.Name</h1>
+                                    <div class="col-4">
+                                        <img src="~/data/brands/@item.Avatar" alt="avatar" width="300" height="300" class="rounded rounded-2" />
+                                    </div>
+                                    <div class="col-4 my-auto">
+                                        <dl class="row">
+                                            <dt class="col-sm-2">
+                                                @Html.DisplayNameFor(model => model.Name)
+                                            </dt>
+                                            <dd class="col-sm-10">
+                                                @item.Name
+                                            </dd>
+                                            <dt class="col-sm-2">
+                                                @Html.DisplayNameFor(model => model.Phone)
+                                            </dt>
+                                            <dd class="col-sm-10">
+                                                @item.Phone
+                                            </dd>
+                                            <dt class="col-sm-2">
+                                                @Html.DisplayNameFor(model => model.Email)
+                                            </dt>
+                                            <dd class="col-sm-10">
+                                                @item.Email
+                                            </dd>
+                                            <dt class="col-sm-2">
+                                                @Html.DisplayNameFor(model => model.Address)
+                                            </dt>
+                                            <dd class="col-sm-10">
+                                                @item.Address
+                                            </dd>
+                                            <dt class="col-sm-2">
+                                                @Html.DisplayNameFor(model => model.MetaTitle)
+                                            </dt>
+                                            <dd class="col-sm-10">
+                                                @item.MetaTitle
+                                            </dd>
+                                            <dt class="col-sm-2">
+                                                @Html.DisplayNameFor(model => model.MetaDescription)
+                                            </dt>
+                                            <dd class="col-sm-10">
+                                                @item.MetaDescription
+                                            </dd>
+                                            <dt class="col-sm-2">
+                                                @Html.DisplayNameFor(model => model.MetaKeywords)
+                                            </dt>
+                                            <dd class="col-sm-10">
+                                                @item.MetaKeywords
+                                            </dd>
+                                            </dl>
+                                    </div>
+                                    <div class="col-4">
+                                        <h4>@Html.DisplayNameFor(model => model.Description)</h4>
+                                        <div style="width: 100%; height: 300px; overflow: auto; word-wrap: break-word;">
+                                            @Html.Raw(item.Description)
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="position-absolute top-0 end-0">
+                                        <button type="button" class="close-button" onclick="location.reload()">
+                                            <i class="fa-solid fa-times text-white"></i>
+                                        </button>
+                                </div>
+                            </div>
+                        </div>
+                        <button popovertarget="popover-delete-@item.BRA_ID" class="trash-button">
+                            <i class="fa-solid fa-trash text-white trash-svgIcon"></i>
+                        </button>
+                        <div id="popover-delete-@item.BRA_ID" popover class="popover-delete rounded rounded-3 border-success-subtle border-2">
+                            <div class="container" style="max-width: 400px;">
+                                <div class="row">
+                                    <h1>Bạn có thực sự muốn xóa @item.Name không?</h1>
+                                </div>
+                                <div class="row">
+                                    <form asp-action="DeleteConfirmed" method="post" class="d-inline" onsubmit="return confirm('Bạn thực sự muốn xóa không?');">
+                                        <button type="submit">
+                                            <i class="fa-solid fa-trash text-white trash-svgIcon"></i>Xóa
+                                        </button>
+                                        <button type="button" class="close-button" onclick="location.reload()">
+                                            <i class="fa-solid fa-times text-white"></i> Đóng
+                                        </button>
+                                    </form>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </td>
         </tr>
 }
     </tbody>
 </table>
+
+@section Header {
+    @{
+        <link href="~/admin/plugins/ckeditor5/ckeditor5.css" rel="stylesheet" />
+    }
+}
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    <script type="importmap">
+        {
+            "imports": {
+                "ckeditor5": "/admin/plugins/ckeditor5/ckeditor5.js",
+                "ckeditor5/": "/admin/plugins/ckeditor5/"
+            }
+        }
+    </script>
+    <script type="module">
+        import {
+            ClassicEditor,
+            Essentials,
+            Paragraph,
+            Bold,
+            Italic,
+            Font
+        } from 'ckeditor5';
+
+        ClassicEditor
+            .create(document.querySelector('#Description'), {
+                plugins: [Essentials, Paragraph, Bold, Italic, Font],
+                toolbar: [
+                    'undo', 'redo', '|', 'bold', 'italic', '|',
+                    'fontSize', 'fontFamily', 'fontColor', 'fontBackgroundColor'
+                ]
+            })
+            .then(editor => {
+                window.editor = editor;
+            })
+            .catch(error => {
+                console.error(error);
+            });
+    </script>
+    <!-- A friendly reminder to run on a server, remove this during the integration. -->
+    <script>
+        window.onload = function () {
+            if (window.location.protocol === "file:") {
+                alert("This sample requires an HTTP server. Please serve this file with a web server.");
+            }
+        };
+    </script>
+    <script>
+        function reloadPage() {
+            location.reload();
+        }
+    </script>
+
+    }
