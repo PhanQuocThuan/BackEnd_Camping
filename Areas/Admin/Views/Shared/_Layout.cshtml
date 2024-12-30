@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="~/admin/css/styles.css" asp-append-version="true" />
     @await RenderSectionAsync("Header", required: false)
 </head>
-<body class="layout-fixed sidebar-expand-lg sidebar-mini sidebar-collapse bg-body-tertiary">
+<body class="layout-fixed sidebar-expand-lg sidebar-mini sidebar-collapse bg-body-tertiary \">
     <div class="app-wrapper">
         <nav class="app-header navbar navbar-expand bg-body">
             <div class="container-fluid">
@@ -72,7 +72,7 @@
                 </ul>
             </div>
         </nav>
-        <aside class="app-sidebar shadow" data-bs-theme="light">
+        <aside class="app-sidebar shadow h-auto" data-bs-theme="light">
             <div class="sidebar-brand">
                 <a href="" class="brand-link">
                     <img src="~/admin/img/logo.jpg"
@@ -92,14 +92,15 @@
                                 <p>Dashboard</p>
                             </a>
                         </li>
-                        <li class="nav-item menu-open">
-                            <a asp-action="index" asp-controller="Order" class="nav-link active">
-                                <i class="fa-solid fa-cart-shopping"></i>
+                        <li class="nav-item">
+                            <a asp-action="index" asp-controller="Product" class="nav-link">
+                                <i class="fa-solid fa-campground"></i>
                                 <p>
-                                    Orders
+                                    Products
                                 </p>
                             </a>
                         </li>
+                       
                         <li class="nav-item menu-open">
                             <a asp-action="index" asp-controller="Brand" class="nav-link active">
                                 <i class="fa-solid fa-copyright"></i>
@@ -116,6 +117,7 @@
                                     Category
                                 </p>
                             </a>
+
                         </li>
                         <li class="nav-item">
                             <a asp-action="index" asp-controller="UserCustomer" class="nav-link">
@@ -133,12 +135,12 @@
                                     Review
                                 </p>
                             </a>
-                        </li>   
-                        <li class="nav-item">
-                            <a asp-action="index" asp-controller="Product" class="nav-link">
-                                <i class="fa-solid fa-campground"></i>
+                        </li>
+                        <li class="nav-item menu-open">
+                            <a asp-action="index" asp-controller="Order" class="nav-link active">
+                                <i class="fa-solid fa-cart-shopping"></i>
                                 <p>
-                                    Products
+                                    Orders
                                 </p>
                             </a>
                         </li>
@@ -182,6 +184,22 @@
                                 </p>
                             </a>
                         </li>
+                        <li class="nav-item">
+                            <a asp-action="index" asp-controller="UserBrand" class="nav-link">
+                                <i class="fa-solid fa-heart"></i>
+                                <p>
+                                    Favourite Brand
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a asp-action="index" asp-controller="UserCategorie" class="nav-link">
+                                <i class="fa-regular fa-heart"></i>
+                                <p>
+                                    Favourite Category
+                                </p>
+                            </a>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -189,7 +207,7 @@
         <div class="container ">
             @RenderBody()
         </div>
-        <footer class="app-footer d-flex justify-content-between">
+        <footer class="app-footer d-flex justify-content-between bottom-0">
             <strong> Copyright &copy; 2024&nbsp; HAT </strong>
             <form method="post" action="/admin/User/Logout" style="display:inline;">
                 <button type="submit" class="button btn btn-danger">Logout</button>
@@ -197,6 +215,41 @@
 
         </footer>
     </div>
+    <style>
+        .dropdown-menu {
+            transition: all 0.3s ease;
+            transform: translateY(-10px);
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .dropdown.show .dropdown-menu {
+            transform: translateY(0);
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .app-sidebar {
+            height: 100vh; /* Chiều cao cố định bằng viewport */
+            overflow-y: auto; /* Cuộn dọc khi nội dung vượt quá */
+        }
+
+        .sidebar-wrapper {
+            max-height: calc(100vh - 50px); /* Trừ khoảng cách header/footer nếu cần */
+            overflow-y: auto;
+        }
+
+        /* Ẩn thanh cuộn mặc định */
+        .app-sidebar::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .app-sidebar::-webkit-scrollbar-thumb {
+            background-color: #ccc;
+            border-radius: 4px;
+        }
+    </style>
+
     <script src="js/bootstrap.bundle.min.js"></script>
     <script>
         const SELECTOR_SIDEBAR_WRAPPER = ".sidebar-wrapper";

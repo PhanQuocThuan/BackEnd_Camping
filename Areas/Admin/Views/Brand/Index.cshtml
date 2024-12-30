@@ -3,6 +3,19 @@
 @{
     ViewData["Title"] = "Index";
 }
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger">
+        @TempData["ErrorMessage"]
+    </div>
+}
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["SuccessMessage"]
+    </div>
+}
+
 <div class="search my-3">
     <form asp-action="Index" method="get">
         <input name="searchQuery" placeholder="Search..." type="text">
@@ -99,10 +112,10 @@
                                             <dd class="col-sm-10">
                                                 @item.Email
                                             </dd>
-                                            <dt class="col-sm-2">
+                                            <dt class="col-sm-2" style="height: 80px;">
                                                 @Html.DisplayNameFor(model => model.Address)
                                             </dt>
-                                            <dd class="col-sm-10">
+                                            <dd class="col-sm-10" style="height: 80px; overflow-wrap: break-word; word-wrap: break-word; word-break: break-word;">
                                                 @item.Address
                                             </dd>
                                             <dt class="col-sm-2">
@@ -149,6 +162,8 @@
                                 </div>
                                 <div class="row">
                                     <form asp-action="DeleteConfirmed" method="post" class="d-inline" onsubmit="return confirm('Bạn thực sự muốn xóa không?');">
+                                        @Html.AntiForgeryToken()
+                                        <input type="hidden" name="id" value="@item.BRA_ID" />
                                         <button type="submit">
                                             <i class="fa-solid fa-trash text-white trash-svgIcon"></i>Xóa
                                         </button>

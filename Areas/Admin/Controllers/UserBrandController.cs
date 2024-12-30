@@ -6,7 +6,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using BackEnd_Camping.Models;
-
+using BackEnd_Camping.Utils;
+using BackEnd_Camping.Areas.Admin.DTOs.response;
 namespace BackEnd_Camping.Areas.Admin.Controllers
 {
     [Area("Admin")]
@@ -22,35 +23,38 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
         // GET: Admin/UserBrand
         public async Task<IActionResult> Index()
         {
-            var campingContext = _context.User_brands.Include(u => u.Brand).Include(u => u.User);
+            var campingContext = _context.UserBrands.Include(u => u.Brand).Include(u => u.User);
             return View(await campingContext.ToListAsync());
         }
 
         // GET: Admin/UserBrand/Details/5
         public async Task<IActionResult> Details(int? id)
         {
-            if (id == null)
+            var userBrands = await _context.UserBrands
+        .Include(ub => ub.User)
+        .Include(ub => ub.Brand)
+        .Where(ub => ub.USE_ID == id)
+        .ToListAsync();
+
+            if (userBrands == null || !userBrands.Any())
             {
                 return NotFound();
             }
 
-            var userBrands = await _context.User_brands
-                .Include(u => u.Brand)
-                .Include(u => u.User)
-                .FirstOrDefaultAsync(m => m.UBRA_ID == id);
-            if (userBrands == null)
+            var viewModel = new UserDetailViewModel
             {
-                return NotFound();
-            }
+                User = userBrands.First().User,
+                Brands = userBrands.Select(ub => ub.Brand).ToList()
+            };
 
-            return View(userBrands);
+            return View(viewModel);
         }
 
         // GET: Admin/UserBrand/Create
         public IActionResult Create()
         {
-            ViewData["BRA_ID"] = new SelectList(_context.Brand, "BRA_ID", "BRA_ID");
-            ViewData["USE_ID"] = new SelectList(_context.User, "USE_ID", "USE_ID");
+            ViewData["BRA_ID"] = new SelectList(_context.Brand, "BRA_ID", "Name");
+            ViewData["USE_ID"] = new SelectList(_context.User, "USE_ID", "Name");
             return View();
         }
 
@@ -59,16 +63,22 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("UBRA_ID,USE_ID,BRA_ID,CreatedDate,CreatedBy,UpdatedDate,UpdatedBy")] UserBrands userBrands)
+        public async Task<IActionResult> Create([FromForm] UserBrands userBrands)
         {
+            var userInfo = HttpContext.Session.Get<AdminUser>("userInfo");
+            var userName = userInfo != null ? userInfo.Username : "";
             if (ModelState.IsValid)
             {
+                userBrands.CreatedBy = userName;
+                userBrands.CreatedDate = DateTime.Now;
+                userBrands.UpdatedDate = DateTime.Now;
+                userBrands.UpdatedBy = userName;
                 _context.Add(userBrands);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["BRA_ID"] = new SelectList(_context.Brand, "BRA_ID", "BRA_ID", userBrands.BRA_ID);
-            ViewData["USE_ID"] = new SelectList(_context.User, "USE_ID", "USE_ID", userBrands.USE_ID);
+            ViewData["BRA_ID"] = new SelectList(_context.Brand, "BRA_ID", "Name", userBrands.BRA_ID);
+            ViewData["USE_ID"] = new SelectList(_context.User, "USE_ID", "Name", userBrands.USE_ID);
             return View(userBrands);
         }
 
@@ -80,13 +90,13 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
                 return NotFound();
             }
 
-            var userBrands = await _context.User_brands.FindAsync(id);
+            var userBrands = await _context.UserBrands.FindAsync(id);
             if (userBrands == null)
             {
                 return NotFound();
             }
-            ViewData["BRA_ID"] = new SelectList(_context.Brand, "BRA_ID", "BRA_ID", userBrands.BRA_ID);
-            ViewData["USE_ID"] = new SelectList(_context.User, "USE_ID", "USE_ID", userBrands.USE_ID);
+            ViewData["BRA_ID"] = new SelectList(_context.Brand, "BRA_ID", "Name", userBrands.BRA_ID);
+            ViewData["USE_ID"] = new SelectList(_context.User, "USE_ID", "Name", userBrands.USE_ID);
             return View(userBrands);
         }
 
@@ -95,7 +105,7 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("UBRA_ID,USE_ID,BRA_ID,CreatedDate,CreatedBy,UpdatedDate,UpdatedBy")] UserBrands userBrands)
+        public async Task<IActionResult> Edit(int id, [FromForm] UserBrands userBrands)
         {
             if (id != userBrands.UBRA_ID)
             {
@@ -104,8 +114,12 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
 
             if (ModelState.IsValid)
             {
+                var userInfo = HttpContext.Session.Get<AdminUser>("userInfo");
+                var userName = userInfo != null ? userInfo.Username : "";
                 try
                 {
+                    userBrands.UpdatedDate = DateTime.Now;
+                    userBrands.UpdatedBy = userName;
                     _context.Update(userBrands);
                     await _context.SaveChangesAsync();
                 }
@@ -122,40 +136,22 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["BRA_ID"] = new SelectList(_context.Brand, "BRA_ID", "BRA_ID", userBrands.BRA_ID);
-            ViewData["USE_ID"] = new SelectList(_context.User, "USE_ID", "USE_ID", userBrands.USE_ID);
+            ViewData["BRA_ID"] = new SelectList(_context.Brand, "BRA_ID", "Name", userBrands.BRA_ID);
+            ViewData["USE_ID"] = new SelectList(_context.User, "USE_ID", "Name", userBrands.USE_ID);
             return View(userBrands);
         }
 
         // GET: Admin/UserBrand/Delete/5
-        public async Task<IActionResult> Delete(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var userBrands = await _context.User_brands
-                .Include(u => u.Brand)
-                .Include(u => u.User)
-                .FirstOrDefaultAsync(m => m.UBRA_ID == id);
-            if (userBrands == null)
-            {
-                return NotFound();
-            }
-
-            return View(userBrands);
-        }
 
         // POST: Admin/UserBrand/Delete/5
-        [HttpPost, ActionName("Delete")]
+        [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var userBrands = await _context.User_brands.FindAsync(id);
+            var userBrands = await _context.UserBrands.FindAsync(id);
             if (userBrands != null)
             {
-                _context.User_brands.Remove(userBrands);
+                _context.UserBrands.Remove(userBrands);
             }
 
             await _context.SaveChangesAsync();
@@ -164,7 +160,9 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
 
         private bool UserBrandsExists(int id)
         {
-            return _context.User_brands.Any(e => e.UBRA_ID == id);
+            return _context.UserBrands.Any(e => e.UBRA_ID == id);
         }
     }
+    
+   
 }

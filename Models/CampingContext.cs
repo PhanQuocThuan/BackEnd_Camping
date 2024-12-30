@@ -24,7 +24,7 @@ namespace BackEnd_Camping.Models
         public DbSet<BackEnd_Camping.Models.Place> Place { get; set; } = default!;
         public DbSet<BackEnd_Camping.Models.Review> Review { get; set; } = default!;
         public DbSet<BackEnd_Camping.Models.Setting> Setting { get; set; } = default!;
-        public DbSet<BackEnd_Camping.Models.UserBrands> User_brands { get; set; } = default!;
+        public DbSet<BackEnd_Camping.Models.UserBrands> UserBrands { get; set; } = default!;
         public DbSet<BackEnd_Camping.Models.UserCategories> UserCategories { get; set; } = default!;
         //public DbSet<Banner> Banners { get; set; }
         //public DbSet<Category> Categories { get; set; }
@@ -38,7 +38,7 @@ namespace BackEnd_Camping.Models
         //public DbSet<Brand> Brands { get; set; }
         //public DbSet<Place> Places { get; set; }
         //public DbSet<Menu> Menus { get; set; }
-        //public DbSet<User_brands> user_Brands { get; set; }
+        //public DbSet<UserBrands> UserBrands { get; set; }
         //public DbSet<User_categories> user_categories { get; set; }
     }
 }

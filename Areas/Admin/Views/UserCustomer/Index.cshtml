@@ -3,18 +3,40 @@
 @{
     ViewData["Title"] = "Index";
 }
-
-<h1>Index</h1>
-
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Password)
-            </th>
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger">
+        @TempData["ErrorMessage"]
+    </div>
+}
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["SuccessMessage"]
+    </div>
+}
+<div class="search my-3">
+    <form asp-action="Index" method="get">
+        <input name="searchQuery" placeholder="Search..." type="text">
+        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </form>
+</div>
+<div class="row d-flex justify-content-between">
+    <div class="col-1">
+        <h1>User Customer</h1>
+    </div>
+    <div class="col-1 my-auto">
+        <a asp-action="create" asp-controller="UserCustomer" class="text-decoration-none">
+            <button class="cssbuttons-io-button">
+                <span><i class="fa-solid fa-plus"></i></span>
+                Add
+            </button>
+        </a>
+    </div>
+</div>
+<table class="table table-bordered">
+    <thead class="text-center">
+        <tr class="text-center">
             <th>
                 @Html.DisplayNameFor(model => model.UserName)
             </th>
@@ -33,27 +55,13 @@
             <th>
                 @Html.DisplayNameFor(model => model.Address)
             </th>
-            <th>
-                @Html.DisplayNameFor(model => model.CreatedDate)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.CreatedBy)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.UpdatedDate)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.UpdatedBy)
-            </th>
-            <th></th>
+            <th>Favorites Brands</th>
+            <th style="width: 10rem;">Actions</th>
         </tr>
     </thead>
     <tbody>
 @foreach (var item in Model) {
         <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Password)
-            </td>
             <td>
                 @Html.DisplayFor(modelItem => item.UserName)
             </td>
@@ -61,7 +69,14 @@
                 @Html.DisplayFor(modelItem => item.Name)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Gender)
+                    @if (item.Gender)
+                    {
+                        <span class="text-black">Nam</span>
+                    }
+                    else
+                    {
+                        <span class="text-black">Nữ</span>
+                    }
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Phone)
@@ -72,22 +87,121 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Address)
             </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CreatedDate)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CreatedBy)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.UpdatedDate)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.UpdatedBy)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.USE_ID">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.USE_ID">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.USE_ID">Delete</a>
+                <td style="display: flex; align-items: center;" class="text-center">
+                    @if (item.UserBrands != null && item.UserBrands.Any())
+                    {
+                        <span>
+                            @(item.UserBrands.Select(ub => ub.BRA_ID).Distinct().Count())
+                        </span>
+                        <a asp-action="Favorites" asp-route-id="@item.USE_ID" class="btn btn-sm bg-white border-1 border-danger mx-3">
+                            <i class="fa-solid fa-heart text-danger"></i>
+                        </a>
+                    }
+                    else
+                    {
+                        <span>0</span>
+                    }
+                </td>
+
+                <td class="text-center">
+                    <div class="d-flex justify-content-center gap-2">
+                        <a asp-action="Edit" asp-route-id="@item.USE_ID" class="text-decoration-none">
+                            <button type="button" class="edit-button">
+                                <i class="fa-solid fa-pen text-white edit-svgIcon"></i>
+                            </button>
+                        </a>
+                        <button type="button" class="detail-button" popovertarget="popover-detail-@item.USE_ID">
+                            <i class="fa-solid fa-info text-white detail-svgIcon"></i>
+                        </button>
+                        <div id="popover-detail-@item.USE_ID" popover class="popover-detail rounded rounded-3 border-success-subtle border-2">
+                            <div class="container bg-success-subtle" style="max-width: 400px;">
+                                <div class="row py-2">
+                                    <h1>Thông tin chi tiết Người dùng @item.Name</h1>
+                                    <div class="my-auto">
+                                        <dl class="row">
+                                            <dt class="col-sm-2">
+                                                @Html.DisplayNameFor(model => model.UserName)
+                                            </dt>
+                                            <dd class="col-sm-10">
+                                                @item.UserName
+                                            </dd>
+                                            <dt class="col-sm-2">
+                                                @Html.DisplayNameFor(model => model.Password)
+                                            </dt>
+                                            <dd class="col-sm-10">
+                                                @item.Password
+                                            </dd>
+                                            <dt class="col-sm-2">
+                                                @Html.DisplayNameFor(model => model.Name)
+                                            </dt>
+                                            <dd class="col-sm-10">
+                                                @item.Name
+                                            </dd>
+                                            
+                                            <dt class="col-sm-2">
+                                                @Html.DisplayNameFor(model => model.Gender)
+                                            </dt>
+                                            <dd class="col-sm-10">
+                                                @if (item.Gender)
+                                                {
+                                                    <span class="text-black">Nam</span>
+                                                }
+                                                else
+                                                {
+                                                    <span class="text-black">Nữ</span>
+                                                }
+                                            </dd>
+                                            <dt class="col-sm-2">
+                                                @Html.DisplayNameFor(model => model.Phone)
+                                            </dt>
+                                            <dd class="col-sm-10">
+                                                @item.Phone
+                                            </dd>
+                                            <dt class="col-sm-2">
+                                                @Html.DisplayNameFor(model => model.Email)
+                                            </dt>
+                                            <dd class="col-sm-10">
+                                                @item.Email
+                                            </dd>
+                                            <dt class="col-sm-2">
+                                                @Html.DisplayNameFor(model => model.Address)
+                                            </dt>
+                                            <dd class="col-sm-10">
+                                                @item.Address
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                                <div class="position-absolute top-0 end-0">
+                                    <button type="button" class="close-button" onclick="location.reload()">
+                                        <i class="fa-solid fa-times text-white"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <button popovertarget="popover-delete-@item.USE_ID" class="trash-button">
+                            <i class="fa-solid fa-trash text-white trash-svgIcon"></i>
+                        </button>
+                        <div id="popover-delete-@item.USE_ID" popover class="popover-delete rounded rounded-3 border-success-subtle border-2">
+                            <div class="container" style="max-width: 400px;">
+                                <div class="row">
+                                    <h1>Bạn có thực sự muốn xóa @item.Name không?</h1>
+                                </div>
+                                <div class="row">
+                                    <form asp-action="DeleteConfirmed" method="post" class="d-inline" onsubmit="return confirm('Bạn thực sự muốn xóa không?');">
+                                        @Html.AntiForgeryToken()
+                                        <input type="hidden" name="id" value="@item.USE_ID" />
+                                        <button type="submit">
+                                            <i class="fa-solid fa-trash text-white trash-svgIcon"></i>Xóa
+                                        </button>
+                                        <button type="button" class="close-button" onclick="location.reload()">
+                                            <i class="fa-solid fa-times text-white"></i> Đóng
+                                        </button>
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
             </td>
         </tr>
 }

@@ -10,16 +10,17 @@ namespace BackEnd_Camping.Models
     {
         [Key]
         public int CAT_ID { get; set; }
-        [MaxLength(50, ErrorMessage = "dòng này không được quá 50 ký tự")]
-
+        [Required(ErrorMessage = "Tên không được để trống")]
         public required string Name { get; set; }
         [DisplayName("Display Order")]
-        [Range(0, 100, ErrorMessage = "DisplayOrder phải là số dương ")]
-
+        [Range(0, int.MaxValue, ErrorMessage = "Thứ tự hiển thị phải là số dương không vượt quá 2,147,483,647")]
         public int DisplayOrder { get; set; }
         public bool Status { get; set; }
+        [DisplayName("Meta Title")]
         public string? MetaTitle { get; set; }
+        [DisplayName("Meta Description")]
         public string? MetaDescription { get; set; }
+        [DisplayName("Meta Keywords")]
         public string? MetaKeywords { get; set; }
         public virtual ICollection<Product>? Products { get; set; }
         public virtual ICollection<UserCategories>? User_Categories { get; set; }

@@ -11,7 +11,7 @@ namespace BackEnd_Camping.Models
         [MaxLength(50, ErrorMessage = "dòng này không được quá 50 ký tự")]
         public string? Name { get; set; }
         public string? Avatar {  get; set; }
-        [MaxLength(10, ErrorMessage = "dòng này không được quá 50 ký tự")]
+        [MaxLength(10, ErrorMessage = "dòng này không được quá 10 ký tự")]
         public string? Phone { get; set; }
         [MaxLength(50, ErrorMessage = "dòng này không được quá 50 ký tự")]
 
@@ -23,6 +23,6 @@ namespace BackEnd_Camping.Models
         public string? MetaDescription { get; set; }
         public string? MetaKeywords { get; set; }
         public virtual ICollection<Product>? Products { get; set; }
-        public virtual ICollection<UserBrands>? User_Brands { get; set; }
+        public virtual ICollection<UserBrands>? UserBrands { get; set; }
     }
 }

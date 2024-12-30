@@ -3,114 +3,294 @@
 @{
     ViewData["Title"] = "Create";
 }
-
-<h1>Create</h1>
-
-<h4>Product</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Create">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="CAT_ID" class="control-label"></label>
-                <select asp-for="CAT_ID" class ="form-control" asp-items="ViewBag.CAT_ID"></select>
+    <div class="container my-3">
+        <form asp-action="Create" enctype="multipart/form-data">
+        <div class="row">
+            <h1 class="text-center">Add Product</h1>
+            <div class="col">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="Avatar" class="control-label"></label>
+                    <input asp-for="Avatar" class="form-control" type="file" accept="image/*" />
+                    <div class="w-100 mt-2" style="width: 100%; height: 300px;">
+                        <img id="imgPreview" alt="Avatar" class="img-fluid border-2" style="width: 100%; height: 300px;" />
+                    </div>
+                    <span asp-validation-for="Avatar" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Name" class="control-label"></label>
+                    <input asp-for="Name" class="form-control" maxlength="20" id="nameInput" />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                    <span id="errorMessage" class="text-danger fs-5" style="display:none;">Tên không được phép là toàn bộ số.</span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Price" class="control-label"></label>
+                    <input asp-for="Price" class="form-control" type="number" />
+                    <span asp-validation-for="Price" class="text-danger"></span>
+                </div>
             </div>
-            <div class="form-group">
-                <label asp-for="BRA_ID" class="control-label"></label>
-                <select asp-for="BRA_ID" class ="form-control" asp-items="ViewBag.BRA_ID"></select>
+            <div class="col">
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label asp-for="CAT_ID" class="control-label"></label>
+                            <select asp-for="CAT_ID" class="form-control" asp-items="ViewBag.CAT_ID"></select>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label asp-for="BRA_ID" class="control-label"></label>
+                            <select asp-for="BRA_ID" class="form-control" asp-items="ViewBag.BRA_ID"></select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label asp-for="DiscountPrice" class="control-label"></label>
+                    <input asp-for="DiscountPrice" class="form-control" type="number" />
+                    <span asp-validation-for="DiscountPrice" class="text-danger"></span>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label asp-for="Rate" class="control-label"></label>
+                            <select asp-for="Rate" class="form-select">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                            <span asp-validation-for="Rate" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label asp-for="Quantity" class="control-label"></label>
+                            <input asp-for="Quantity" class="form-control" type="number" />
+                            <span asp-validation-for="Quantity" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Status" class="control-label"></label>
+                    <select class="form-control" asp-for="Status">
+                        <option value="true">Đang hoạt động</option>
+                        <option value="false">Ngừng hoạt động</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label asp-for="MetaTitle" class="control-label"></label>
+                    <input asp-for="MetaTitle" class="form-control" maxlength="10" id="nameTitle" />
+                    <span asp-validation-for="MetaTitle" class="text-danger"></span>
+                    <span id="errorTitle" class="text-danger" style="display:none;">Meta Title không được phép là toàn bộ số.</span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="MetaDescription" class="control-label"></label>
+                    <input asp-for="MetaDescription" class="form-control" maxlength="10" id="nameDescription" />
+                    <span asp-validation-for="MetaDescription" class="text-danger"></span>
+                    <span id="errorDescription" class="text-danger" style="display:none;">Meta Description không được phép là toàn bộ số.</span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="MetaKeywords" class="control-label"></label>
+                    <input asp-for="MetaKeywords" class="form-control" maxlength="10" id="nameKeywords" />
+                    <span asp-validation-for="MetaKeywords" class="text-danger"></span>
+                    <span id="errorKeywords" class="text-danger" style="display:none;">Meta Keywords không được phép là toàn bộ số.</span>
+                </div>
+                <div class="form-group mx-2 d-flex justify-content-center align-items-center my-2">
+                    <a asp-action="Index" class="text-decoration-none">
+                        <button type="button" class="back-button mx-5">
+                            <i class="fa-solid fa-arrow-left text-white back-svgIcon"></i>
+                        </button>
+                    </a>
+                    <button type="submit" class="add-button mx-5">
+                        <i class="fa-solid fa-plus text-white edit-svgIcon"></i>
+                    </button>
+                </div>
             </div>
-            <div class="form-group">
-                <label asp-for="Avatar" class="control-label"></label>
-                <input asp-for="Avatar" class="form-control" />
-                <span asp-validation-for="Avatar" class="text-danger"></span>
+            <div class="col">
+                <div class="form-group">
+                    <label asp-for="Intro" class="control-label"></label>
+                    <textarea asp-for="Intro" class="form-control" ></textarea>
+                    <span asp-validation-for="Intro" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Description" class="control-label"></label>
+                    <textarea asp-for="Description" class="form-control" ></textarea>
+                    <span asp-validation-for="Description" class="text-danger"></span>
+                </div>
             </div>
-            <div class="form-group">
-                <label asp-for="Name" class="control-label"></label>
-                <input asp-for="Name" class="form-control" />
-                <span asp-validation-for="Name" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Price" class="control-label"></label>
-                <input asp-for="Price" class="form-control" />
-                <span asp-validation-for="Price" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="DiscountPrice" class="control-label"></label>
-                <input asp-for="DiscountPrice" class="form-control" />
-                <span asp-validation-for="DiscountPrice" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Rate" class="control-label"></label>
-                <input asp-for="Rate" class="form-control" />
-                <span asp-validation-for="Rate" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Description" class="control-label"></label>
-                <input asp-for="Description" class="form-control" />
-                <span asp-validation-for="Description" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Quantity" class="control-label"></label>
-                <input asp-for="Quantity" class="form-control" />
-                <span asp-validation-for="Quantity" class="text-danger"></span>
-            </div>
-            <div class="form-group form-check">
-                <label class="form-check-label">
-                    <input class="form-check-input" asp-for="Status" /> @Html.DisplayNameFor(model => model.Status)
-                </label>
-            </div>
-            <div class="form-group">
-                <label asp-for="Intro" class="control-label"></label>
-                <input asp-for="Intro" class="form-control" />
-                <span asp-validation-for="Intro" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="MetaTitle" class="control-label"></label>
-                <input asp-for="MetaTitle" class="form-control" />
-                <span asp-validation-for="MetaTitle" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="MetaDescription" class="control-label"></label>
-                <input asp-for="MetaDescription" class="form-control" />
-                <span asp-validation-for="MetaDescription" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="MetaKeywords" class="control-label"></label>
-                <input asp-for="MetaKeywords" class="form-control" />
-                <span asp-validation-for="MetaKeywords" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="CreatedDate" class="control-label"></label>
-                <input asp-for="CreatedDate" class="form-control" />
-                <span asp-validation-for="CreatedDate" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="CreatedBy" class="control-label"></label>
-                <input asp-for="CreatedBy" class="form-control" />
-                <span asp-validation-for="CreatedBy" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="UpdatedDate" class="control-label"></label>
-                <input asp-for="UpdatedDate" class="form-control" />
-                <span asp-validation-for="UpdatedDate" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="UpdatedBy" class="control-label"></label>
-                <input asp-for="UpdatedBy" class="form-control" />
-                <span asp-validation-for="UpdatedBy" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
+        </div>
         </form>
     </div>
-</div>
+    
+    <style>
+    .ck-editor__editable {
+        resize: none !important; /* Ngăn resize */
+        height: 200px !important; /* Chiều cao cố định */
+        width: 450px !important; /* Chiều rộng cố định */
+    }
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
-
+    </style>
+@section Header {
+    @{
+        <link href="~/admin/plugins/ckeditor5/ckeditor5.css" rel="stylesheet" />
+    }
+}
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    <script type="importmap">
+        {
+            "imports": {
+                "ckeditor5": "/admin/plugins/ckeditor5/ckeditor5.js",
+                "ckeditor5/": "/admin/plugins/ckeditor5/"
+            }
+        }
+    </script>
+    <script type="module">
+        import {
+            ClassicEditor,
+            Essentials,
+            Paragraph,
+            Bold,
+            Italic,
+            Font
+        } from 'ckeditor5';
+
+        ClassicEditor
+            .create(document.querySelector('#Description'), {
+                plugins: [Essentials, Paragraph, Bold, Italic, Font],
+                toolbar: [
+                    'undo', 'redo', '|', 'bold', 'italic', '|',
+                    'fontSize', 'fontFamily', 'fontColor', 'fontBackgroundColor'
+                ],
+                editorConfig: {
+                    height: '200px',
+                    width: '450px'
+                }
+            })
+            .then(editor => {
+                editor.ui.view.editable.element.style.height = '200px';
+                editor.ui.view.editable.element.style.width = '450px';
+                editor.ui.view.editable.element.style.resize = 'none';
+                window.editor = editor;
+            })
+            .catch(error => {
+                console.error(error);
+            });
+    </script>
+    <script type="module">
+        import {
+            ClassicEditor,
+            Essentials,
+            Paragraph,
+            Bold,
+            Italic,
+            Font
+        } from 'ckeditor5';
+
+        ClassicEditor
+            .create(document.querySelector('#Intro'), {
+                plugins: [Essentials, Paragraph, Bold, Italic, Font],
+                toolbar: [
+                    'undo', 'redo', '|', 'bold', 'italic', '|',
+                    'fontSize', 'fontFamily', 'fontColor', 'fontBackgroundColor'
+                ],
+                editorConfig: {
+                    height: '200px',
+                    width: '450px'
+                }
+            })
+            .then(editor => {
+                editor.ui.view.editable.element.style.height = '200px';
+                editor.ui.view.editable.element.style.width = '450px';
+                editor.ui.view.editable.element.style.resize = 'none';
+                window.editor = editor;
+            })
+            .catch(error => {
+                console.error(error);
+            });
+    </script>
+    <!-- A friendly reminder to run on a server, remove this during the integration. -->
+    <script>
+        window.onload = function () {
+            if (window.location.protocol === "file:") {
+                alert("This sample requires an HTTP server. Please serve this file with a web server.");
+            }
+        };
+    </script>
+    <script>
+        window.onload = () => {
+            document.getElementById("Avatar").onchange = (e) => {
+                var preview = document.getElementById('imgPreview');
+                var file = e.target.files[0];
+                var reader = new FileReader();
+
+                reader.onloadend = function () {
+                    preview.src = reader.result;
+                    preview.style.display = "block";
+                }
+
+                if (file) {
+                    reader.readAsDataURL(file);
+                } else {
+                    preview.src = '';
+                    preview.style.display = "none";
+                }
+            };
+        }
+    </script>
+    <script>
+        document.getElementById('nameInput').addEventListener('input', function () {
+            var nameInput = this.value;
+            var errorMessage = document.getElementById('errorMessage');
+
+            // Kiểm tra nếu toàn bộ là số
+            if (/^\d+$/.test(nameInput)) {
+                errorMessage.style.display = 'inline';
+            } else {
+                errorMessage.style.display = 'none';
+            }
+        });
+    </script>
+    <script>
+        document.getElementById('nameTitle').addEventListener('input', function () {
+            var nameTitle = this.value;
+            var errorTitle = document.getElementById('errorTitle');
+
+            // Kiểm tra nếu toàn bộ là số
+            if (/^\d+$/.test(nameTitle)) {
+                errorTitle.style.display = 'inline';
+            } else {
+                errorTitle.style.display = 'none';
+            }
+        });
+    </script>
+    <script>
+        document.getElementById('nameDescription').addEventListener('input', function () {
+            var nameDescription = this.value;
+            var errorDescription = document.getElementById('errorDescription');
+
+            // Kiểm tra nếu toàn bộ là số
+            if (/^\d+$/.test(nameDescription)) {
+                errorDescription.style.display = 'inline';
+            } else {
+                errorDescription.style.display = 'none';
+            }
+        });
+    </script>
+    <script>
+        document.getElementById('nameKeywords').addEventListener('input', function () {
+            var nameKeywords = this.value;
+            var errorKeywords = document.getElementById('errorKeywords');
+
+            // Kiểm tra nếu toàn bộ là số
+            if (/^\d+$/.test(nameKeywords)) {
+                errorKeywords.style.display = 'inline';
+            } else {
+                errorKeywords.style.display = 'none';
+            }
+        });
+    </script>
 }

@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using BackEnd_Camping.Models;
-
+using BackEnd_Camping.Utils;
 namespace BackEnd_Camping.Areas.Admin.Controllers
 {
     [Area("Admin")]
@@ -20,9 +20,22 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
         }
 
         // GET: Admin/Category
-        public async Task<IActionResult> Index()
+        [HttpGet]
+        public async Task<IActionResult> Index(string searchQuery)
         {
-            return View(await _context.Category.ToListAsync());
+            var categories = string.IsNullOrEmpty(searchQuery)
+        ? await _context.Category.ToListAsync()
+        : await _context.Category
+            .Where(b => b.Name.Contains(searchQuery) ||
+                        b.MetaKeywords.Contains(searchQuery) ||
+                        b.MetaTitle.Contains(searchQuery) ||
+                        b.MetaDescription.Contains(searchQuery)
+                        )
+
+            .ToListAsync();
+
+
+            return View(categories);
         }
 
         // GET: Admin/Category/Details/5
@@ -54,10 +67,16 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("CAT_ID,Name,DisplayOrder,Status,MetaTitle,MetaDescription,MetaKeywords,CreatedDate,CreatedBy,UpdatedDate,UpdatedBy")] Category category)
+        public async Task<IActionResult> Create([FromForm] Category category)
         {
             if (ModelState.IsValid)
             {
+                var userInfo = HttpContext.Session.Get<AdminUser>("userInfo");
+                var userName = userInfo != null ? userInfo.Username : "";
+                category.UpdatedDate = DateTime.Now;
+                category.UpdatedBy = userName;
+                category.CreatedDate = DateTime.Now;
+                category.CreatedBy = userName;
                 _context.Add(category);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -86,7 +105,7 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("CAT_ID,Name,DisplayOrder,Status,MetaTitle,MetaDescription,MetaKeywords,CreatedDate,CreatedBy,UpdatedDate,UpdatedBy")] Category category)
+        public async Task<IActionResult> Edit(int id, [FromForm] Category category)
         {
             if (id != category.CAT_ID)
             {
@@ -97,8 +116,14 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
             {
                 try
                 {
+                    var userInfo = HttpContext.Session.Get<AdminUser>("userInfo");
+                    var userName = userInfo != null ? userInfo.Username : "";
+                    category.UpdatedDate = DateTime.Now;
+                    category.UpdatedBy = userName;
+
                     _context.Update(category);
                     await _context.SaveChangesAsync();
+                    return RedirectToAction(nameof(Index));
                 }
                 catch (DbUpdateConcurrencyException)
                 {
@@ -111,41 +136,43 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
                         throw;
                     }
                 }
-                return RedirectToAction(nameof(Index));
-            }
-            return View(category);
-        }
-
-        // GET: Admin/Category/Delete/5
-        public async Task<IActionResult> Delete(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
             }
 
-            var category = await _context.Category
-                .FirstOrDefaultAsync(m => m.CAT_ID == id);
-            if (category == null)
+            // Debug lỗi trong ModelState
+            foreach (var modelError in ModelState.Values.SelectMany(v => v.Errors))
             {
-                return NotFound();
+                Console.WriteLine(modelError.ErrorMessage);
             }
 
             return View(category);
         }
+
+
 
         // POST: Admin/Category/Delete/5
-        [HttpPost, ActionName("Delete")]
+        [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
+            var hasProducts = await _context.Product.AnyAsync(p => p.CAT_ID == id);
+            if (hasProducts)
+            {
+                TempData["ErrorMessage"] = "Không thể xóa thể loại này vì có sản phẩm liên quan.";
+                return RedirectToAction(nameof(Index));
+            }
+
             var category = await _context.Category.FindAsync(id);
             if (category != null)
             {
                 _context.Category.Remove(category);
+                await _context.SaveChangesAsync();
+                TempData["SuccessMessage"] = "Thể Loại đã được xóa thành công.";
+            }
+            else
+            {
+                TempData["ErrorMessage"] = "Không tìm thấy loại.";
             }
 
-            await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 

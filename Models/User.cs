@@ -19,7 +19,7 @@ namespace BackEnd_Camping.Models
         public string? Address { get; set; }
         public virtual ICollection<Order>? Orders { get; set; }
         public virtual ICollection<Review>? Reviews { get; set; }
-        public virtual ICollection<UserBrands>? User_Brands { get; set; }
+        public virtual ICollection<UserBrands>? UserBrands { get; set; }
         public virtual ICollection<UserCategories>? User_Categories { get; set; }
     }
 }

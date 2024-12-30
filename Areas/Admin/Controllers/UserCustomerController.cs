@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using BackEnd_Camping.Models;
-
+using BackEnd_Camping.Utils;
 namespace BackEnd_Camping.Areas.Admin.Controllers
 {
     [Area("Admin")]
@@ -20,9 +20,23 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
         }
 
         // GET: Admin/UserCustomer
-        public async Task<IActionResult> Index()
+        [HttpGet]
+        public async Task<IActionResult> Index(string searchQuery)
         {
-            return View(await _context.User.ToListAsync());
+            var users = string.IsNullOrEmpty(searchQuery)
+       ? await _context.User.Include(u => u.UserBrands).ThenInclude(ub => ub.Brand).ToListAsync()
+       : await _context.User
+       .Include(u => u.UserBrands).ThenInclude(ub => ub.Brand)
+           .Where(b => b.Name.Contains(searchQuery) ||
+                       b.UserName.Contains(searchQuery) ||
+                       b.Email.Contains(searchQuery) ||
+                       b.Phone.Contains(searchQuery)
+                       )
+
+           .ToListAsync();
+
+
+            return View(users);
         }
 
         // GET: Admin/UserCustomer/Details/5
@@ -54,10 +68,34 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("USE_ID,Password,UserName,Name,Gender,Phone,Email,Address,CreatedDate,CreatedBy,UpdatedDate,UpdatedBy")] User user)
+        public async Task<IActionResult> Create([FromForm] User user)
         {
+            bool emailExists = await _context.User.AnyAsync(u => u.Email == user.Email);
+            bool userNameExists = await _context.User.AnyAsync(u => u.UserName == user.UserName);
+
+            if (emailExists || userNameExists)
+            {
+                if (emailExists)
+                {
+                    ModelState.AddModelError("Email", "Email này đã được sử dụng.");
+                }
+                if (userNameExists)
+                {
+                    ModelState.AddModelError("UserName", "Tên người dùng này đã được sử dụng.");
+                }
+                return View(user); // Trả lại dữ liệu nhập kèm lỗi
+            }
             if (ModelState.IsValid)
             {
+                var userInfo = HttpContext.Session.Get<AdminUser>("userInfo");
+                var userName = userInfo != null ? userInfo.Username : "";
+
+                user.Password = BCrypt.Net.BCrypt.HashPassword(user.Password);
+
+                user.UpdatedDate = DateTime.Now;
+                user.UpdatedBy = userName;
+                user.CreatedDate = DateTime.Now;
+                user.CreatedBy = userName;
                 _context.Add(user);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -86,17 +124,30 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("USE_ID,Password,UserName,Name,Gender,Phone,Email,Address,CreatedDate,CreatedBy,UpdatedDate,UpdatedBy")] User user)
+        public async Task<IActionResult> Edit(int id, [FromForm] User user, [FromForm] string OldPassword)
         {
             if (id != user.USE_ID)
             {
                 return NotFound();
             }
-
+            if (string.IsNullOrEmpty(user.Password))
+            {
+                // Giữ mật khẩu cũ nếu không thay đổi
+                user.Password = OldPassword;
+            }
+            else
+            {
+                // Mã hóa mật khẩu mới nếu có thay đổi
+                user.Password = BCrypt.Net.BCrypt.HashPassword(user.Password);
+            }
             if (ModelState.IsValid)
             {
                 try
                 {
+                    var userInfo = HttpContext.Session.Get<AdminUser>("userInfo");
+                    var userName = userInfo != null ? userInfo.Username : "";
+                    user.UpdatedDate = DateTime.Now;
+                    user.UpdatedBy = userName;
                     _context.Update(user);
                     await _context.SaveChangesAsync();
                 }
@@ -117,35 +168,31 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
         }
 
         // GET: Admin/UserCustomer/Delete/5
-        public async Task<IActionResult> Delete(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var user = await _context.User
-                .FirstOrDefaultAsync(m => m.USE_ID == id);
-            if (user == null)
-            {
-                return NotFound();
-            }
-
-            return View(user);
-        }
 
         // POST: Admin/UserCustomer/Delete/5
-        [HttpPost, ActionName("Delete")]
+        [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
+            var hasProducts = await _context.Order.AnyAsync(p => p.USE_ID == id);
+            if (hasProducts)
+            {
+                TempData["ErrorMessage"] = "Không thể xóa người dùng này vì có đơn hàng hoặc yêu thích liên quan.";
+                return RedirectToAction(nameof(Index));
+            }
+
             var user = await _context.User.FindAsync(id);
             if (user != null)
             {
                 _context.User.Remove(user);
+                await _context.SaveChangesAsync();
+                TempData["SuccessMessage"] = "Người dùng đã được xóa thành công.";
+            }
+            else
+            {
+                TempData["ErrorMessage"] = "Không tìm thấy Người dùng.";
             }
 
-            await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
@@ -153,5 +200,42 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
         {
             return _context.User.Any(e => e.USE_ID == id);
         }
+        // GET: Admin/UserCustomer/Favorites/5
+        public async Task<IActionResult> Favorites(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            // Lấy danh sách thương hiệu yêu thích của người dùng
+            var favoriteBrands = await _context.UserBrands
+                .Where(uf => uf.USE_ID == id)
+                .Include(uf => uf.Brand) // Include để lấy thông tin Brand
+                .Select(uf => new Brand
+                {
+                    BRA_ID = uf.Brand.BRA_ID,
+                    Name = uf.Brand.Name,
+                    Description = uf.Brand.Description
+                })
+                .ToListAsync();
+
+            if (favoriteBrands == null || !favoriteBrands.Any())
+            {
+                TempData["ErrorMessage"] = "Người dùng này không có thương hiệu yêu thích nào.";
+                return RedirectToAction(nameof(Index));
+            }
+
+            // Gán tên người dùng vào ViewData để hiển thị
+            ViewData["UserName"] = await _context.User
+                .Where(u => u.USE_ID == id)
+                .Select(u => u.Name)
+                .FirstOrDefaultAsync();
+
+            return View("~/Areas/Admin/Views/UserCustomer/Favorites.cshtml", favoriteBrands);
+
+        }
+
+
     }
 }

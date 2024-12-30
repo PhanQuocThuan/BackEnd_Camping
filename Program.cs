@@ -33,7 +33,6 @@ namespace BackEnd_Camping
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
-
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
@@ -42,6 +41,10 @@ namespace BackEnd_Camping
             app.UseAuthorization();
 
             app.UseSession();
+
+            //app.UseMiddleware<BackEnd_Camping.Middleware.AdminAccessMiddleware>();
+
+            
 
             app.MapControllerRoute(
                 name: "areas",

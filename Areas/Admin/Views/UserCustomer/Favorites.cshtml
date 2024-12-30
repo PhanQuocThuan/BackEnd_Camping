@@ -1,0 +1,34 @@
+﻿@model IEnumerable<BackEnd_Camping.Models.Brand>
+
+@{
+    ViewData["Title"] = "Favorites";
+}
+
+<h1>Danh sách thương hiệu yêu thích của @ViewData["UserName"]</h1>
+
+@if (Model != null && Model.Any())
+{
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>@Html.DisplayNameFor(model => model.Name)</th>
+                <th>@Html.DisplayNameFor(model => model.Description)</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var brand in Model)
+            {
+                <tr>
+                    <td>@brand.BRA_ID</td>
+                    <td>@brand.Name</td>
+                    <td>@Html.Raw(brand.Description)</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>Không có thương hiệu yêu thích nào.</p>
+}

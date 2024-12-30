@@ -3,77 +3,121 @@
 @{
     ViewData["Title"] = "Edit";
 }
-
-<h1>Edit</h1>
-
-<h4>Category</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
+<div class="container my-3">
         <form asp-action="Edit">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="CAT_ID" />
-            <div class="form-group">
-                <label asp-for="Name" class="control-label"></label>
-                <input asp-for="Name" class="form-control" />
-                <span asp-validation-for="Name" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="DisplayOrder" class="control-label"></label>
-                <input asp-for="DisplayOrder" class="form-control" />
-                <span asp-validation-for="DisplayOrder" class="text-danger"></span>
-            </div>
-            <div class="form-group form-check">
-                <label class="form-check-label">
-                    <input class="form-check-input" asp-for="Status" /> @Html.DisplayNameFor(model => model.Status)
-                </label>
-            </div>
-            <div class="form-group">
-                <label asp-for="MetaTitle" class="control-label"></label>
-                <input asp-for="MetaTitle" class="form-control" />
-                <span asp-validation-for="MetaTitle" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="MetaDescription" class="control-label"></label>
-                <input asp-for="MetaDescription" class="form-control" />
-                <span asp-validation-for="MetaDescription" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="MetaKeywords" class="control-label"></label>
-                <input asp-for="MetaKeywords" class="form-control" />
-                <span asp-validation-for="MetaKeywords" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="CreatedDate" class="control-label"></label>
-                <input asp-for="CreatedDate" class="form-control" />
-                <span asp-validation-for="CreatedDate" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="CreatedBy" class="control-label"></label>
-                <input asp-for="CreatedBy" class="form-control" />
-                <span asp-validation-for="CreatedBy" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="UpdatedDate" class="control-label"></label>
-                <input asp-for="UpdatedDate" class="form-control" />
-                <span asp-validation-for="UpdatedDate" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="UpdatedBy" class="control-label"></label>
-                <input asp-for="UpdatedBy" class="form-control" />
-                <span asp-validation-for="UpdatedBy" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+            <div class="row d-flex justify-content-center">
+                <h1 class="text-center">Edit Category</h1>
+                <div class="col"></div>
+                <div class="col">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <input type="hidden" asp-for="CAT_ID" />
+                <div class="form-group">
+                    <label asp-for="Name" class="control-label"></label>
+                    <input asp-for="Name" class="form-control" maxlength="20" id="nameInput" />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                    <span id="errorMessage" class="text-danger" style="display:none;">Tên không được phép là toàn bộ số.</span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="DisplayOrder" class="control-label"></label>
+                    <input asp-for="DisplayOrder" class="form-control" type="number" />
+                    <span asp-validation-for="DisplayOrder" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Status" class="control-label"></label>
+                    <select class="form-control" asp-for="Status">
+                        <option value="true">Đang hoạt động</option>
+                        <option value="false">Ngừng hoạt động</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label asp-for="MetaTitle" class="control-label"></label>
+                    <input asp-for="MetaTitle" class="form-control" maxlength="10" id="nameTitle" />
+                    <span asp-validation-for="MetaTitle" class="text-danger"></span>
+                    <span id="errorTitle" class="text-danger" style="display:none;">Meta Title không được phép là toàn bộ số.</span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="MetaDescription" class="control-label"></label>
+                    <input asp-for="MetaDescription" class="form-control" maxlength="10" id="nameDescription" />
+                    <span asp-validation-for="MetaDescription" class="text-danger"></span>
+                    <span id="errorDescription" class="text-danger" style="display:none;">Meta Description không được phép là toàn bộ số.</span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="MetaKeywords" class="control-label"></label>
+                    <input asp-for="MetaKeywords" class="form-control" maxlength="10" id="nameKeywords" />
+                    <span asp-validation-for="MetaKeywords" class="text-danger"></span>
+                    <span id="errorKeywords" class="text-danger" style="display:none;">Meta Keywords không được phép là toàn bộ số.</span>
+                </div>
+                        <div class="form-group mx-2 d-flex justify-content-center align-items-center my-2">
+                            <a asp-action="Index" class="text-decoration-none">
+                                <button type="button" class="back-button mx-5">
+                                    <i class="fa-solid fa-arrow-left text-white back-svgIcon"></i>
+                                </button>
+                            </a>
+                            <button type="submit" class="edit-button mx-5">
+                              <i class="fa-solid fa-plus text-white edit-svgIcon"></i>
+                            </button>
+                        </div>
+                  </div>
+                <div class="col"></div>
             </div>
         </form>
     </div>
-</div>
-
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    <script>
+        document.getElementById('nameInput').addEventListener('input', function () {
+            var nameInput = this.value;
+            var errorMessage = document.getElementById('errorMessage');
+
+            // Kiểm tra nếu toàn bộ là số
+            if (/^\d+$/.test(nameInput)) {
+                errorMessage.style.display = 'inline';
+            } else {
+                errorMessage.style.display = 'none';
+            }
+        });
+    </script>
+    <script>
+        document.getElementById('nameTitle').addEventListener('input', function () {
+            var nameTitle = this.value;
+            var errorTitle = document.getElementById('errorTitle');
+
+            // Kiểm tra nếu toàn bộ là số
+            if (/^\d+$/.test(nameTitle)) {
+                errorTitle.style.display = 'inline';
+            } else {
+                errorTitle.style.display = 'none';
+            }
+        });
+    </script>
+    <script>
+        document.getElementById('nameDescription').addEventListener('input', function () {
+            var nameDescription = this.value;
+            var errorDescription = document.getElementById('errorDescription');
+
+            // Kiểm tra nếu toàn bộ là số
+            if (/^\d+$/.test(nameDescription)) {
+                errorDescription.style.display = 'inline';
+            } else {
+                errorDescription.style.display = 'none';
+            }
+        });
+    </script>
+    <script>
+        document.getElementById('nameKeywords').addEventListener('input', function () {
+            var nameKeywords = this.value;
+            var errorKeywords = document.getElementById('errorKeywords');
+
+            // Kiểm tra nếu toàn bộ là số
+            if (/^\d+$/.test(nameKeywords)) {
+                errorKeywords.style.display = 'inline';
+            } else {
+                errorKeywords.style.display = 'none';
+            }
+        });
+    </script>
 }
+

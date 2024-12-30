@@ -20,10 +20,6 @@ html {
   position: relative;
   min-height: 100%;
 }
-
-body {
-  margin-bottom: 60px;
-}
 /* From Uiverse.io by satyamchaudharydev */
 /* From uiverse.io by @satyamchaudharydev */
 /* removing default style of button */
@@ -1096,8 +1092,3 @@ button {
         background-color: #145c32; /* Màu nền khi hover */
     }
 
-.ck-editor__editable {
-    resize: none !important; /* Ngăn resize */
-    height: 400px !important; /* Chiều cao cố định */
-    width: 450px !important; /* Chiều rộng cố định */
-}

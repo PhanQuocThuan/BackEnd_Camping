@@ -31,7 +31,12 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
          : await _context.Brand
              .Where(b => b.Name.Contains(searchQuery) ||
                          b.Phone.Contains(searchQuery) ||
-                         b.Address.Contains(searchQuery))
+                         b.Address.Contains(searchQuery)||
+                         b.MetaKeywords.Contains(searchQuery)||
+                         b.MetaTitle.Contains(searchQuery) ||
+                         b.MetaDescription.Contains(searchQuery)
+                         )
+
              .ToListAsync();
 
 
@@ -216,13 +221,25 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
+            var hasProducts = await _context.Product.AnyAsync(p => p.BRA_ID == id);
+            if (hasProducts)
+            {
+                TempData["ErrorMessage"] = "Không thể xóa thương hiệu này vì có sản phẩm liên quan.";
+                return RedirectToAction(nameof(Index));
+            }
+
             var brand = await _context.Brand.FindAsync(id);
             if (brand != null)
             {
                 _context.Brand.Remove(brand);
+                await _context.SaveChangesAsync();
+                TempData["SuccessMessage"] = "Thương hiệu đã được xóa thành công.";
+            }
+            else
+            {
+                TempData["ErrorMessage"] = "Không tìm thấy thương hiệu.";
             }
 
-            await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 

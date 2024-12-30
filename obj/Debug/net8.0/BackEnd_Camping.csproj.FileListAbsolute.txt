@@ -284,3 +284,4 @@ C:\Users\PC\source\repos\BackEnd_Camping\obj\Debug\net8.0\refint\BackEnd_Camping
 C:\Users\PC\source\repos\BackEnd_Camping\obj\Debug\net8.0\BackEnd_Camping.pdb
 C:\Users\PC\source\repos\BackEnd_Camping\obj\Debug\net8.0\BackEnd_Camping.genruntimeconfig.cache
 C:\Users\PC\source\repos\BackEnd_Camping\obj\Debug\net8.0\ref\BackEnd_Camping.dll
+C:\Users\PC\source\repos\BackEnd_Camping\bin\Debug\net8.0\BCrypt.Net-Next.dll

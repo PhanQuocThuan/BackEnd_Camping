@@ -29,8 +29,11 @@ namespace BackEnd_Camping.Models
         public int? Quantity { get; set; }
         public bool Status { get; set; }
         public string? Intro { get; set; }
+        [DisplayName("Meta Title")]
         public string? MetaTitle { get; set; }
+        [DisplayName("Meta Description")]
         public string? MetaDescription { get; set; }
+        [DisplayName("Meta Keywords")]
         public string? MetaKeywords { get; set; }
         [ForeignKey("CAT_ID")]
         public virtual Category? Category { get; set; }

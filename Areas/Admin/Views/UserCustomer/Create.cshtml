@@ -3,81 +3,121 @@
 @{
     ViewData["Title"] = "Create";
 }
-
-<h1>Create</h1>
-
-<h4>User</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
+<div class="container my-3">
         <form asp-action="Create">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="Password" class="control-label"></label>
-                <input asp-for="Password" class="form-control" />
-                <span asp-validation-for="Password" class="text-danger"></span>
+        <div class="row d-flex justify-content-center">
+            <h1 class="text-center">Add User</h1>
+            <div class="col"></div>
+            <div class="col">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="UserName" class="control-label"></label>
+                    <input asp-for="UserName" class="form-control" maxlength="20" />
+                    <span asp-validation-for="UserName" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Password" class="control-label"></label>
+                    <div class="input-group">
+                        <input asp-for="Password" class="form-control" type="password" id="PasswordField" />
+                        <span class="input-group-text" onclick="togglePassword()" style="cursor: pointer;">
+                            <i id="togglePasswordIcon" class="fa-solid fa-eye"></i>
+                        </span>
+                    </div>
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </div>
+                <div class="row">
+                    <div class="col-8">
+                        <div class="form-group">
+                            <label asp-for="Name" class="control-label"></label>
+                            <input asp-for="Name" class="form-control" maxlength="20" id="nameInput" />
+                            <span asp-validation-for="Name" class="text-danger"></span>
+                            <span id="errorMessage" class="text-danger" style="display:none;">Tên không được phép là toàn bộ số.</span>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="form-group">
+                            <label asp-for="Gender" class="control-label"></label>
+                            <select class="form-control" asp-for="Gender">
+                                <option value="true">Nam</option>
+                                <option value="false">Nữ</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Phone" class="control-label"></label>
+                    <input asp-for="Phone" class="form-control" type="number" />
+                    <span asp-validation-for="Phone" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Email" class="control-label"></label>
+                    <input asp-for="Email" class="form-control" maxlength="30" type="email"/>
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Address" class="control-label"></label>
+                    <input asp-for="Address" class="form-control" maxlength="30" id="nameAddress" />
+                    <span asp-validation-for="Address" class="text-danger"></span>
+                    <span id="errorAddress" class="text-danger" style="display:none;">Địa Chỉ không được phép là toàn bộ số.</span>
+                </div>
+                <div class="form-group mx-2 d-flex justify-content-center align-items-center my-2">
+                    <a asp-action="Index" class="text-decoration-none">
+                        <button type="button" class="back-button mx-5">
+                            <i class="fa-solid fa-arrow-left text-white back-svgIcon"></i>
+                        </button>
+                    </a>
+                    <button type="submit" class="add-button mx-5">
+                        <i class="fa-solid fa-plus text-white edit-svgIcon"></i>
+                    </button>
+                </div>
             </div>
-            <div class="form-group">
-                <label asp-for="UserName" class="control-label"></label>
-                <input asp-for="UserName" class="form-control" />
-                <span asp-validation-for="UserName" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Name" class="control-label"></label>
-                <input asp-for="Name" class="form-control" />
-                <span asp-validation-for="Name" class="text-danger"></span>
-            </div>
-            <div class="form-group form-check">
-                <label class="form-check-label">
-                    <input class="form-check-input" asp-for="Gender" /> @Html.DisplayNameFor(model => model.Gender)
-                </label>
-            </div>
-            <div class="form-group">
-                <label asp-for="Phone" class="control-label"></label>
-                <input asp-for="Phone" class="form-control" />
-                <span asp-validation-for="Phone" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Email" class="control-label"></label>
-                <input asp-for="Email" class="form-control" />
-                <span asp-validation-for="Email" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Address" class="control-label"></label>
-                <input asp-for="Address" class="form-control" />
-                <span asp-validation-for="Address" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="CreatedDate" class="control-label"></label>
-                <input asp-for="CreatedDate" class="form-control" />
-                <span asp-validation-for="CreatedDate" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="CreatedBy" class="control-label"></label>
-                <input asp-for="CreatedBy" class="form-control" />
-                <span asp-validation-for="CreatedBy" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="UpdatedDate" class="control-label"></label>
-                <input asp-for="UpdatedDate" class="form-control" />
-                <span asp-validation-for="UpdatedDate" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="UpdatedBy" class="control-label"></label>
-                <input asp-for="UpdatedBy" class="form-control" />
-                <span asp-validation-for="UpdatedBy" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
+            <div class="col"></div>
+        </div>
         </form>
-    </div>
 </div>
-
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
-
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    <script>
+        function togglePassword() {
+            const passwordField = document.getElementById('PasswordField');
+            const toggleIcon = document.getElementById('togglePasswordIcon');
+
+            if (passwordField.type === 'password') {
+                passwordField.type = 'text';
+                toggleIcon.classList.remove('fa-eye');
+                toggleIcon.classList.add('fa-eye-slash');
+            } else {
+                passwordField.type = 'password';
+                toggleIcon.classList.remove('fa-eye-slash');
+                toggleIcon.classList.add('fa-eye');
+            }
+        }
+    </script>
+    <script>
+        document.getElementById('nameInput').addEventListener('input', function () {
+            var nameInput = this.value;
+            var errorMessage = document.getElementById('errorMessage');
+
+            // Kiểm tra nếu toàn bộ là số
+            if (/^\d+$/.test(nameInput)) {
+                errorMessage.style.display = 'inline';
+            } else {
+                errorMessage.style.display = 'none';
+            }
+        });
+    </script>
+    <script>
+        document.getElementById('nameAddress').addEventListener('input', function () {
+            var nameAddress = this.value;
+            var errorAddress = document.getElementById('errorAddress');
+
+            // Kiểm tra nếu toàn bộ là số
+            if (/^\d+$/.test(nameAddress)) {
+                errorAddress.style.display = 'inline';
+            } else {
+                errorAddress.style.display = 'none';
+            }
+        });
+    </script>
+
 }

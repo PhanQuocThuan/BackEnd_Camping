@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using BackEnd_Camping.Models;
-
+using BackEnd_Camping.Utils;
 namespace BackEnd_Camping.Areas.Admin.Controllers
 {
     [Area("Admin")]
@@ -49,8 +49,8 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
         // GET: Admin/UserCategorie/Create
         public IActionResult Create()
         {
-            ViewData["CAT_ID"] = new SelectList(_context.Category, "CAT_ID", "CAT_ID");
-            ViewData["USE_ID"] = new SelectList(_context.User, "USE_ID", "USE_ID");
+            ViewData["CAT_ID"] = new SelectList(_context.Category, "CAT_ID", "Name");
+            ViewData["USE_ID"] = new SelectList(_context.User, "USE_ID", "Name");
             return View();
         }
 
@@ -59,7 +59,7 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("UCAT_ID,USE_ID,CAT_ID,CreatedDate,CreatedBy,UpdatedDate,UpdatedBy")] UserCategories userCategories)
+        public async Task<IActionResult> Create([FromForm] UserCategories userCategories)
         {
             if (ModelState.IsValid)
             {
@@ -67,8 +67,8 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["CAT_ID"] = new SelectList(_context.Category, "CAT_ID", "CAT_ID", userCategories.CAT_ID);
-            ViewData["USE_ID"] = new SelectList(_context.User, "USE_ID", "USE_ID", userCategories.USE_ID);
+            ViewData["CAT_ID"] = new SelectList(_context.Category, "CAT_ID", "Name", userCategories.CAT_ID);
+            ViewData["USE_ID"] = new SelectList(_context.User, "USE_ID", "Name", userCategories.USE_ID);
             return View(userCategories);
         }
 
@@ -85,8 +85,8 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
             {
                 return NotFound();
             }
-            ViewData["CAT_ID"] = new SelectList(_context.Category, "CAT_ID", "CAT_ID", userCategories.CAT_ID);
-            ViewData["USE_ID"] = new SelectList(_context.User, "USE_ID", "USE_ID", userCategories.USE_ID);
+            ViewData["CAT_ID"] = new SelectList(_context.Category, "CAT_ID", "Name", userCategories.CAT_ID);
+            ViewData["USE_ID"] = new SelectList(_context.User, "USE_ID", "Name", userCategories.USE_ID);
             return View(userCategories);
         }
 
@@ -95,7 +95,7 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("UCAT_ID,USE_ID,CAT_ID,CreatedDate,CreatedBy,UpdatedDate,UpdatedBy")] UserCategories userCategories)
+        public async Task<IActionResult> Edit(int id, [FromForm] UserCategories userCategories)
         {
             if (id != userCategories.UCAT_ID)
             {
@@ -122,33 +122,15 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["CAT_ID"] = new SelectList(_context.Category, "CAT_ID", "CAT_ID", userCategories.CAT_ID);
-            ViewData["USE_ID"] = new SelectList(_context.User, "USE_ID", "USE_ID", userCategories.USE_ID);
+            ViewData["CAT_ID"] = new SelectList(_context.Category, "CAT_ID", "Name", userCategories.CAT_ID);
+            ViewData["USE_ID"] = new SelectList(_context.User, "USE_ID", "Name", userCategories.USE_ID);
             return View(userCategories);
         }
 
         // GET: Admin/UserCategorie/Delete/5
-        public async Task<IActionResult> Delete(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var userCategories = await _context.UserCategories
-                .Include(u => u.Category)
-                .Include(u => u.User)
-                .FirstOrDefaultAsync(m => m.UCAT_ID == id);
-            if (userCategories == null)
-            {
-                return NotFound();
-            }
-
-            return View(userCategories);
-        }
 
         // POST: Admin/UserCategorie/Delete/5
-        [HttpPost, ActionName("Delete")]
+        [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {

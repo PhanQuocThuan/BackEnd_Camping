@@ -1157,6 +1157,10 @@
       "PackagePath": "staticwebassets\\admin\\plugins\\ckeditor5\\translations\\zh.umd.js"
     },
     {
+      "Id": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\wwwroot\\css\\login.css",
+      "PackagePath": "staticwebassets\\css\\login.css"
+    },
+    {
       "Id": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\wwwroot\\css\\styles.css",
       "PackagePath": "staticwebassets\\css\\styles.css"
     },
@@ -1171,6 +1175,10 @@
     {
       "Id": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\wwwroot\\data\\brands\\8cbe659b-3a39-4ffb-9bb6-6296655d21b6.jpg",
       "PackagePath": "staticwebassets\\data\\brands\\8cbe659b-3a39-4ffb-9bb6-6296655d21b6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\wwwroot\\data\\brands\\98ae945e-d0d4-437c-af2f-897a8ace4d51.jpeg",
+      "PackagePath": "staticwebassets\\data\\brands\\98ae945e-d0d4-437c-af2f-897a8ace4d51.jpeg"
     },
     {
       "Id": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\wwwroot\\data\\brands\\a9c21014-be2c-4c04-a9dc-3324d363af1c.jpg",
@@ -1191,6 +1199,26 @@
     {
       "Id": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\wwwroot\\data\\brands\\fc1d023f-92a1-4ef0-aa4a-f127ec865c93.png",
       "PackagePath": "staticwebassets\\data\\brands\\fc1d023f-92a1-4ef0-aa4a-f127ec865c93.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\wwwroot\\data\\products\\188423af-c69d-47b2-8333-434cafe388f6.jpg",
+      "PackagePath": "staticwebassets\\data\\products\\188423af-c69d-47b2-8333-434cafe388f6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\wwwroot\\data\\products\\205286c1-5b96-4dc6-aacd-1f59227da9c9.jpeg",
+      "PackagePath": "staticwebassets\\data\\products\\205286c1-5b96-4dc6-aacd-1f59227da9c9.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\wwwroot\\data\\products\\7670f9e5-c527-4a33-b53e-073a9f5c5151.jpeg",
+      "PackagePath": "staticwebassets\\data\\products\\7670f9e5-c527-4a33-b53e-073a9f5c5151.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\wwwroot\\data\\products\\f0d4ccf4-66c1-4fe6-a6e0-a7bd9433382c.jpg",
+      "PackagePath": "staticwebassets\\data\\products\\f0d4ccf4-66c1-4fe6-a6e0-a7bd9433382c.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\wwwroot\\data\\products\\f7b53662-19be-4baf-9269-420ceb804a4a.jpg",
+      "PackagePath": "staticwebassets\\data\\products\\f7b53662-19be-4baf-9269-420ceb804a4a.jpg"
     },
     {
       "Id": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\wwwroot\\favicon.ico",
