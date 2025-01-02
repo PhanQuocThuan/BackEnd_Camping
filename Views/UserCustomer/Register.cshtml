@@ -1,0 +1,50 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<!--begin::Head-->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="AdminLTE 4 | Login Page v2">
+    <meta name="author" content="ColorlibHQ">
+    <meta name="description" content="AdminLTE is a Free Bootstrap 5 Admin Dashboard, 30 example pages using Vanilla JS.">
+    <meta name="keywords" content="bootstrap 5, bootstrap, bootstrap 5 admin dashboard, bootstrap 5 dashboard, bootstrap 5 charts, bootstrap 5 calendar, bootstrap 5 datepicker, bootstrap 5 tables, bootstrap 5 datatable, vanilla js datatable, colorlibhq, colorlibhq dashboard, colorlibhq admin dashboard">
+    <link rel="stylesheet" href="~/admin/css/Login.css" />
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+</head>
+<body>
+    <form class="form border border-2 text-center" asp-action="Login" asp-controller="User">
+        <h1>Sign In</h1>
+        <div class="input-group mb-2">
+            <div class="form-floating"> <input id="username" name="UserName" type="text" class="form-control" placeholder=""> <label for="Username">User Name</label> </div>
+            <div class="input-group-text"> <i class="fa-solid fa-user"></i> </div>
+        </div>
+        <div class="input-group mb-2">
+            <div class="form-floating"> <input id="email" name="Email" type="email" class="form-control" placeholder=""> <label for="Email">Email</label> </div>
+            <div class="input-group-text"> <i class="fa-solid fa-user"></i> </div>
+        </div>
+        <div class="input-group mb-3">
+            <div class="form-floating"> <input id="password" name="Password" type="password" class="form-control" placeholder=""> <label for="password">Password</label> </div>
+            <div class="input-group-text"> <i class="fa-solid fa-lock"></i> </div>
+        </div>
+        <div class="input-group mb-3">
+            <div class="form-floating"> <input id="password" name="ConfirmPassword" type="password" class="form-control" placeholder=""> <label for="confirmpassword">Confirm Password</label> </div>
+            <div class="input-group-text"> <i class="fa-solid fa-lock"></i> </div>
+        </div>
+        <div class="flex-row">
+            <div class="form-check">
+                <input class="form-check-input" name="RememberMe" type="checkbox" value="true" id="flexCheckDefault"> <label class="form-check-label" for="flexCheckDefault">
+                    Remember Me
+                </label>
+            </div>
+            <span class="span">Forgot password?</span>
+        </div>
+        <a asp-action="register" asp-controller="usercustomer">Sign Up</a>
+    </form>
+</body>
+</html>

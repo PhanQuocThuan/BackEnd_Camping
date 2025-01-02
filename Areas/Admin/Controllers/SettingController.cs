@@ -22,7 +22,7 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
         // GET: Admin/Setting
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Setting.ToListAsync());
+            return View(await _context.Settings.ToListAsync());
         }
 
         // GET: Admin/Setting/Details/5
@@ -33,7 +33,7 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
                 return NotFound();
             }
 
-            var setting = await _context.Setting
+            var setting = await _context.Settings
                 .FirstOrDefaultAsync(m => m.SET_ID == id);
             if (setting == null)
             {
@@ -73,7 +73,7 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
                 return NotFound();
             }
 
-            var setting = await _context.Setting.FindAsync(id);
+            var setting = await _context.Settings.FindAsync(id);
             if (setting == null)
             {
                 return NotFound();
@@ -124,7 +124,7 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
                 return NotFound();
             }
 
-            var setting = await _context.Setting
+            var setting = await _context.Settings
                 .FirstOrDefaultAsync(m => m.SET_ID == id);
             if (setting == null)
             {
@@ -139,10 +139,10 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var setting = await _context.Setting.FindAsync(id);
+            var setting = await _context.Settings.FindAsync(id);
             if (setting != null)
             {
-                _context.Setting.Remove(setting);
+                _context.Settings.Remove(setting);
             }
 
             await _context.SaveChangesAsync();
@@ -151,7 +151,7 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
 
         private bool SettingExists(int id)
         {
-            return _context.Setting.Any(e => e.SET_ID == id);
+            return _context.Settings.Any(e => e.SET_ID == id);
         }
     }
 }

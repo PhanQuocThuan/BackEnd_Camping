@@ -22,7 +22,7 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
         // GET: Admin/Order
         public async Task<IActionResult> Index()
         {
-            var campingContext = _context.Order.Include(o => o.User);
+            var campingContext = _context.Orders.Include(o => o.User);
             return View(await campingContext.ToListAsync());
         }
 
@@ -34,7 +34,7 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
                 return NotFound();
             }
 
-            var order = await _context.Order
+            var order = await _context.Orders
                 .Include(o => o.User)
                 .FirstOrDefaultAsync(m => m.ORD_ID == id);
             if (order == null)
@@ -48,7 +48,7 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
         // GET: Admin/Order/Create
         public IActionResult Create()
         {
-            ViewData["USE_ID"] = new SelectList(_context.User, "USE_ID", "USE_ID");
+            ViewData["USE_ID"] = new SelectList(_context.Users, "USE_ID", "USE_ID");
             return View();
         }
 
@@ -65,7 +65,7 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["USE_ID"] = new SelectList(_context.User, "USE_ID", "USE_ID", order.USE_ID);
+            ViewData["USE_ID"] = new SelectList(_context.Users, "USE_ID", "USE_ID", order.USE_ID);
             return View(order);
         }
 
@@ -77,12 +77,12 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
                 return NotFound();
             }
 
-            var order = await _context.Order.FindAsync(id);
+            var order = await _context.Orders.FindAsync(id);
             if (order == null)
             {
                 return NotFound();
             }
-            ViewData["USE_ID"] = new SelectList(_context.User, "USE_ID", "USE_ID", order.USE_ID);
+            ViewData["USE_ID"] = new SelectList(_context.Users, "USE_ID", "USE_ID", order.USE_ID);
             return View(order);
         }
 
@@ -118,7 +118,7 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["USE_ID"] = new SelectList(_context.User, "USE_ID", "USE_ID", order.USE_ID);
+            ViewData["USE_ID"] = new SelectList(_context.Users, "USE_ID", "USE_ID", order.USE_ID);
             return View(order);
         }
 
@@ -130,7 +130,7 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
                 return NotFound();
             }
 
-            var order = await _context.Order
+            var order = await _context.Orders
                 .Include(o => o.User)
                 .FirstOrDefaultAsync(m => m.ORD_ID == id);
             if (order == null)
@@ -146,10 +146,10 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var order = await _context.Order.FindAsync(id);
+            var order = await _context.Orders.FindAsync(id);
             if (order != null)
             {
-                _context.Order.Remove(order);
+                _context.Orders.Remove(order);
             }
 
             await _context.SaveChangesAsync();
@@ -158,7 +158,7 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
 
         private bool OrderExists(int id)
         {
-            return _context.Order.Any(e => e.ORD_ID == id);
+            return _context.Orders.Any(e => e.ORD_ID == id);
         }
     }
 }

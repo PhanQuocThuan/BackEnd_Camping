@@ -22,7 +22,7 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
         // GET: Admin/Feature
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Feature.ToListAsync());
+            return View(await _context.Features.ToListAsync());
         }
 
         // GET: Admin/Feature/Details/5
@@ -33,7 +33,7 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
                 return NotFound();
             }
 
-            var feature = await _context.Feature
+            var feature = await _context.Features
                 .FirstOrDefaultAsync(m => m.FEA_ID == id);
             if (feature == null)
             {
@@ -73,7 +73,7 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
                 return NotFound();
             }
 
-            var feature = await _context.Feature.FindAsync(id);
+            var feature = await _context.Features.FindAsync(id);
             if (feature == null)
             {
                 return NotFound();
@@ -124,7 +124,7 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
                 return NotFound();
             }
 
-            var feature = await _context.Feature
+            var feature = await _context.Features
                 .FirstOrDefaultAsync(m => m.FEA_ID == id);
             if (feature == null)
             {
@@ -139,10 +139,10 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var feature = await _context.Feature.FindAsync(id);
+            var feature = await _context.Features.FindAsync(id);
             if (feature != null)
             {
-                _context.Feature.Remove(feature);
+                _context.Features.Remove(feature);
             }
 
             await _context.SaveChangesAsync();
@@ -151,7 +151,7 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
 
         private bool FeatureExists(int id)
         {
-            return _context.Feature.Any(e => e.FEA_ID == id);
+            return _context.Features.Any(e => e.FEA_ID == id);
         }
     }
 }

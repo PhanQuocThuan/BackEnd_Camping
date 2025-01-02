@@ -22,7 +22,7 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
         // GET: Admin/Banner
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Banner.ToListAsync());
+            return View(await _context.Banners.ToListAsync());
         }
 
         // GET: Admin/Banner/Details/5
@@ -33,7 +33,7 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
                 return NotFound();
             }
 
-            var banner = await _context.Banner
+            var banner = await _context.Banners
                 .FirstOrDefaultAsync(m => m.BAN_ID == id);
             if (banner == null)
             {
@@ -73,7 +73,7 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
                 return NotFound();
             }
 
-            var banner = await _context.Banner.FindAsync(id);
+            var banner = await _context.Banners.FindAsync(id);
             if (banner == null)
             {
                 return NotFound();
@@ -124,7 +124,7 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
                 return NotFound();
             }
 
-            var banner = await _context.Banner
+            var banner = await _context.Banners
                 .FirstOrDefaultAsync(m => m.BAN_ID == id);
             if (banner == null)
             {
@@ -139,10 +139,10 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var banner = await _context.Banner.FindAsync(id);
+            var banner = await _context.Banners.FindAsync(id);
             if (banner != null)
             {
-                _context.Banner.Remove(banner);
+                _context.Banners.Remove(banner);
             }
 
             await _context.SaveChangesAsync();
@@ -151,7 +151,7 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
 
         private bool BannerExists(int id)
         {
-            return _context.Banner.Any(e => e.BAN_ID == id);
+            return _context.Banners.Any(e => e.BAN_ID == id);
         }
     }
 }

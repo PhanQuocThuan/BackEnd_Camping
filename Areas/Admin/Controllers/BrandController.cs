@@ -27,8 +27,8 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
         public async Task<IActionResult> Index(string searchQuery)
         {
             var brands = string.IsNullOrEmpty(searchQuery)
-         ? await _context.Brand.ToListAsync()
-         : await _context.Brand
+         ? await _context.Brands.ToListAsync()
+         : await _context.Brands
              .Where(b => b.Name.Contains(searchQuery) ||
                          b.Phone.Contains(searchQuery) ||
                          b.Address.Contains(searchQuery)||
@@ -51,8 +51,8 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
             {
                 return NotFound();
             }
-
-            var brand = await _context.Brand
+            
+            var brand = await _context.Brands
                 .FirstOrDefaultAsync(m => m.BRA_ID == id);
             if (brand == null)
             {
@@ -123,7 +123,7 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
                 return NotFound();
             }
 
-            var brand = await _context.Brand.FindAsync(id);
+            var brand = await _context.Brands.FindAsync(id);
             if (brand == null)
             {
                 return NotFound();
@@ -142,7 +142,7 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
             {
                 return NotFound();
             }
-            var brand = await _context.Brand.FindAsync(id);
+            var brand = await _context.Brands.FindAsync(id);
             if (brand == null)
             {
                 return NotFound();
@@ -221,17 +221,17 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var hasProducts = await _context.Product.AnyAsync(p => p.BRA_ID == id);
+            var hasProducts = await _context.Products.AnyAsync(p => p.BRA_ID == id);
             if (hasProducts)
             {
                 TempData["ErrorMessage"] = "Không thể xóa thương hiệu này vì có sản phẩm liên quan.";
                 return RedirectToAction(nameof(Index));
             }
 
-            var brand = await _context.Brand.FindAsync(id);
+            var brand = await _context.Brands.FindAsync(id);
             if (brand != null)
             {
-                _context.Brand.Remove(brand);
+                _context.Brands.Remove(brand);
                 await _context.SaveChangesAsync();
                 TempData["SuccessMessage"] = "Thương hiệu đã được xóa thành công.";
             }
@@ -245,7 +245,7 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
 
         private bool BrandExists(int id)
         {
-            return _context.Brand.Any(e => e.BRA_ID == id);
+            return _context.Brands.Any(e => e.BRA_ID == id);
         }
     }
 }

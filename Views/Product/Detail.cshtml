@@ -1,0 +1,107 @@
+﻿@model BackEnd_Camping.Models.Product
+@{
+}
+<div class="row">
+    <div class="col-8">
+        <img src="~/data/products/@Model.Avatar"
+             class="img-fluid"
+             alt="" style="width: 500px; height: 500px;" />
+    </div>
+    <div class="col-4 text-center border-start border-bottom">
+        <h2>@Model.Name</h2>
+        <div class="row">
+            <div class="col">
+                <div class="rating">
+                    @for (var i = 0; i < Model.Rate; i++)//đếm sao đánh giá
+                    {
+                        <i class="fa fa-star text-warning"></i>
+                    }
+                    @for (var i = 1; i <= (5 - Model.Rate); i++)//đếm sao không màu
+                    {
+                        <i class="fa fa-star"></i>
+                    }
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col"><h3>Giá: @(Model.Price.ToString("N00") + " $")</h3></div>
+            <div class="col mt-2"><h5>Hàng tồn kho: @Model.Quantity</h5></div>
+        </div>
+        <div class="row text-start ms-4">
+           <h4>Loại: @Model.Category?.Name</h4>
+           <h4>Thương hiệu: @Model.Brand?.Name</h4>
+        </div>
+        <div class="row">
+            @Html.Raw(Model.Intro)
+        </div>
+        <div class="row text-center d-flex justify-content-center my-1">
+                <div class="fs-3 title align-text-bottom">Số lượng</div>
+                <div class="input-group quantity rounded-pill mt-2" style="width: 13rem; height: 3rem;">
+                    <div class="input-group-btn">
+                        <button class="btn btn-sm btn-minus rounded-circle bg-danger border"
+                                style="height: 3rem; width: 3rem;"
+                                onclick="subtractValue();">
+                            <i class="fa fa-minus text-black"></i>
+                        </button>
+                    </div>
+                    <input type="text" class="form-control text-center border-start-0 border-end-0 fs-4 bg-white" min="1" max="@Model.Quantity" value="1" disabled>
+                    <div class="input-group-btn">
+                        <button class="btn btn-sm btn-plus rounded-circle bg-success border"
+                                style="height: 3rem; width: 3rem;"
+                                onclick="addValue();">
+                            <i class="fa fa-plus text-white"></i>
+                        </button>
+                    </div>
+                </div>
+        </div>
+        <div class="row">
+            <div class="col-6 mx-auto" style="mar">
+                <button class="button-cart">
+                    <div class="svg-wrapper-1">
+                        <div class="svg-wrapper">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                    </div>
+                    <span>Giỏ hàng</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <h4>Mô tả sản phẩm</h4>
+            <p>
+                Sản phẩm Lều 2-3 người 2 lớp cắm trại Naturehike CNK2300ZP024 là
+                một lựa chọn tốt cho những ai yêu thích hoạt động cắm trại hoặc
+                du lịch ngoài trời. Được thiết kế với kích thước vừa phải, lều
+                này có khả năng chứa được 2 đến 3 người, tạo ra không gian thoải
+                mái để ngủ và nghỉ ngơi.Lều CNK2300ZP024 có cấu trúc 2 lớp, giúp
+                bảo vệ người dùng khỏi các yếu tố thời tiết như mưa, gió hay
+                nắng chói chang. Lớp ngoài chống thấm nước tốt, đảm bảo bên
+                trong lều luôn khô ráo và thoải mái. Lớp trong có thể tháo rời,
+                giúp tiện lợi trong việc vệ sinh và bảo dưỡng lều.
+            </p>
+        </div>
+        <div class="col">
+            <h4>Đánh giá của khách hàng</h4>
+        </div>
+    </div>
+</div>
+<script>
+    const inputNumber = document.querySelector(".input-group input");
+
+    const addValue = () => {
+        const currentValue = Number(inputNumber.value);
+        const maxValue = Number(inputNumber.max);
+        if (currentValue < maxValue) {
+            inputNumber.value = Number(inputNumber.value) + 1;
+        }
+    };
+    const subtractValue = () => {
+        const currentValue = Number(inputNumber.value);
+        const minValue = Number(inputNumber.min);
+        if (currentValue > minValue) {
+            inputNumber.value = Number(inputNumber.value) - 1;
+        }
+    };
+</script>

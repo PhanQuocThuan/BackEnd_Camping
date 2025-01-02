@@ -2,7 +2,7 @@
     ViewData["Title"] = "Home Page";
 }
 @* slideder start*@
-<div id="carouselExampleCaptions" class="carousel slide">
+<div id="carouselExampleCaptions" class="carousel slide" style="margin-top: 125px;">
     <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -42,6 +42,7 @@
 </div>
 @* slideder end*@
 @* service start*@
+<vc:Pro
 <div class="container my-5">
     <div class="row d-flex justify-content-between">
 
@@ -204,7 +205,7 @@
                                             <div class="text-black bg-success-subtle px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">@product.Category.Name</div>
                                             <div class="p-4 border border-success-subtle border-top-0 rounded-bottom">
                                                 <h4 class="title-truncate-multiline"><a asp-action="detail" asp-controller="product" asp-route-id="@product.PRO_ID" class="text-decoration-none text-success">@product.Name</a></h4>
-                                                <p class="text-truncate-multiline">@product.Intro</p>
+                                                <p class="text-truncate-multiline">@Html.Raw(product.Intro)</p>
                                                 <div class="d-flex justify-content-between flex-lg-wrap">
                                                     <p class="text-dark fs-5 fw-bold mb-0">@(product.Price.ToString("N00") + " $")</p>
                                                     <button class="button-cart">

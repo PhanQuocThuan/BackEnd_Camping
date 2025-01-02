@@ -2,28 +2,29 @@
 using Microsoft.EntityFrameworkCore;
 using System.Reflection;
 using BackEnd_Camping.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 namespace BackEnd_Camping.Models
 {
-    public class CampingContext : DbContext
+    public class CampingContext : IdentityDbContext
     {
         public CampingContext(DbContextOptions options) : base(options)
         {
         }
         public DbSet<AdminUser> AdminUsers { get; set; }
-        public DbSet<BackEnd_Camping.Models.Banner> Banner { get; set; } = default!;
-        public DbSet<BackEnd_Camping.Models.Brand> Brand { get; set; } = default!;
-        public DbSet<BackEnd_Camping.Models.Category> Category { get; set; } = default!;
-        public DbSet<BackEnd_Camping.Models.Contact> Contact { get; set; } = default!;
-        public DbSet<BackEnd_Camping.Models.Feature> Feature { get; set; } = default!;
-        public DbSet<BackEnd_Camping.Models.Menu> Menu { get; set; } = default!;
-        public DbSet<BackEnd_Camping.Models.User> User { get; set; } = default!;
-        public DbSet<BackEnd_Camping.Models.Product> Product { get; set; } = default!;
-        public DbSet<BackEnd_Camping.Models.Order> Order { get; set; } = default!;
-        public DbSet<BackEnd_Camping.Models.OrderDetail> OrderDetail { get; set; } = default!;
-        public DbSet<BackEnd_Camping.Models.Place> Place { get; set; } = default!;
-        public DbSet<BackEnd_Camping.Models.Review> Review { get; set; } = default!;
-        public DbSet<BackEnd_Camping.Models.Setting> Setting { get; set; } = default!;
+        public DbSet<BackEnd_Camping.Models.Banner> Banners { get; set; } = default!;
+        public DbSet<BackEnd_Camping.Models.Brand> Brands { get; set; } = default!;
+        public DbSet<BackEnd_Camping.Models.Category> Categorys { get; set; } = default!;
+        public DbSet<BackEnd_Camping.Models.Contact> Contacts { get; set; } = default!;
+        public DbSet<BackEnd_Camping.Models.Feature> Features { get; set; } = default!;
+        public DbSet<BackEnd_Camping.Models.Menu> Menus { get; set; } = default!;
+        public DbSet<BackEnd_Camping.Models.User> Users { get; set; } = default!;
+        public DbSet<BackEnd_Camping.Models.Product> Products { get; set; } = default!;
+        public DbSet<BackEnd_Camping.Models.Order> Orders { get; set; } = default!;
+        public DbSet<BackEnd_Camping.Models.OrderDetail> OrderDetails { get; set; } = default!;
+        public DbSet<BackEnd_Camping.Models.Place> Places { get; set; } = default!;
+        public DbSet<BackEnd_Camping.Models.Review> Reviews { get; set; } = default!;
+        public DbSet<BackEnd_Camping.Models.Setting> Settings { get; set; } = default!;
         public DbSet<BackEnd_Camping.Models.UserBrands> UserBrands { get; set; } = default!;
         public DbSet<BackEnd_Camping.Models.UserCategories> UserCategories { get; set; } = default!;
         //public DbSet<Banner> Banners { get; set; }
@@ -39,6 +40,6 @@ namespace BackEnd_Camping.Models
         //public DbSet<Place> Places { get; set; }
         //public DbSet<Menu> Menus { get; set; }
         //public DbSet<UserBrands> UserBrands { get; set; }
-        //public DbSet<User_categories> user_categories { get; set; }
+        //public DbSet<UserCategories> UserCategories { get; set; }
     }
 }

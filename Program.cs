@@ -12,6 +12,7 @@ namespace BackEnd_Camping
 
             builder.Services.AddDbContext<CampingContext>(options =>
             options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
             // Add services to the container.
             builder.Services.AddControllersWithViews();
 
@@ -43,7 +44,6 @@ namespace BackEnd_Camping
             app.UseSession();
 
             //app.UseMiddleware<BackEnd_Camping.Middleware.AdminAccessMiddleware>();
-
             
 
             app.MapControllerRoute(

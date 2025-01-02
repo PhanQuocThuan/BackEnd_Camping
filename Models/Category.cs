@@ -23,6 +23,6 @@ namespace BackEnd_Camping.Models
         [DisplayName("Meta Keywords")]
         public string? MetaKeywords { get; set; }
         public virtual ICollection<Product>? Products { get; set; }
-        public virtual ICollection<UserCategories>? User_Categories { get; set; }
+        public virtual ICollection<UserCategories>? UserCategories { get; set; }
     }
 }

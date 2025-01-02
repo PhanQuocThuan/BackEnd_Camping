@@ -22,7 +22,7 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
         // GET: Admin/Review
         public async Task<IActionResult> Index()
         {
-            var campingContext = _context.Review.Include(r => r.Product).Include(r => r.User);
+            var campingContext = _context.Reviews.Include(r => r.Product).Include(r => r.User);
             return View(await campingContext.ToListAsync());
         }
 
@@ -34,7 +34,7 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
                 return NotFound();
             }
 
-            var review = await _context.Review
+            var review = await _context.Reviews
                 .Include(r => r.Product)
                 .Include(r => r.User)
                 .FirstOrDefaultAsync(m => m.REV_ID == id);
@@ -49,8 +49,8 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
         // GET: Admin/Review/Create
         public IActionResult Create()
         {
-            ViewData["PRO_ID"] = new SelectList(_context.Product, "PRO_ID", "Name");
-            ViewData["USE_ID"] = new SelectList(_context.User, "USE_ID", "USE_ID");
+            ViewData["PRO_ID"] = new SelectList(_context.Products, "PRO_ID", "Name");
+            ViewData["USE_ID"] = new SelectList(_context.Users, "USE_ID", "USE_ID");
             return View();
         }
 
@@ -67,8 +67,8 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["PRO_ID"] = new SelectList(_context.Product, "PRO_ID", "Name", review.PRO_ID);
-            ViewData["USE_ID"] = new SelectList(_context.User, "USE_ID", "USE_ID", review.USE_ID);
+            ViewData["PRO_ID"] = new SelectList(_context.Products, "PRO_ID", "Name", review.PRO_ID);
+            ViewData["USE_ID"] = new SelectList(_context.Users, "USE_ID", "USE_ID", review.USE_ID);
             return View(review);
         }
 
@@ -80,13 +80,13 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
                 return NotFound();
             }
 
-            var review = await _context.Review.FindAsync(id);
+            var review = await _context.Reviews.FindAsync(id);
             if (review == null)
             {
                 return NotFound();
             }
-            ViewData["PRO_ID"] = new SelectList(_context.Product, "PRO_ID", "Name", review.PRO_ID);
-            ViewData["USE_ID"] = new SelectList(_context.User, "USE_ID", "USE_ID", review.USE_ID);
+            ViewData["PRO_ID"] = new SelectList(_context.Products, "PRO_ID", "Name", review.PRO_ID);
+            ViewData["USE_ID"] = new SelectList(_context.Users, "USE_ID", "USE_ID", review.USE_ID);
             return View(review);
         }
 
@@ -122,8 +122,8 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["PRO_ID"] = new SelectList(_context.Product, "PRO_ID", "Name", review.PRO_ID);
-            ViewData["USE_ID"] = new SelectList(_context.User, "USE_ID", "USE_ID", review.USE_ID);
+            ViewData["PRO_ID"] = new SelectList(_context.Products, "PRO_ID", "Name", review.PRO_ID);
+            ViewData["USE_ID"] = new SelectList(_context.Users, "USE_ID", "USE_ID", review.USE_ID);
             return View(review);
         }
 
@@ -135,7 +135,7 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
                 return NotFound();
             }
 
-            var review = await _context.Review
+            var review = await _context.Reviews
                 .Include(r => r.Product)
                 .Include(r => r.User)
                 .FirstOrDefaultAsync(m => m.REV_ID == id);
@@ -152,10 +152,10 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var review = await _context.Review.FindAsync(id);
+            var review = await _context.Reviews.FindAsync(id);
             if (review != null)
             {
-                _context.Review.Remove(review);
+                _context.Reviews.Remove(review);
             }
 
             await _context.SaveChangesAsync();
@@ -164,7 +164,7 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
 
         private bool ReviewExists(int id)
         {
-            return _context.Review.Any(e => e.REV_ID == id);
+            return _context.Reviews.Any(e => e.REV_ID == id);
         }
     }
 }

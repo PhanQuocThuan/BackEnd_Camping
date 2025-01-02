@@ -2,6 +2,7 @@
 using BackEnd_Camping.Areas.Admin.DTOs;
 using BackEnd_Camping.Models;
 using BackEnd_Camping.Utils;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -19,7 +20,7 @@ namespace BackEnd_Camping.Controllers
             var login = Request.Cookies.Get<LoginUserDTO>("UserCustomer");
             if (login != null)
             {
-                var result = await _context.User.AsNoTracking()
+                var result = await _context.Users.AsNoTracking()
                             .FirstOrDefaultAsync(x => x.UserName == login.UserName
                             && x.Password == login.Password);
                 if (result != null)
@@ -34,27 +35,35 @@ namespace BackEnd_Camping.Controllers
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> Login(LoginUserDTO login)
         {
-            var result = await _context.User.AsTracking()
-                .FirstOrDefaultAsync(x => x.UserName == login.UserName
-                && x.Password == login.Password);
-            if (result != null)
+            // Tìm user dựa trên UserName
+            var user = await _context.Users.AsTracking()
+                .FirstOrDefaultAsync(x => x.UserName == login.UserName);
+
+            if (user != null)
             {
-                if (login.RememberMe)
+                var hasher = new PasswordHasher<User>();
+                // Kiểm tra mật khẩu đã mã hóa
+                var passwordVerificationResult = hasher.VerifyHashedPassword(user, user.Password, login.Password);
+
+                if (passwordVerificationResult == PasswordVerificationResult.Success)
                 {
-                    Response.Cookies.Append<LoginUserDTO>("UserCustomer", login, new CookieOptions
+                    if (login.RememberMe)
                     {
-                        Expires = DateTimeOffset.UtcNow.AddDays(1),
-                        HttpOnly = true,
-                        IsEssential = true
-                    });
+                        Response.Cookies.Append<LoginUserDTO>("UserCustomer", login, new CookieOptions
+                        {
+                            Expires = DateTimeOffset.UtcNow.AddDays(1),
+                            HttpOnly = true,
+                            IsEssential = true
+                        });
+                    }
+
+                    HttpContext.Session.Set<User>("userInfo", user);
+                    return RedirectToAction("Index", "Home");
                 }
-                HttpContext.Session.Set<User>("userInfo", result);
-                return RedirectToAction("Index", "Home");
             }
-            else
-            {
-                ViewData["Message"] = "Wrong username or password";
-            }
+
+            // Sai username hoặc password
+            ViewData["Message"] = "Wrong username or password";
             return View();
         }
         [HttpPost]
@@ -72,5 +81,22 @@ namespace BackEnd_Camping.Controllers
             // Chuyển hướng về trang Login
             return RedirectToAction("Login");
         }
+        //public async Task<ActionResult> Register(RegisterUserDTO register)
+        //{
+        //    var hasher = new PasswordHasher<RegisterUserDTO>();
+        //    var hashedPassword = hasher.HashPassword(register, register.Password);
+
+        //    var user = new User
+        //    {
+        //        UserName = register.UserName,
+        //        Password = hashedPassword, 
+                                           
+        //    };
+
+        //    _context.User.Add(user);
+        //    await _context.SaveChangesAsync();
+
+        //    return RedirectToAction("Login");
+        //}
     }
 }

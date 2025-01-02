@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BackEnd_Camping")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9317bc070aefadfdf733fa6a3a48dfc5d6fc7136")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d11b172f442612541040be0b1012b2f20ab55b81")]
 [assembly: System.Reflection.AssemblyProductAttribute("BackEnd_Camping")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BackEnd_Camping")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

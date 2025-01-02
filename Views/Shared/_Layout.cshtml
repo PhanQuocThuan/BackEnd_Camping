@@ -21,41 +21,38 @@
 
 </head>
 <body>
-    <div class="container-header navbar-edit">
-        <nav class="navbar bg-success ">
-            <div class="container-fluid justify-content-start">
-                <div class="col-1 d-flex justify-content-center align-items-center" id="img1">
-                    <a asp-controller="home" asp-action="index" class="offset-1">
-                        <img src="~/img/logo.jpg" class="img-fluid rounded-circle" alt="Logo" style="width: 75px; height: 75px" />
-                    </a>
+    <div class="container-header navbar-edit px-1">
+        <nav class="navbar rounded-top-5 ">
+            <div class="container-fluid d-flex justify-content-around">
+                <div class="col-2 text-uppercase fs-2">
+                    camping
                 </div>
-                <form class="form w-25 h-25 offset-1">
-                    <button class="mb-1">
-                        <i class="fas fa-search"></i>
-                    </button>
-                    <input class="input" placeholder="Search..." required="" type="text" />
-                </form>
-                <div class="d-flex align-items-center offset-3 me-3">
-                    <a asp-action="Login" asp-controller="User" class="text-black text-decoration-none">Đăng nhập</a>
+                <div class="col">
+                    <form class="form" style="width: 300px; height: 40px;">
+                        <button>
+                            <i class="fas fa-search"></i>
+                        </button>
+                        <input class="input" placeholder="Search..." required="" type="text" />
+                    </form>
                 </div>
-                <div class="col fw-light">
+                <div class="col-1 d-flex align-items-center offset-md-4 me-3">
+                    <a asp-action="Login" asp-controller="UserCustomer" class="text-black text-decoration-none"><i class="fa-solid fa-user"></i> Đăng nhập</a>
+                </div>
+                <div class="col-1 text-black me-3">
                     <a asp-controller="cart" asp-action="index" class="text-decoration-none text-black-50 d-flex align-items-center">
                         Giỏ hàng/ 100$
                         <i class="fa-solid fa-cart-shopping fa-2x ms-2 position-relative">
                             <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill text-white bg-danger">3</span>
                         </i>
                     </a>
-                    </div>
+                 </div>
              </div>
         </nav>
-        <marquee class="text-black" direction="left" scrollamount="15">
-            <strong>Địa chỉ</strong>: <strong>SĐT</strong>: <strong>Email</strong>:
-        </marquee>
-        <ul class="list text-black d-flex justify-content-center fs-4">
+        <ul class="list text-black d-flex justify-content-start">
             <li class="nav-item dropdown">
                 <div class="menu">
                     <div class="item">
-                        <a asp-controller="home" asp-action="index" class="link fs-4">Trang Chủ</a>
+                        <a asp-controller="home" asp-action="index" class="link fs-5">Trang Chủ</a>
                         <div class="submenu text-black">
                         </div>
                     </div>
@@ -65,7 +62,7 @@
             <li class="nav-item dropdown">
                 <div class="menu">
                     <div class="item">
-                        <a href="#" class="link fs-4">
+                        <a href="#" class="link fs-5">
                             <span> Thương Hiệu </span>
                             <i class="fa-solid fa-chevron-down"></i>
                         </a>
@@ -82,7 +79,7 @@
             <li class="nav-item dropdown">
                 <div class="menu">
                     <div class="item">
-                        <a href="#" class="link fs-4">
+                        <a href="#" class="link fs-5">
                             <span> Loại </span>
                             @* <i class="fa-solid fa-chevron-down"></i> *@
                         </a>
@@ -106,7 +103,7 @@
             <li class="nav-item dropdown">
                 <div class="menu">
                     <div class="item">
-                        <a href="#" class="link fs-4">
+                        <a href="#" class="link fs-5">
                             <span> Địa điểm cắm trại </span>
                             @* <i class="fa-solid fa-chevron-down"></i> *@
                         </a>
@@ -128,7 +125,7 @@
             <li class="nav-item dropdown">
                 <div class="menu">
                     <div class="item">
-                        <a asp-controller="contact" asp-action="index" class="link fs-4">Liên Hệ</a>
+                        <a asp-controller="Contact" asp-action="index" class="link fs-5">Liên Hệ</a>
                         <div class="submenu text-black">
                         </div>
                     </div>
@@ -136,7 +133,7 @@
             </li>
         </ul>
     </div>
-    <div class="text-center">
+    <div class="text-center" style="padding-top: 125px;" >
             @RenderBody()
     </div>
     <div class="footer">

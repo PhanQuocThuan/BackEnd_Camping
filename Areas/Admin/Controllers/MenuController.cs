@@ -22,7 +22,7 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
         // GET: Admin/Menu
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Menu.ToListAsync());
+            return View(await _context.Menus.ToListAsync());
         }
 
         // GET: Admin/Menu/Details/5
@@ -33,7 +33,7 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
                 return NotFound();
             }
 
-            var menu = await _context.Menu
+            var menu = await _context.Menus
                 .FirstOrDefaultAsync(m => m.MEN_ID == id);
             if (menu == null)
             {
@@ -73,7 +73,7 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
                 return NotFound();
             }
 
-            var menu = await _context.Menu.FindAsync(id);
+            var menu = await _context.Menus.FindAsync(id);
             if (menu == null)
             {
                 return NotFound();
@@ -124,7 +124,7 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
                 return NotFound();
             }
 
-            var menu = await _context.Menu
+            var menu = await _context.Menus
                 .FirstOrDefaultAsync(m => m.MEN_ID == id);
             if (menu == null)
             {
@@ -139,10 +139,10 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var menu = await _context.Menu.FindAsync(id);
+            var menu = await _context.Menus.FindAsync(id);
             if (menu != null)
             {
-                _context.Menu.Remove(menu);
+                _context.Menus.Remove(menu);
             }
 
             await _context.SaveChangesAsync();
@@ -151,7 +151,7 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
 
         private bool MenuExists(int id)
         {
-            return _context.Menu.Any(e => e.MEN_ID == id);
+            return _context.Menus.Any(e => e.MEN_ID == id);
         }
     }
 }

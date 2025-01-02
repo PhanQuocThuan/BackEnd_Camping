@@ -24,8 +24,8 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
         public async Task<IActionResult> Index(string searchQuery)
         {
             var categories = string.IsNullOrEmpty(searchQuery)
-        ? await _context.Category.ToListAsync()
-        : await _context.Category
+        ? await _context.Categorys.ToListAsync()
+        : await _context.Categorys
             .Where(b => b.Name.Contains(searchQuery) ||
                         b.MetaKeywords.Contains(searchQuery) ||
                         b.MetaTitle.Contains(searchQuery) ||
@@ -46,7 +46,7 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
                 return NotFound();
             }
 
-            var category = await _context.Category
+            var category = await _context.Categorys
                 .FirstOrDefaultAsync(m => m.CAT_ID == id);
             if (category == null)
             {
@@ -92,7 +92,7 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
                 return NotFound();
             }
 
-            var category = await _context.Category.FindAsync(id);
+            var category = await _context.Categorys.FindAsync(id);
             if (category == null)
             {
                 return NotFound();
@@ -154,17 +154,17 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var hasProducts = await _context.Product.AnyAsync(p => p.CAT_ID == id);
+            var hasProducts = await _context.Products.AnyAsync(p => p.CAT_ID == id);
             if (hasProducts)
             {
                 TempData["ErrorMessage"] = "Không thể xóa thể loại này vì có sản phẩm liên quan.";
                 return RedirectToAction(nameof(Index));
             }
 
-            var category = await _context.Category.FindAsync(id);
+            var category = await _context.Categorys.FindAsync(id);
             if (category != null)
             {
-                _context.Category.Remove(category);
+                _context.Categorys.Remove(category);
                 await _context.SaveChangesAsync();
                 TempData["SuccessMessage"] = "Thể Loại đã được xóa thành công.";
             }
@@ -178,7 +178,7 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
 
         private bool CategoryExists(int id)
         {
-            return _context.Category.Any(e => e.CAT_ID == id);
+            return _context.Categorys.Any(e => e.CAT_ID == id);
         }
     }
 }

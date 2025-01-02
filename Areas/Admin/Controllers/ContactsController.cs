@@ -22,7 +22,7 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
         // GET: Admin/Contacts
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Contact.ToListAsync());
+            return View(await _context.Contacts.ToListAsync());
         }
 
         // GET: Admin/Contacts/Details/5
@@ -33,7 +33,7 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
                 return NotFound();
             }
 
-            var contact = await _context.Contact
+            var contact = await _context.Contacts
                 .FirstOrDefaultAsync(m => m.CON_ID == id);
             if (contact == null)
             {
@@ -73,7 +73,7 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
                 return NotFound();
             }
 
-            var contact = await _context.Contact.FindAsync(id);
+            var contact = await _context.Contacts.FindAsync(id);
             if (contact == null)
             {
                 return NotFound();
@@ -124,7 +124,7 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
                 return NotFound();
             }
 
-            var contact = await _context.Contact
+            var contact = await _context.Contacts
                 .FirstOrDefaultAsync(m => m.CON_ID == id);
             if (contact == null)
             {
@@ -139,10 +139,10 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var contact = await _context.Contact.FindAsync(id);
+            var contact = await _context.Contacts.FindAsync(id);
             if (contact != null)
             {
-                _context.Contact.Remove(contact);
+                _context.Contacts.Remove(contact);
             }
 
             await _context.SaveChangesAsync();
@@ -151,7 +151,7 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
 
         private bool ContactExists(int id)
         {
-            return _context.Contact.Any(e => e.CON_ID == id);
+            return _context.Contacts.Any(e => e.CON_ID == id);
         }
     }
 }

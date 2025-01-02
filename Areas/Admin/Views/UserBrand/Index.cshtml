@@ -40,9 +40,9 @@
             <td class="text-center">
                     <div class="d-flex justify-content-center gap-2">
                         <a asp-action="Edit" asp-route-id="@item.UBRA_ID" class="text-decoration-none">
-                            <button type="button" class="edit-button">
+                        <button type="button" class="edit-button">
                                 <i class="fa-solid fa-pen text-white edit-svgIcon"></i>
-                            </button>
+                        </button>
                         </a>
                         <button popovertarget="popover-delete-@item.UBRA_ID" class="trash-button">
                             <i class="fa-solid fa-trash text-white trash-svgIcon"></i>
@@ -73,3 +73,13 @@
 }
     </tbody>
 </table>
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+<script>
+    function reloadPage() {
+        location.reload();
+    }
+</script>
+}

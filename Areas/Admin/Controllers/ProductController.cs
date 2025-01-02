@@ -28,7 +28,7 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
         [HttpGet]
         public async Task<IActionResult> Index(string searchQuery)
         {
-            IQueryable<Product> query = _context.Product;
+            IQueryable<Product> query = _context.Products;
 
             if (!string.IsNullOrEmpty(searchQuery))
             {
@@ -66,7 +66,7 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
                 return NotFound();
             }
 
-            var product = await _context.Product
+            var product = await _context.Products
                 .Include(p => p.Brand)
                 .Include(p => p.Category)
                 .FirstOrDefaultAsync(m => m.PRO_ID == id);
@@ -81,8 +81,8 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
         // GET: Admin/Product/Create
         public IActionResult Create()
         {
-            ViewData["BRA_ID"] = new SelectList(_context.Brand, "BRA_ID", "Name");
-            ViewData["CAT_ID"] = new SelectList(_context.Category, "CAT_ID", "Name");
+            ViewData["BRA_ID"] = new SelectList(_context.Brands, "BRA_ID", "Name");
+            ViewData["CAT_ID"] = new SelectList(_context.Categorys, "CAT_ID", "Name");
             return View();
         }
 
@@ -131,8 +131,8 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["BRA_ID"] = new SelectList(_context.Brand, "BRA_ID", "Name", product.BRA_ID);
-            ViewData["CAT_ID"] = new SelectList(_context.Category, "CAT_ID", "Name", product.CAT_ID);
+            ViewData["BRA_ID"] = new SelectList(_context.Brands, "BRA_ID", "Name", product.BRA_ID);
+            ViewData["CAT_ID"] = new SelectList(_context.Categorys, "CAT_ID", "Name", product.CAT_ID);
             return View(product);
         }
 
@@ -144,13 +144,13 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
                 return NotFound();
             }
 
-            var product = await _context.Product.FindAsync(id);
+            var product = await _context.Products.FindAsync(id);
             if (product == null)
             {
                 return NotFound();
             }
-            ViewData["BRA_ID"] = new SelectList(_context.Brand, "BRA_ID", "Name", product.BRA_ID);
-            ViewData["CAT_ID"] = new SelectList(_context.Category, "CAT_ID", "Name", product.CAT_ID);
+            ViewData["BRA_ID"] = new SelectList(_context.Brands, "BRA_ID", "Name", product.BRA_ID);
+            ViewData["CAT_ID"] = new SelectList(_context.Categorys, "CAT_ID", "Name", product.CAT_ID);
             return View(product);
         }
 
@@ -165,7 +165,7 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
             {
                 return NotFound();
             }
-            var product = await _context.Product.FindAsync(id);
+            var product = await _context.Products.FindAsync(id);
             if (product == null)
             {
                 return NotFound();
@@ -240,8 +240,8 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["BRA_ID"] = new SelectList(_context.Brand, "BRA_ID", "Name", product.BRA_ID);
-            ViewData["CAT_ID"] = new SelectList(_context.Category, "CAT_ID", "Name", product.CAT_ID);
+            ViewData["BRA_ID"] = new SelectList(_context.Brands, "BRA_ID", "Name", product.BRA_ID);
+            ViewData["CAT_ID"] = new SelectList(_context.Categorys, "CAT_ID", "Name", product.CAT_ID);
             return View(product);
         }
 
@@ -252,10 +252,10 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var product = await _context.Product.FindAsync(id);
+            var product = await _context.Products.FindAsync(id);
             if (product != null)
             {
-                _context.Product.Remove(product);
+                _context.Products.Remove(product);
             }
 
             await _context.SaveChangesAsync();
@@ -264,7 +264,7 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
 
         private bool ProductExists(int id)
         {
-            return _context.Product.Any(e => e.PRO_ID == id);
+            return _context.Products.Any(e => e.PRO_ID == id);
         }
     }
 }

@@ -3,13 +3,20 @@
 @{
     ViewData["Title"] = "Index";
 }
-
-<h1>Index</h1>
-
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
+<div class="row d-flex justify-content-between my-3">
+    <div class="col-4">
+        <h1>Favorites Categories</h1>
+    </div>
+    <div class="col-1 my-auto">
+        <a asp-action="create" asp-controller="UserCategorie" class="text-decoration-none">
+            <button class="cssbuttons-io-button">
+                <span><i class="fa-solid fa-plus"></i></span>
+                Add
+            </button>
+        </a>
+    </div>
+</div>
+<table class="table table-bordered text-center">
     <thead>
         <tr>
             <th>
@@ -30,12 +37,49 @@
             <td>
                 @Html.DisplayFor(modelItem => item.User.Name)
             </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.UCAT_ID">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.UCAT_ID">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.UCAT_ID">Delete</a>
-            </td>
+                <td class="text-center">
+                    <div class="d-flex justify-content-center gap-2">
+                        <a asp-action="Edit" asp-route-id="@item.UCAT_ID" class="text-decoration-none">
+                            <button type="button" class="edit-button">
+                                <i class="fa-solid fa-pen text-white edit-svgIcon"></i>
+                            </button>
+                        </a>
+                        <button popovertarget="popover-delete-@item.UCAT_ID" class="trash-button">
+                            <i class="fa-solid fa-trash text-white trash-svgIcon"></i>
+                        </button>
+                        <div id="popover-delete-@item.UCAT_ID" popover class="popover-delete rounded rounded-3 border-success-subtle border-2">
+                            <div class="container" style="max-width: 400px;">
+                                <div class="row">
+                                    <h1>Bạn có thực sự muốn @item.Category.Name khỏi yêu thích không?</h1>
+                                </div>
+                                <div class="row">
+                                    <form asp-action="DeleteConfirmed" method="post" class="d-inline" onsubmit="return confirm('Bạn thực sự muốn xóa không?');">
+                                        @Html.AntiForgeryToken()
+                                        <input type="hidden" name="id" value="@item.UCAT_ID" />
+                                        <button type="submit">
+                                            <i class="fa-solid fa-trash text-white trash-svgIcon"></i>Xóa
+                                        </button>
+                                        <button type="button" class="close-button" onclick="location.reload()">
+                                            <i class="fa-solid fa-times text-white"></i> Đóng
+                                        </button>
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </td>
         </tr>
 }
     </tbody>
 </table>
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    <script>
+        function reloadPage() {
+            location.reload();
+        }
+    </script>
+}

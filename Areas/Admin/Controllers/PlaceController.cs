@@ -22,7 +22,7 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
         // GET: Admin/Place
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Place.ToListAsync());
+            return View(await _context.Places.ToListAsync());
         }
 
         // GET: Admin/Place/Details/5
@@ -33,7 +33,7 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
                 return NotFound();
             }
 
-            var place = await _context.Place
+            var place = await _context.Places
                 .FirstOrDefaultAsync(m => m.PLA_ID == id);
             if (place == null)
             {
@@ -73,7 +73,7 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
                 return NotFound();
             }
 
-            var place = await _context.Place.FindAsync(id);
+            var place = await _context.Places.FindAsync(id);
             if (place == null)
             {
                 return NotFound();
@@ -124,7 +124,7 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
                 return NotFound();
             }
 
-            var place = await _context.Place
+            var place = await _context.Places
                 .FirstOrDefaultAsync(m => m.PLA_ID == id);
             if (place == null)
             {
@@ -139,10 +139,10 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var place = await _context.Place.FindAsync(id);
+            var place = await _context.Places.FindAsync(id);
             if (place != null)
             {
-                _context.Place.Remove(place);
+                _context.Places.Remove(place);
             }
 
             await _context.SaveChangesAsync();
@@ -151,7 +151,7 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
 
         private bool PlaceExists(int id)
         {
-            return _context.Place.Any(e => e.PLA_ID == id);
+            return _context.Places.Any(e => e.PLA_ID == id);
         }
     }
 }

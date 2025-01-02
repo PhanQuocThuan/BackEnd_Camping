@@ -53,8 +53,8 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
         // GET: Admin/UserBrand/Create
         public IActionResult Create()
         {
-            ViewData["BRA_ID"] = new SelectList(_context.Brand, "BRA_ID", "Name");
-            ViewData["USE_ID"] = new SelectList(_context.User, "USE_ID", "Name");
+            ViewData["BRA_ID"] = new SelectList(_context.Brands, "BRA_ID", "Name");
+            ViewData["USE_ID"] = new SelectList(_context.Users, "USE_ID", "Name");
             return View();
         }
 
@@ -77,8 +77,8 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["BRA_ID"] = new SelectList(_context.Brand, "BRA_ID", "Name", userBrands.BRA_ID);
-            ViewData["USE_ID"] = new SelectList(_context.User, "USE_ID", "Name", userBrands.USE_ID);
+            ViewData["BRA_ID"] = new SelectList(_context.Brands, "BRA_ID", "Name", userBrands.BRA_ID);
+            ViewData["USE_ID"] = new SelectList(_context.Users, "USE_ID", "Name", userBrands.USE_ID);
             return View(userBrands);
         }
 
@@ -90,14 +90,17 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
                 return NotFound();
             }
 
-            var userBrands = await _context.UserBrands.FindAsync(id);
-            if (userBrands == null)
+            var userBrand = _context.UserBrands
+        .Include(ub => ub.Brand)
+        .Include(ub => ub.User)
+        .FirstOrDefault(ub => ub.UBRA_ID == id);
+            if (userBrand == null)
             {
                 return NotFound();
             }
-            ViewData["BRA_ID"] = new SelectList(_context.Brand, "BRA_ID", "Name", userBrands.BRA_ID);
-            ViewData["USE_ID"] = new SelectList(_context.User, "USE_ID", "Name", userBrands.USE_ID);
-            return View(userBrands);
+            ViewData["BRA_ID"] = new SelectList(_context.Brands, "BRA_ID", "Name", userBrand.BRA_ID);
+            ViewData["USE_ID"] = new SelectList(_context.Users, "USE_ID", "Name", userBrand.USE_ID);
+            return View(userBrand);
         }
 
         // POST: Admin/UserBrand/Edit/5
@@ -136,8 +139,8 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["BRA_ID"] = new SelectList(_context.Brand, "BRA_ID", "Name", userBrands.BRA_ID);
-            ViewData["USE_ID"] = new SelectList(_context.User, "USE_ID", "Name", userBrands.USE_ID);
+            ViewData["BRA_ID"] = new SelectList(_context.Brands, "BRA_ID", "Name", userBrands.BRA_ID);
+            ViewData["USE_ID"] = new SelectList(_context.Users, "USE_ID", "Name", userBrands.USE_ID);
             return View(userBrands);
         }
 

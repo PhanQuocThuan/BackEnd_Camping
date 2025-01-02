@@ -24,9 +24,10 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
         public async Task<IActionResult> Index(string searchQuery)
         {
             var users = string.IsNullOrEmpty(searchQuery)
-       ? await _context.User.Include(u => u.UserBrands).ThenInclude(ub => ub.Brand).ToListAsync()
-       : await _context.User
+       ? await _context.Users.Include(u => u.UserBrands).ThenInclude(ub => ub.Brand).ToListAsync()
+       : await _context.Users
        .Include(u => u.UserBrands).ThenInclude(ub => ub.Brand)
+       .Include(u => u.UserCategories).ThenInclude(ub => ub.Category)
            .Where(b => b.Name.Contains(searchQuery) ||
                        b.UserName.Contains(searchQuery) ||
                        b.Email.Contains(searchQuery) ||
@@ -46,8 +47,8 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
             {
                 return NotFound();
             }
-
-            var user = await _context.User
+            
+            var user = await _context.Users
                 .FirstOrDefaultAsync(m => m.USE_ID == id);
             if (user == null)
             {
@@ -70,8 +71,8 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([FromForm] User user)
         {
-            bool emailExists = await _context.User.AnyAsync(u => u.Email == user.Email);
-            bool userNameExists = await _context.User.AnyAsync(u => u.UserName == user.UserName);
+            bool emailExists = await _context.Users.AnyAsync(u => u.Email == user.Email);
+            bool userNameExists = await _context.Users.AnyAsync(u => u.UserName == user.UserName);
 
             if (emailExists || userNameExists)
             {
@@ -111,7 +112,7 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
                 return NotFound();
             }
 
-            var user = await _context.User.FindAsync(id);
+            var user = await _context.Users.FindAsync(id);
             if (user == null)
             {
                 return NotFound();
@@ -174,17 +175,17 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var hasProducts = await _context.Order.AnyAsync(p => p.USE_ID == id);
+            var hasProducts = await _context.Orders.AnyAsync(p => p.USE_ID == id);
             if (hasProducts)
             {
                 TempData["ErrorMessage"] = "Không thể xóa người dùng này vì có đơn hàng hoặc yêu thích liên quan.";
                 return RedirectToAction(nameof(Index));
             }
 
-            var user = await _context.User.FindAsync(id);
+            var user = await _context.Users.FindAsync(id);
             if (user != null)
             {
-                _context.User.Remove(user);
+                _context.Users.Remove(user);
                 await _context.SaveChangesAsync();
                 TempData["SuccessMessage"] = "Người dùng đã được xóa thành công.";
             }
@@ -198,7 +199,7 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
 
         private bool UserExists(int id)
         {
-            return _context.User.Any(e => e.USE_ID == id);
+            return _context.Users.Any(e => e.USE_ID == id);
         }
         // GET: Admin/UserCustomer/Favorites/5
         public async Task<IActionResult> Favorites(int? id)
@@ -227,7 +228,7 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
             }
 
             // Gán tên người dùng vào ViewData để hiển thị
-            ViewData["UserName"] = await _context.User
+            ViewData["UserName"] = await _context.Users
                 .Where(u => u.USE_ID == id)
                 .Select(u => u.Name)
                 .FirstOrDefaultAsync();
@@ -235,7 +236,39 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
             return View("~/Areas/Admin/Views/UserCustomer/Favorites.cshtml", favoriteBrands);
 
         }
+        public async Task<IActionResult> FavoriteCategory(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
 
+            // Lấy danh sách thương hiệu yêu thích của người dùng
+            var favoriteCategories = await _context.UserCategories
+                .Where(uf => uf.USE_ID == id)
+                .Include(uf => uf.Category) // Include để lấy thông tin Brand
+                .Select(uf => new Brand
+                {
+                    BRA_ID = uf.Category.CAT_ID,
+                    Name = uf.Category.Name,
+                })
+                .ToListAsync();
+
+            if (favoriteCategories == null || !favoriteCategories.Any())
+            {
+                TempData["ErrorMessage"] = "Người dùng này không có thương hiệu yêu thích nào.";
+                return RedirectToAction(nameof(Index));
+            }
+
+            // Gán tên người dùng vào ViewData để hiển thị
+            ViewData["UserName"] = await _context.Users
+                .Where(u => u.USE_ID == id)
+                .Select(u => u.Name)
+                .FirstOrDefaultAsync();
+
+            return View("~/Areas/Admin/Views/UserCustomer/FavoriteCategory.cshtml", favoriteCategories);
+
+        }
 
     }
 }

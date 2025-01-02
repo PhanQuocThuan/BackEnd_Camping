@@ -22,7 +22,7 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
         // GET: Admin/OrderDetail
         public async Task<IActionResult> Index()
         {
-            var campingContext = _context.OrderDetail.Include(o => o.Order).Include(o => o.Product);
+            var campingContext = _context.OrderDetails.Include(o => o.Order).Include(o => o.Product);
             return View(await campingContext.ToListAsync());
         }
 
@@ -34,7 +34,7 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
                 return NotFound();
             }
 
-            var orderDetail = await _context.OrderDetail
+            var orderDetail = await _context.OrderDetails
                 .Include(o => o.Order)
                 .Include(o => o.Product)
                 .FirstOrDefaultAsync(m => m.ORDD_ID == id);
@@ -49,8 +49,8 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
         // GET: Admin/OrderDetail/Create
         public IActionResult Create()
         {
-            ViewData["ORD_ID"] = new SelectList(_context.Order, "ORD_ID", "ORD_ID");
-            ViewData["PRO_ID"] = new SelectList(_context.Product, "PRO_ID", "Name");
+            ViewData["ORD_ID"] = new SelectList(_context.Orders, "ORD_ID", "ORD_ID");
+            ViewData["PRO_ID"] = new SelectList(_context.Products, "PRO_ID", "Name");
             return View();
         }
 
@@ -67,8 +67,8 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["ORD_ID"] = new SelectList(_context.Order, "ORD_ID", "ORD_ID", orderDetail.ORD_ID);
-            ViewData["PRO_ID"] = new SelectList(_context.Product, "PRO_ID", "Name", orderDetail.PRO_ID);
+            ViewData["ORD_ID"] = new SelectList(_context.Orders, "ORD_ID", "ORD_ID", orderDetail.ORD_ID);
+            ViewData["PRO_ID"] = new SelectList(_context.Products, "PRO_ID", "Name", orderDetail.PRO_ID);
             return View(orderDetail);
         }
 
@@ -80,13 +80,13 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
                 return NotFound();
             }
 
-            var orderDetail = await _context.OrderDetail.FindAsync(id);
+            var orderDetail = await _context.OrderDetails.FindAsync(id);
             if (orderDetail == null)
             {
                 return NotFound();
             }
-            ViewData["ORD_ID"] = new SelectList(_context.Order, "ORD_ID", "ORD_ID", orderDetail.ORD_ID);
-            ViewData["PRO_ID"] = new SelectList(_context.Product, "PRO_ID", "Name", orderDetail.PRO_ID);
+            ViewData["ORD_ID"] = new SelectList(_context.Orders, "ORD_ID", "ORD_ID", orderDetail.ORD_ID);
+            ViewData["PRO_ID"] = new SelectList(_context.Products, "PRO_ID", "Name", orderDetail.PRO_ID);
             return View(orderDetail);
         }
 
@@ -122,8 +122,8 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["ORD_ID"] = new SelectList(_context.Order, "ORD_ID", "ORD_ID", orderDetail.ORD_ID);
-            ViewData["PRO_ID"] = new SelectList(_context.Product, "PRO_ID", "Name", orderDetail.PRO_ID);
+            ViewData["ORD_ID"] = new SelectList(_context.Orders, "ORD_ID", "ORD_ID", orderDetail.ORD_ID);
+            ViewData["PRO_ID"] = new SelectList(_context.Products, "PRO_ID", "Name", orderDetail.PRO_ID);
             return View(orderDetail);
         }
 
@@ -135,7 +135,7 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
                 return NotFound();
             }
 
-            var orderDetail = await _context.OrderDetail
+            var orderDetail = await _context.OrderDetails
                 .Include(o => o.Order)
                 .Include(o => o.Product)
                 .FirstOrDefaultAsync(m => m.ORDD_ID == id);
@@ -152,10 +152,10 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var orderDetail = await _context.OrderDetail.FindAsync(id);
+            var orderDetail = await _context.OrderDetails.FindAsync(id);
             if (orderDetail != null)
             {
-                _context.OrderDetail.Remove(orderDetail);
+                _context.OrderDetails.Remove(orderDetail);
             }
 
             await _context.SaveChangesAsync();
@@ -164,7 +164,7 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
 
         private bool OrderDetailExists(int id)
         {
-            return _context.OrderDetail.Any(e => e.ORDD_ID == id);
+            return _context.OrderDetails.Any(e => e.ORDD_ID == id);
         }
     }
 }

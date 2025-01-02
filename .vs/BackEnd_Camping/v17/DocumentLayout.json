@@ -3,72 +3,76 @@
   "WorkspaceRootPath": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\areas\\admin\\views\\userbrand\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:areas\\admin\\views\\userbrand\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\areas\\admin\\views\\product\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:areas\\admin\\views\\product\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\areas\\admin\\views\\userbrand\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:areas\\admin\\views\\userbrand\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\areas\\admin\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:areas\\admin\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\areas\\admin\\views\\usercustomer\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:areas\\admin\\views\\usercustomer\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\areas\\admin\\views\\usercustomer\\favorites.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:areas\\admin\\views\\usercustomer\\favorites.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\areas\\admin\\controllers\\usercustomercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:areas\\admin\\controllers\\usercustomercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\models\\userbrands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:models\\userbrands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\models\\brand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:models\\brand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\areas\\admin\\controllers\\usercategoriecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:areas\\admin\\controllers\\usercategoriecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\areas\\admin\\controllers\\userbrandcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:areas\\admin\\controllers\\userbrandcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\models\\campingcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:models\\campingcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\areas\\admin\\controllers\\userbrandcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:areas\\admin\\controllers\\userbrandcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\models\\orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:models\\orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\views\\product\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:views\\product\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\controllers\\usercustomercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:controllers\\usercustomercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\areas\\admin\\controllers\\usercustomercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:areas\\admin\\controllers\\usercustomercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\areas\\admin\\controllers\\usercategoriecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:areas\\admin\\controllers\\usercategoriecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\areas\\admin\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:areas\\admin\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\areas\\admin\\controllers\\menucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:areas\\admin\\controllers\\menucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\areas\\admin\\controllers\\settingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:areas\\admin\\controllers\\settingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\areas\\admin\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:areas\\admin\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\areas\\admin\\controllers\\reviewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:areas\\admin\\controllers\\reviewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\areas\\admin\\controllers\\placecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -77,10 +81,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\areas\\admin\\controllers\\orderdetailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:areas\\admin\\controllers\\orderdetailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\areas\\admin\\controllers\\menucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:areas\\admin\\controllers\\menucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\areas\\admin\\controllers\\featurecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -103,36 +103,56 @@
       "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:areas\\admin\\controllers\\bannercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\areas\\admin\\controllers\\adminusercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:areas\\admin\\controllers\\adminusercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\models\\basemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:models\\basemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\models\\brand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:models\\brand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\areas\\admin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:areas\\admin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\views\\checkout\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:views\\checkout\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\areas\\admin\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:areas\\admin\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\areas\\admin\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:areas\\admin\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\views\\category\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:views\\category\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\areas\\admin\\views\\brand\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:areas\\admin\\views\\brand\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\controllers\\brandcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:controllers\\brandcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\wwwroot\\css\\login.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:wwwroot\\css\\login.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\areas\\admin\\dtos\\registeruserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:areas\\admin\\dtos\\registeruserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\areas\\admin\\dtos\\loginuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:areas\\admin\\dtos\\loginuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\views\\usercustomer\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:views\\usercustomer\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\areas\\admin\\views\\user\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:areas\\admin\\views\\user\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\views\\usercustomer\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:views\\usercustomer\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\areas\\admin\\dtos\\response\\viewbrand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -143,8 +163,96 @@
       "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:areas\\admin\\views\\usercategorie\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\areas\\admin\\views\\userbrand\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:areas\\admin\\views\\userbrand\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\areas\\admin\\views\\userbrand\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:areas\\admin\\views\\userbrand\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\areas\\admin\\views\\usercategorie\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:areas\\admin\\views\\usercategorie\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\areas\\admin\\views\\usercategorie\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:areas\\admin\\views\\usercategorie\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\areas\\admin\\views\\userbrand\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:areas\\admin\\views\\userbrand\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\areas\\admin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:areas\\admin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\wwwroot\\admin\\css\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:wwwroot\\admin\\css\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\wwwroot\\css\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:wwwroot\\css\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\areas\\admin\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:areas\\admin\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\areas\\admin\\views\\userbrand\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:areas\\admin\\views\\userbrand\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\areas\\admin\\views\\product\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:areas\\admin\\views\\product\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\areas\\admin\\views\\usercustomer\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:areas\\admin\\views\\usercustomer\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\areas\\admin\\views\\usercustomer\\favorites.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:areas\\admin\\views\\usercustomer\\favorites.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\models\\userbrands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:models\\userbrands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\areas\\admin\\controllers\\adminusercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:areas\\admin\\controllers\\adminusercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\models\\basemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:models\\basemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\areas\\admin\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:areas\\admin\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\areas\\admin\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:areas\\admin\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\areas\\admin\\views\\brand\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:areas\\admin\\views\\brand\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\wwwroot\\css\\login.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:wwwroot\\css\\login.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\models\\usercategories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -159,18 +267,6 @@
       "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:areas\\admin\\views\\usercustomer\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\middleware\\adminaccessmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:middleware\\adminaccessmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\controllers\\usercustomercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:controllers\\usercustomercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\views\\user\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:views\\user\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\utils\\sessionextention.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:utils\\sessionextention.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -179,20 +275,8 @@
       "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:utils\\cookiesextention.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\areas\\admin\\dtos\\loginuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:areas\\admin\\dtos\\loginuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\areas\\admin\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:areas\\admin\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\areas\\admin\\views\\user\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:areas\\admin\\views\\user\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\areas\\admin\\views\\category\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -215,10 +299,6 @@
       "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:areas\\admin\\views\\product\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\areas\\admin\\views\\brand\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:areas\\admin\\views\\brand\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -235,20 +315,8 @@
       "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:areas\\admin\\dtos\\request\\bannerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\areas\\admin\\controllers\\reviewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:areas\\admin\\controllers\\reviewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\areas\\admin\\views\\category\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:areas\\admin\\views\\category\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\areas\\admin\\views\\category\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -281,10 +349,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\areas\\admin\\views\\orderdetail\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:areas\\admin\\views\\orderdetail\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\areas\\admin\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:areas\\admin\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\areas\\admin\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -331,10 +395,6 @@
       "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:models\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\models\\orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:models\\orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\models\\feature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:models\\feature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -349,10 +409,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\models\\adminuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:models\\adminuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|c:\\users\\pc\\source\\repos\\backend_camping\\backend_camping.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{A7B9B25F-8D12-4555-999D-C2BA3FB5CBFB}|BackEnd_Camping.csproj|solutionrelative:backend_camping.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -362,7 +418,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 979,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -374,262 +430,275 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Views\\UserCustomer\\Index.cshtml",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\UserCustomer\\Index.cshtml",
-              "ToolTip": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Views\\UserCustomer\\Index.cshtml",
-              "RelativeToolTip": "Areas\\Admin\\Views\\UserCustomer\\Index.cshtml",
-              "ViewState": "AQIAAEwAAAAAAAAAAAAAADMAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-28T06:01:43.068Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "UserBrands.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Models\\UserBrands.cs",
-              "RelativeDocumentMoniker": "Models\\UserBrands.cs",
-              "ToolTip": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Models\\UserBrands.cs",
-              "RelativeToolTip": "Models\\UserBrands.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAwAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T05:20:08.798Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Models\\User.cs",
-              "RelativeDocumentMoniker": "Models\\User.cs",
-              "ToolTip": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Models\\User.cs",
-              "RelativeToolTip": "Models\\User.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAA4wBQAAABBAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T05:20:01.201Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAACQAAAAAAAAAAAAAwDcAAABDAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T05:04:47.385Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Views\\UserBrand\\Index.cshtml",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\UserBrand\\Index.cshtml",
-              "ToolTip": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Views\\UserBrand\\Index.cshtml",
-              "RelativeToolTip": "Areas\\Admin\\Views\\UserBrand\\Index.cshtml",
-              "ViewState": "AQIAACoAAAAAAAAAAAAowDoAAAA+AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-29T15:04:36.268Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Views\\Product\\Index.cshtml",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Product\\Index.cshtml",
-              "ToolTip": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Views\\Product\\Index.cshtml",
-              "RelativeToolTip": "Areas\\Admin\\Views\\Product\\Index.cshtml",
-              "ViewState": "AQIAAM0AAAAAAAAAAAAjwN4AAAA8AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-27T09:26:46.259Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Views\\Product\\Create.cshtml",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Product\\Create.cshtml",
-              "ToolTip": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Views\\Product\\Create.cshtml",
-              "RelativeToolTip": "Areas\\Admin\\Views\\Product\\Create.cshtml",
-              "ViewState": "AQIAAFoAAAAAAAAAAAAAAGkAAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-27T09:53:58.621Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Views\\UserBrand\\Create.cshtml",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\UserBrand\\Create.cshtml",
-              "ToolTip": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Views\\UserBrand\\Create.cshtml",
-              "RelativeToolTip": "Areas\\Admin\\Views\\UserBrand\\Create.cshtml",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABMAAABKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-30T00:37:56.778Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "UserCustomerController.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Controllers\\UserCustomerController.cs",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\UserCustomerController.cs",
-              "ToolTip": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Controllers\\UserCustomerController.cs",
-              "RelativeToolTip": "Areas\\Admin\\Controllers\\UserCustomerController.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAswMsAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T05:40:38.399Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Favorites.cshtml",
-              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Views\\UserCustomer\\Favorites.cshtml",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\UserCustomer\\Favorites.cshtml",
-              "ToolTip": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Views\\UserCustomer\\Favorites.cshtml",
-              "RelativeToolTip": "Areas\\Admin\\Views\\UserCustomer\\Favorites.cshtml",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAsAAAAPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-30T01:27:27.548Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "UserCategorieController.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Controllers\\UserCategorieController.cs",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\UserCategorieController.cs",
-              "ToolTip": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Controllers\\UserCategorieController.cs",
-              "RelativeToolTip": "Areas\\Admin\\Controllers\\UserCategorieController.cs",
-              "ViewState": "AQIAAIoAAAAAAAAAAAAAwIQAAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T05:53:26.942Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Brand.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Models\\Brand.cs",
-              "RelativeDocumentMoniker": "Models\\Brand.cs",
-              "ToolTip": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Models\\Brand.cs",
-              "RelativeToolTip": "Models\\Brand.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAmwBUAAAAuAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T05:19:10.205Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Product.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Models\\Product.cs",
-              "RelativeDocumentMoniker": "Models\\Product.cs",
-              "ToolTip": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Models\\Product.cs",
-              "RelativeToolTip": "Models\\Product.cs",
-              "ViewState": "AQIAABwAAAAAAAAAAAAwwB8AAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T05:19:55.526Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "CampingContext.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Models\\CampingContext.cs",
-              "RelativeDocumentMoniker": "Models\\CampingContext.cs",
-              "ToolTip": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Models\\CampingContext.cs",
-              "RelativeToolTip": "Models\\CampingContext.cs",
-              "ViewState": "AQIAABQAAAAAAAAAAAA0wBoAAABCAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T05:15:43.901Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
               "Title": "UserBrandController.cs",
               "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Controllers\\UserBrandController.cs",
               "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\UserBrandController.cs",
               "ToolTip": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Controllers\\UserBrandController.cs",
               "RelativeToolTip": "Areas\\Admin\\Controllers\\UserBrandController.cs",
-              "ViewState": "AQIAAIsAAAAAAAAAAAAwwCIAAAAgAAAA",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAAwFUAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-25T05:52:41.624Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CampingContext.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Models\\CampingContext.cs",
+              "RelativeDocumentMoniker": "Models\\CampingContext.cs",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Models\\CampingContext.cs",
+              "RelativeToolTip": "Models\\CampingContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-25T05:15:43.901Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAHQAAAAAAAAAAAAjwIYAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-25T05:12:39.171Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "UserCategorieController.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Controllers\\UserCategorieController.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\UserCategorieController.cs",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Controllers\\UserCategorieController.cs",
+              "RelativeToolTip": "Areas\\Admin\\Controllers\\UserCategorieController.cs",
+              "ViewState": "AQIAADcAAAAAAAAAAAAYwDQAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-25T05:53:26.942Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAMAAAAAAAAAAAIBJwNUAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-25T05:12:33.541Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Detail.cshtml",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Views\\Product\\Detail.cshtml",
+              "RelativeDocumentMoniker": "Views\\Product\\Detail.cshtml",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Views\\Product\\Detail.cshtml",
+              "RelativeToolTip": "Views\\Product\\Detail.cshtml",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAAwDgAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-31T03:58:52.859Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Models\\User.cs",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Models\\User.cs",
+              "RelativeToolTip": "Models\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-25T05:20:01.201Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CartController.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Controllers\\CartController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CartController.cs",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Controllers\\CartController.cs",
+              "RelativeToolTip": "Controllers\\CartController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-31T03:54:21.735Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "OrderDetail.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Models\\OrderDetail.cs",
+              "RelativeDocumentMoniker": "Models\\OrderDetail.cs",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Models\\OrderDetail.cs",
+              "RelativeToolTip": "Models\\OrderDetail.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAAABIAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-25T05:19:50.503Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAIBQwDAAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-25T05:04:47.385Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAwAoAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-25T05:11:32.5Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "Controllers\\ProductController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-31T04:00:18.057Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "UserCustomerController.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Controllers\\UserCustomerController.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\UserCustomerController.cs",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Controllers\\UserCustomerController.cs",
+              "RelativeToolTip": "Areas\\Admin\\Controllers\\UserCustomerController.cs",
+              "ViewState": "AQIAAPsAAAAAAAAAAAAYwAcBAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-25T05:40:38.399Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "UserCustomerController.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Controllers\\UserCustomerController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UserCustomerController.cs",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Controllers\\UserCustomerController.cs",
+              "RelativeToolTip": "Controllers\\UserCustomerController.cs",
+              "ViewState": "AQIAADEAAAAAAAAAAAAowCYAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-29T07:12:15.852Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\OrderController.cs",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "Areas\\Admin\\Controllers\\OrderController.cs",
+              "ViewState": "AQIAAIkAAAAAAAAAAAAQwJQAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-25T05:41:54.962Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 15,
+              "Title": "MenuController.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Controllers\\MenuController.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\MenuController.cs",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Controllers\\MenuController.cs",
+              "RelativeToolTip": "Areas\\Admin\\Controllers\\MenuController.cs",
+              "ViewState": "AQIAAJcAAAAAAAAAAAA2wJkAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-25T05:39:29.403Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "SettingController.cs",
               "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Controllers\\SettingController.cs",
               "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\SettingController.cs",
               "ToolTip": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Controllers\\SettingController.cs",
               "RelativeToolTip": "Areas\\Admin\\Controllers\\SettingController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAIYAAAAAAAAAAIBJwJkAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-25T05:44:44.104Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "ProductController.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Controllers\\ProductController.cs",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\ProductController.cs",
-              "ToolTip": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Controllers\\ProductController.cs",
-              "RelativeToolTip": "Areas\\Admin\\Controllers\\ProductController.cs",
-              "ViewState": "AQIAANgAAAAAAAAAAAAgwDYAAAAmAAAA",
+              "DocumentIndex": 17,
+              "Title": "ReviewController.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Controllers\\ReviewController.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\ReviewController.cs",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Controllers\\ReviewController.cs",
+              "RelativeToolTip": "Areas\\Admin\\Controllers\\ReviewController.cs",
+              "ViewState": "AQIAAJsAAAAAAAAAAAAQwKYAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T05:41:19.16Z",
+              "WhenOpened": "2024-12-25T05:44:01.592Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "PlaceController.cs",
               "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Controllers\\PlaceController.cs",
               "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\PlaceController.cs",
               "ToolTip": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Controllers\\PlaceController.cs",
               "RelativeToolTip": "Areas\\Admin\\Controllers\\PlaceController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAtAAAA",
+              "ViewState": "AQIAABgAAAAAAAAAAAAQwCMAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-25T05:43:16.875Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "OrderDetailController.cs",
               "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Controllers\\OrderDetailController.cs",
               "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\OrderDetailController.cs",
               "ToolTip": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Controllers\\OrderDetailController.cs",
               "RelativeToolTip": "Areas\\Admin\\Controllers\\OrderDetailController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAUwBoAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-25T05:42:37.21Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "MenuController.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Controllers\\MenuController.cs",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\MenuController.cs",
-              "ToolTip": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Controllers\\MenuController.cs",
-              "RelativeToolTip": "Areas\\Admin\\Controllers\\MenuController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 20,
+              "Title": "FeatureController.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Controllers\\FeatureController.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\FeatureController.cs",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Controllers\\FeatureController.cs",
+              "RelativeToolTip": "Areas\\Admin\\Controllers\\FeatureController.cs",
+              "ViewState": "AQIAAI8AAAAAAAAAAAAIwJkAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T05:39:29.403Z",
+              "WhenOpened": "2024-12-25T05:38:49.56Z",
               "EditorCaption": ""
             },
             {
@@ -640,7 +709,7 @@
               "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\ContactsController.cs",
               "ToolTip": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Controllers\\ContactsController.cs",
               "RelativeToolTip": "Areas\\Admin\\Controllers\\ContactsController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "ViewState": "AQIAAJoAAAAAAAAAAIBJwJkAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-25T05:38:09.494Z",
               "EditorCaption": ""
@@ -653,7 +722,7 @@
               "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\CategoryController.cs",
               "ToolTip": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Controllers\\CategoryController.cs",
               "RelativeToolTip": "Areas\\Admin\\Controllers\\CategoryController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwB8AAAA7AAAA",
+              "ViewState": "AQIAAJsAAAAAAAAAAAAQwKYAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-25T05:37:34.735Z",
               "EditorCaption": ""
@@ -666,7 +735,7 @@
               "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\BrandController.cs",
               "ToolTip": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Controllers\\BrandController.cs",
               "RelativeToolTip": "Areas\\Admin\\Controllers\\BrandController.cs",
-              "ViewState": "AQIAAEMAAAAAAAAAAAAQwE8AAAAhAAAA",
+              "ViewState": "AQIAAOUAAAAAAAAAAAAUwPcAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-25T05:36:57.363Z",
               "EditorCaption": ""
@@ -679,14 +748,430 @@
               "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\BannerController.cs",
               "ToolTip": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Controllers\\BannerController.cs",
               "RelativeToolTip": "Areas\\Admin\\Controllers\\BannerController.cs",
-              "ViewState": "AQIAAD8AAAAAAAAAAAAowAAAAAAAAAAA",
+              "ViewState": "AQIAAI4AAAAAAAAAAAAQwJkAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-25T05:36:22.567Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Views\\Product\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Product\\Index.cshtml",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Views\\Product\\Index.cshtml",
+              "RelativeToolTip": "Views\\Product\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-31T03:58:30.134Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Views\\Category\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Category\\Index.cshtml",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Views\\Category\\Index.cshtml",
+              "RelativeToolTip": "Views\\Category\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-31T03:58:12.576Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "ContactController.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Controllers\\ContactController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ContactController.cs",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Controllers\\ContactController.cs",
+              "RelativeToolTip": "Controllers\\ContactController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-31T03:55:30.385Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 25,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-25T05:18:03.587Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "BrandController.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Controllers\\BrandController.cs",
+              "RelativeDocumentMoniker": "Controllers\\BrandController.cs",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Controllers\\BrandController.cs",
+              "RelativeToolTip": "Controllers\\BrandController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-31T03:54:54.261Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CategoryController.cs",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "Controllers\\CategoryController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-31T03:54:44.543Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Brand.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Models\\Brand.cs",
+              "RelativeDocumentMoniker": "Models\\Brand.cs",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Models\\Brand.cs",
+              "RelativeToolTip": "Models\\Brand.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAqwBQAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-25T05:19:10.205Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Views\\Checkout\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Checkout\\Index.cshtml",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Views\\Checkout\\Index.cshtml",
+              "RelativeToolTip": "Views\\Checkout\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-31T03:59:22.296Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "RegisterUserDTO.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\DTOs\\RegisterUserDTO.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\DTOs\\RegisterUserDTO.cs",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\DTOs\\RegisterUserDTO.cs",
+              "RelativeToolTip": "Areas\\Admin\\DTOs\\RegisterUserDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-31T03:20:01.435Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "LoginUserDTO.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\DTOs\\LoginUserDTO.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\DTOs\\LoginUserDTO.cs",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\DTOs\\LoginUserDTO.cs",
+              "RelativeToolTip": "Areas\\Admin\\DTOs\\LoginUserDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-29T07:27:36.303Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Views\\UserCustomer\\Login.cshtml",
+              "RelativeDocumentMoniker": "Views\\UserCustomer\\Login.cshtml",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Views\\UserCustomer\\Login.cshtml",
+              "RelativeToolTip": "Views\\UserCustomer\\Login.cshtml",
+              "ViewState": "AQIAAAwAAAAAAAAAAIBJwBwAAABSAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-29T07:17:10.111Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "ViewBrand.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\DTOs\\response\\ViewBrand.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\DTOs\\response\\ViewBrand.cs",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\DTOs\\response\\ViewBrand.cs",
+              "RelativeToolTip": "Areas\\Admin\\DTOs\\response\\ViewBrand.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAIBJwAcAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-25T08:11:36.961Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "styles.css",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\wwwroot\\admin\\css\\styles.css",
+              "RelativeDocumentMoniker": "wwwroot\\admin\\css\\styles.css",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\wwwroot\\admin\\css\\styles.css",
+              "RelativeToolTip": "wwwroot\\admin\\css\\styles.css",
+              "ViewState": "AQIAAGwEAAAAAAAAAADwv4AEAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-12-26T06:17:20.636Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Views\\User\\Login.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\User\\Login.cshtml",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Views\\User\\Login.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\User\\Login.cshtml",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAowCYAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-25T05:32:27.988Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Views\\UserCustomer\\Register.cshtml",
+              "RelativeDocumentMoniker": "Views\\UserCustomer\\Register.cshtml",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Views\\UserCustomer\\Register.cshtml",
+              "RelativeToolTip": "Views\\UserCustomer\\Register.cshtml",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAowDIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-31T03:14:23.45Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Views\\UserCategorie\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\UserCategorie\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Views\\UserCategorie\\Edit.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\UserCategorie\\Edit.cshtml",
+              "ViewState": "AQIAABMAAAAAAAAAAAAAwCUAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-30T16:15:20.403Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Views\\UserCategorie\\Create.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\UserCategorie\\Create.cshtml",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Views\\UserCategorie\\Create.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\UserCategorie\\Create.cshtml",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAAwAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-30T16:11:59.847Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Views\\UserBrand\\Index.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\UserBrand\\Index.cshtml",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Views\\UserBrand\\Index.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\UserBrand\\Index.cshtml",
+              "ViewState": "AQIAAD8AAAAAAAAAAIBJwEsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-29T15:04:36.268Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Views\\UserCategorie\\Index.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\UserCategorie\\Index.cshtml",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Views\\UserCategorie\\Index.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\UserCategorie\\Index.cshtml",
+              "ViewState": "AQIAADwAAAAAAAAAAAAAwEMAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-29T15:05:36.239Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Views\\UserBrand\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\UserBrand\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Views\\UserBrand\\Edit.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\UserBrand\\Edit.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAABKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-30T03:29:44.374Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Views\\UserBrand\\Create.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\UserBrand\\Create.cshtml",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Views\\UserBrand\\Create.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\UserBrand\\Create.cshtml",
+              "ViewState": "AQIAAAwAAAAAAAAAAIBJwCMAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-30T00:37:56.778Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAMcAAAAAAAAAAAAjwNIAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-25T05:24:08.176Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "styles.css",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\wwwroot\\css\\styles.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\styles.css",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\wwwroot\\css\\styles.css",
+              "RelativeToolTip": "wwwroot\\css\\styles.css",
+              "ViewState": "AQIAAMEDAAAAAAAAAIBJwM0DAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-12-30T15:07:34.781Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Views\\Cart\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Cart\\Index.cshtml",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Views\\Cart\\Index.cshtml",
+              "RelativeToolTip": "Views\\Cart\\Index.cshtml",
+              "ViewState": "AQIAAJkAAAAAAAAAAAAjwKMAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-30T15:22:30.62Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Views\\Product\\Create.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Product\\Create.cshtml",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Views\\Product\\Create.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Product\\Create.cshtml",
+              "ViewState": "AQIAAFcAAAAAAAAAAIBJwGkAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-27T09:53:58.621Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Views\\Product\\Index.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Product\\Index.cshtml",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Views\\Product\\Index.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Product\\Index.cshtml",
+              "ViewState": "AQIAAN0AAAAAAAAAAAAjwPAAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-27T09:26:46.259Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "UserBrands.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Models\\UserBrands.cs",
+              "RelativeDocumentMoniker": "Models\\UserBrands.cs",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Models\\UserBrands.cs",
+              "RelativeToolTip": "Models\\UserBrands.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-25T05:20:08.798Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Models\\Category.cs",
+              "RelativeDocumentMoniker": "Models\\Category.cs",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Models\\Category.cs",
+              "RelativeToolTip": "Models\\Category.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAA0wBkAAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-25T05:19:24.786Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Views\\UserCustomer\\Index.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\UserCustomer\\Index.cshtml",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Views\\UserCustomer\\Index.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\UserCustomer\\Index.cshtml",
+              "ViewState": "AQIAAEkAAAAAAAAAAIBJwDMAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-28T06:01:43.068Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Views\\UserBrand\\Details.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\UserBrand\\Details.cshtml",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Views\\UserBrand\\Details.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\UserBrand\\Details.cshtml",
+              "ViewState": "AQIAABgAAAAAAAAAAIBJwC8AAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-30T03:29:33.269Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "Favorites.cshtml",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Views\\UserCustomer\\Favorites.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\UserCustomer\\Favorites.cshtml",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Views\\UserCustomer\\Favorites.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\UserCustomer\\Favorites.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAIBJwAsAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-30T01:27:27.548Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "Models\\Product.cs",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Models\\Product.cs",
+              "RelativeToolTip": "Models\\Product.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAA/wB8AAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-25T05:19:55.526Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
               "Title": "AdminUserController.cs",
               "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Controllers\\AdminUserController.cs",
               "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\AdminUserController.cs",
@@ -699,20 +1184,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "FeatureController.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Controllers\\FeatureController.cs",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\FeatureController.cs",
-              "ToolTip": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Controllers\\FeatureController.cs",
-              "RelativeToolTip": "Areas\\Admin\\Controllers\\FeatureController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T05:38:49.56Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 58,
               "Title": "BaseModel.cs",
               "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Models\\BaseModel.cs",
               "RelativeDocumentMoniker": "Models\\BaseModel.cs",
@@ -725,20 +1197,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAFcAAAAAAAAAAAAjwGsAAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-25T05:24:08.176Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 59,
               "Title": "_ValidationScriptsPartial.cshtml",
               "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
@@ -751,7 +1210,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 60,
               "Title": "UserController.cs",
               "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\UserController.cs",
@@ -764,20 +1223,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAAACgAAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-25T05:12:39.171Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 61,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Views\\Brand\\Index.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Brand\\Index.cshtml",
@@ -785,11 +1231,12 @@
               "RelativeToolTip": "Areas\\Admin\\Views\\Brand\\Index.cshtml",
               "ViewState": "AQIAABEAAAAAAAAAAADwvx4AAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-25T06:26:22.733Z"
+              "WhenOpened": "2024-12-25T06:26:22.733Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 62,
               "Title": "login.css",
               "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\wwwroot\\css\\login.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\login.css",
@@ -797,47 +1244,12 @@
               "RelativeToolTip": "wwwroot\\css\\login.css",
               "ViewState": "AQIAAG8AAAAAAAAAAAAvwH0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-12-29T07:04:59.437Z"
+              "WhenOpened": "2024-12-29T07:04:59.437Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "ViewBrand.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\DTOs\\response\\ViewBrand.cs",
-              "RelativeDocumentMoniker": "Areas\\Admin\\DTOs\\response\\ViewBrand.cs",
-              "ToolTip": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\DTOs\\response\\ViewBrand.cs",
-              "RelativeToolTip": "Areas\\Admin\\DTOs\\response\\ViewBrand.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T08:11:36.961Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Views\\UserCategorie\\Index.cshtml",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\UserCategorie\\Index.cshtml",
-              "ToolTip": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Views\\UserCategorie\\Index.cshtml",
-              "RelativeToolTip": "Areas\\Admin\\Views\\UserCategorie\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-29T15:05:36.239Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "styles.css",
-              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\wwwroot\\admin\\css\\styles.css",
-              "RelativeDocumentMoniker": "wwwroot\\admin\\css\\styles.css",
-              "ToolTip": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\wwwroot\\admin\\css\\styles.css",
-              "RelativeToolTip": "wwwroot\\admin\\css\\styles.css",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-12-26T06:17:20.636Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 63,
               "Title": "UserCategories.cs",
               "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Models\\UserCategories.cs",
               "RelativeDocumentMoniker": "Models\\UserCategories.cs",
@@ -845,71 +1257,38 @@
               "RelativeToolTip": "Models\\UserCategories.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T05:20:07.865Z"
+              "WhenOpened": "2024-12-25T05:20:07.865Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 65,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Views\\UserCustomer\\Create.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Views\\UserCustomer\\Create.cshtml",
               "ToolTip": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Views\\UserCustomer\\Create.cshtml",
               "RelativeToolTip": "Areas\\Admin\\Views\\UserCustomer\\Create.cshtml",
-              "ViewState": "AQIAACcAAAAAAAAAAAAAACEAAACHAAAA",
+              "ViewState": "AQIAACQAAAAAAAAAAIBJwCEAAACHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-28T06:22:39.23Z"
+              "WhenOpened": "2024-12-28T06:22:39.23Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
-              "Title": "UserCustomerController.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Controllers\\UserCustomerController.cs",
-              "RelativeDocumentMoniker": "Controllers\\UserCustomerController.cs",
-              "ToolTip": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Controllers\\UserCustomerController.cs",
-              "RelativeToolTip": "Controllers\\UserCustomerController.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAAwEMAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-29T07:12:15.852Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 41,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Views\\User\\Login.cshtml",
-              "RelativeDocumentMoniker": "Views\\User\\Login.cshtml",
-              "ToolTip": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Views\\User\\Login.cshtml",
-              "RelativeToolTip": "Views\\User\\Login.cshtml",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAAwBMAAAAGAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-29T07:17:10.111Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 64,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Views\\UserCustomer\\Edit.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Views\\UserCustomer\\Edit.cshtml",
               "ToolTip": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Views\\UserCustomer\\Edit.cshtml",
               "RelativeToolTip": "Areas\\Admin\\Views\\UserCustomer\\Edit.cshtml",
-              "ViewState": "AQIAADkAAAAAAAAAAAAAACcAAAAeAAAA",
+              "ViewState": "AQIAADYAAAAAAAAAAIBJwCcAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-29T08:04:49.668Z"
+              "WhenOpened": "2024-12-29T08:04:49.668Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "AdminAccessMiddleware.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Middleware\\AdminAccessMiddleware.cs",
-              "RelativeDocumentMoniker": "Middleware\\AdminAccessMiddleware.cs",
-              "ToolTip": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Middleware\\AdminAccessMiddleware.cs",
-              "RelativeToolTip": "Middleware\\AdminAccessMiddleware.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAAwCMAAABVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-29T07:45:17.136Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 67,
               "Title": "CookiesExtention.cs",
               "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Utils\\CookiesExtention.cs",
               "RelativeDocumentMoniker": "Utils\\CookiesExtention.cs",
@@ -917,11 +1296,12 @@
               "RelativeToolTip": "Utils\\CookiesExtention.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T05:12:14.454Z"
+              "WhenOpened": "2024-12-25T05:12:14.454Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 68,
               "Title": "LoginDTO.cs",
               "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\DTOs\\LoginDTO.cs",
               "RelativeDocumentMoniker": "Areas\\Admin\\DTOs\\LoginDTO.cs",
@@ -929,23 +1309,12 @@
               "RelativeToolTip": "Areas\\Admin\\DTOs\\LoginDTO.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T05:24:03.05Z"
+              "WhenOpened": "2024-12-25T05:24:03.05Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
-              "Title": "LoginUserDTO.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\DTOs\\LoginUserDTO.cs",
-              "RelativeDocumentMoniker": "Areas\\Admin\\DTOs\\LoginUserDTO.cs",
-              "ToolTip": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\DTOs\\LoginUserDTO.cs",
-              "RelativeToolTip": "Areas\\Admin\\DTOs\\LoginUserDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-29T07:27:36.303Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 66,
               "Title": "SessionExtention.cs",
               "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Utils\\SessionExtention.cs",
               "RelativeDocumentMoniker": "Utils\\SessionExtention.cs",
@@ -953,23 +1322,12 @@
               "RelativeToolTip": "Utils\\SessionExtention.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T05:12:21.92Z"
+              "WhenOpened": "2024-12-25T05:12:21.92Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Views\\User\\Login.cshtml",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\User\\Login.cshtml",
-              "ToolTip": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Views\\User\\Login.cshtml",
-              "RelativeToolTip": "Areas\\Admin\\Views\\User\\Login.cshtml",
-              "ViewState": "AQIAABQAAAAAAAAAAAAowCsAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-25T05:32:27.988Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 69,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Views\\Category\\Index.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Category\\Index.cshtml",
@@ -977,35 +1335,25 @@
               "RelativeToolTip": "Areas\\Admin\\Views\\Category\\Index.cshtml",
               "ViewState": "AQIAAIgAAAAAAAAAAAAAwJcAAABeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-26T02:23:24.775Z"
+              "WhenOpened": "2024-12-26T02:23:24.775Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAAwB4AAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T05:11:32.5Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 70,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Views\\Category\\Create.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Category\\Create.cshtml",
               "ToolTip": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Views\\Category\\Create.cshtml",
               "RelativeToolTip": "Areas\\Admin\\Views\\Category\\Create.cshtml",
-              "ViewState": "AQIAAEUAAAAAAAAAAIBJwFgAAAANAAAA",
+              "ViewState": "AQIAAEIAAAAAAAAAAIBZwFgAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-26T08:11:27.91Z"
+              "WhenOpened": "2024-12-26T08:11:27.91Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 73,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Views\\Product\\Delete.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Product\\Delete.cshtml",
@@ -1013,35 +1361,25 @@
               "RelativeToolTip": "Areas\\Admin\\Views\\Product\\Delete.cshtml",
               "ViewState": "AQIAAFMAAAAAAAAAAAAtwF8AAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-25T05:41:58.45Z"
+              "WhenOpened": "2024-12-25T05:41:58.45Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
-              "Title": "Category.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Models\\Category.cs",
-              "RelativeDocumentMoniker": "Models\\Category.cs",
-              "ToolTip": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Models\\Category.cs",
-              "RelativeToolTip": "Models\\Category.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAADwvxUAAAA0AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T05:19:24.786Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 71,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Views\\Brand\\Delete.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Brand\\Delete.cshtml",
               "ToolTip": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Views\\Brand\\Delete.cshtml",
               "RelativeToolTip": "Areas\\Admin\\Views\\Brand\\Delete.cshtml",
-              "ViewState": "AQIAADMAAAAAAAAAAIBJwEYAAAAwAAAA",
+              "ViewState": "AQIAADAAAAAAAAAAAIBZwEYAAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-25T07:58:40.126Z"
+              "WhenOpened": "2024-12-25T07:58:40.126Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 72,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Views\\Product\\Edit.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Product\\Edit.cshtml",
@@ -1049,11 +1387,12 @@
               "RelativeToolTip": "Areas\\Admin\\Views\\Product\\Edit.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAABMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-27T10:17:13.72Z"
+              "WhenOpened": "2024-12-27T10:17:13.72Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 74,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Views\\Brand\\Create.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Brand\\Create.cshtml",
@@ -1061,23 +1400,25 @@
               "RelativeToolTip": "Areas\\Admin\\Views\\Brand\\Create.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAwEQAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-25T06:29:45.367Z"
+              "WhenOpened": "2024-12-25T06:29:45.367Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 75,
               "Title": "ProductDTO.cs",
               "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\DTOs\\request\\ProductDTO.cs",
               "RelativeDocumentMoniker": "Areas\\Admin\\DTOs\\request\\ProductDTO.cs",
               "ToolTip": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\DTOs\\request\\ProductDTO.cs",
               "RelativeToolTip": "Areas\\Admin\\DTOs\\request\\ProductDTO.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAzwAIAAAAVAAAA",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAxwAIAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T05:23:57.84Z"
+              "WhenOpened": "2024-12-25T05:23:57.84Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 77,
               "Title": "BannerDTO.cs",
               "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\DTOs\\request\\BannerDTO.cs",
               "RelativeDocumentMoniker": "Areas\\Admin\\DTOs\\request\\BannerDTO.cs",
@@ -1085,11 +1426,12 @@
               "RelativeToolTip": "Areas\\Admin\\DTOs\\request\\BannerDTO.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T05:23:42.903Z"
+              "WhenOpened": "2024-12-25T05:23:42.903Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 76,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Views\\Brand\\Edit.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Brand\\Edit.cshtml",
@@ -1097,23 +1439,12 @@
               "RelativeToolTip": "Areas\\Admin\\Views\\Brand\\Edit.cshtml",
               "ViewState": "AQIAAEAAAAAAAAAAAAAAwFIAAAAGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-26T05:22:05.912Z"
+              "WhenOpened": "2024-12-26T05:22:05.912Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
-              "Title": "ReviewController.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Controllers\\ReviewController.cs",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\ReviewController.cs",
-              "ToolTip": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Controllers\\ReviewController.cs",
-              "RelativeToolTip": "Areas\\Admin\\Controllers\\ReviewController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T05:44:01.592Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 78,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Views\\Category\\Edit.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Category\\Edit.cshtml",
@@ -1121,59 +1452,38 @@
               "RelativeToolTip": "Areas\\Admin\\Views\\Category\\Edit.cshtml",
               "ViewState": "AQIAAF8AAAAAAAAAAAAAwGwAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-26T09:06:35.415Z"
+              "WhenOpened": "2024-12-26T09:06:35.415Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAMsAAACaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-25T05:12:33.541Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 61,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-12-25T05:18:03.587Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 63,
+              "DocumentIndex": 80,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Views\\Brand\\Details.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Brand\\Details.cshtml",
               "ToolTip": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Views\\Brand\\Details.cshtml",
               "RelativeToolTip": "Areas\\Admin\\Views\\Brand\\Details.cshtml",
-              "ViewState": "AQIAAFEAAAAAAAAAAIBJwF0AAABBAAAA",
+              "ViewState": "AQIAAE4AAAAAAAAAAIBZwF0AAABBAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-25T14:55:40.715Z"
+              "WhenOpened": "2024-12-25T14:55:40.715Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 62,
+              "DocumentIndex": 79,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Views\\Category\\Details.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Category\\Details.cshtml",
               "ToolTip": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Views\\Category\\Details.cshtml",
               "RelativeToolTip": "Areas\\Admin\\Views\\Category\\Details.cshtml",
-              "ViewState": "AQIAADAAAAAAAAAAAIBJwEgAAAAJAAAA",
+              "ViewState": "AQIAAC0AAAAAAAAAAIBZwEgAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-26T08:14:10.172Z"
+              "WhenOpened": "2024-12-26T08:14:10.172Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 66,
+              "DocumentIndex": 83,
               "Title": "FeatureDTO.cs",
               "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\DTOs\\request\\FeatureDTO.cs",
               "RelativeDocumentMoniker": "Areas\\Admin\\DTOs\\request\\FeatureDTO.cs",
@@ -1181,23 +1491,25 @@
               "RelativeToolTip": "Areas\\Admin\\DTOs\\request\\FeatureDTO.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T05:23:51.972Z"
+              "WhenOpened": "2024-12-25T05:23:51.972Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 64,
+              "DocumentIndex": 81,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Views\\Banner\\Create.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Banner\\Create.cshtml",
               "ToolTip": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Views\\Banner\\Create.cshtml",
               "RelativeToolTip": "Areas\\Admin\\Views\\Banner\\Create.cshtml",
-              "ViewState": "AQIAAAkAAAAAAAAAAIBJwAcAAAAAAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAIBZwAcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-26T05:56:27.196Z"
+              "WhenOpened": "2024-12-26T05:56:27.196Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 67,
+              "DocumentIndex": 84,
               "Title": "Banner.cs",
               "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Models\\Banner.cs",
               "RelativeDocumentMoniker": "Models\\Banner.cs",
@@ -1205,11 +1517,12 @@
               "RelativeToolTip": "Models\\Banner.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T05:17:19.268Z"
+              "WhenOpened": "2024-12-25T05:17:19.268Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 65,
+              "DocumentIndex": 82,
               "Title": "BrandDTO.cs",
               "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\DTOs\\request\\BrandDTO.cs",
               "RelativeDocumentMoniker": "Areas\\Admin\\DTOs\\request\\BrandDTO.cs",
@@ -1217,11 +1530,12 @@
               "RelativeToolTip": "Areas\\Admin\\DTOs\\request\\BrandDTO.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAIBJwAsAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T05:23:27.573Z"
+              "WhenOpened": "2024-12-25T05:23:27.573Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 69,
+              "DocumentIndex": 86,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Views\\OrderDetail\\Delete.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Views\\OrderDetail\\Delete.cshtml",
@@ -1229,11 +1543,12 @@
               "RelativeToolTip": "Areas\\Admin\\Views\\OrderDetail\\Delete.cshtml",
               "ViewState": "AQIAABcAAAAAAAAAAAAtwCIAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-25T05:44:49.426Z"
+              "WhenOpened": "2024-12-25T05:44:49.426Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 68,
+              "DocumentIndex": 85,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Views\\OrderDetail\\Details.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Views\\OrderDetail\\Details.cshtml",
@@ -1241,23 +1556,12 @@
               "RelativeToolTip": "Areas\\Admin\\Views\\OrderDetail\\Details.cshtml",
               "ViewState": "AQIAABYAAAAAAAAAAAAtwCIAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-25T05:50:12.412Z"
+              "WhenOpened": "2024-12-25T05:50:12.412Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 70,
-              "Title": "OrderController.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Controllers\\OrderController.cs",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\OrderController.cs",
-              "ToolTip": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Controllers\\OrderController.cs",
-              "RelativeToolTip": "Areas\\Admin\\Controllers\\OrderController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T05:41:54.962Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 71,
+              "DocumentIndex": 87,
               "Title": "_ViewStart.cshtml",
               "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Views\\_ViewStart.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Views\\_ViewStart.cshtml",
@@ -1265,11 +1569,12 @@
               "RelativeToolTip": "Areas\\Admin\\Views\\_ViewStart.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-25T05:27:52.589Z"
+              "WhenOpened": "2024-12-25T05:27:52.589Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 80,
+              "DocumentIndex": 96,
               "Title": "Setting.cs",
               "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Models\\Setting.cs",
               "RelativeDocumentMoniker": "Models\\Setting.cs",
@@ -1277,11 +1582,12 @@
               "RelativeToolTip": "Models\\Setting.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T05:20:02.195Z"
+              "WhenOpened": "2024-12-25T05:20:02.195Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 74,
+              "DocumentIndex": 90,
               "Title": "_ViewImports.cshtml",
               "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Views\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "Views\\_ViewImports.cshtml",
@@ -1289,11 +1595,12 @@
               "RelativeToolTip": "Views\\_ViewImports.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-25T05:16:56.214Z"
+              "WhenOpened": "2024-12-25T05:16:56.214Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 72,
+              "DocumentIndex": 88,
               "Title": "_ViewImports.cshtml",
               "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\Views\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Views\\_ViewImports.cshtml",
@@ -1301,11 +1608,12 @@
               "RelativeToolTip": "Areas\\Admin\\Views\\_ViewImports.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-25T05:26:16.536Z"
+              "WhenOpened": "2024-12-25T05:26:16.536Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 75,
+              "DocumentIndex": 91,
               "Title": "_ViewStart.cshtml",
               "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Views\\_ViewStart.cshtml",
               "RelativeDocumentMoniker": "Views\\_ViewStart.cshtml",
@@ -1313,11 +1621,12 @@
               "RelativeToolTip": "Views\\_ViewStart.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-25T05:27:59.254Z"
+              "WhenOpened": "2024-12-25T05:27:59.254Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 73,
+              "DocumentIndex": 89,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\appsettings.Development.json",
               "RelativeDocumentMoniker": "appsettings.Development.json",
@@ -1325,11 +1634,12 @@
               "RelativeToolTip": "appsettings.Development.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAADAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-12-25T05:04:22.165Z"
+              "WhenOpened": "2024-12-25T05:04:22.165Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 76,
+              "DocumentIndex": 92,
               "Title": "PlaceDTO.cs",
               "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Areas\\Admin\\DTOs\\request\\PlaceDTO.cs",
               "RelativeDocumentMoniker": "Areas\\Admin\\DTOs\\request\\PlaceDTO.cs",
@@ -1337,11 +1647,12 @@
               "RelativeToolTip": "Areas\\Admin\\DTOs\\request\\PlaceDTO.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T05:23:54.948Z"
+              "WhenOpened": "2024-12-25T05:23:54.948Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 81,
+              "DocumentIndex": 97,
               "Title": "Review.cs",
               "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Models\\Review.cs",
               "RelativeDocumentMoniker": "Models\\Review.cs",
@@ -1349,11 +1660,12 @@
               "RelativeToolTip": "Models\\Review.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T05:19:58.212Z"
+              "WhenOpened": "2024-12-25T05:19:58.212Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 79,
+              "DocumentIndex": 95,
               "Title": "Place.cs",
               "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Models\\Place.cs",
               "RelativeDocumentMoniker": "Models\\Place.cs",
@@ -1361,11 +1673,12 @@
               "RelativeToolTip": "Models\\Place.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAuwAMAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T05:19:52.961Z"
+              "WhenOpened": "2024-12-25T05:19:52.961Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 77,
+              "DocumentIndex": 93,
               "Title": "Order.cs",
               "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Models\\Order.cs",
               "RelativeDocumentMoniker": "Models\\Order.cs",
@@ -1373,11 +1686,12 @@
               "RelativeToolTip": "Models\\Order.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T05:19:47.384Z"
+              "WhenOpened": "2024-12-25T05:19:47.384Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 78,
+              "DocumentIndex": 94,
               "Title": "Menu.cs",
               "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Models\\Menu.cs",
               "RelativeDocumentMoniker": "Models\\Menu.cs",
@@ -1385,23 +1699,12 @@
               "RelativeToolTip": "Models\\Menu.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAuwAsAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T05:19:44.713Z"
+              "WhenOpened": "2024-12-25T05:19:44.713Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 82,
-              "Title": "OrderDetail.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Models\\OrderDetail.cs",
-              "RelativeDocumentMoniker": "Models\\OrderDetail.cs",
-              "ToolTip": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Models\\OrderDetail.cs",
-              "RelativeToolTip": "Models\\OrderDetail.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T05:19:50.503Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 83,
+              "DocumentIndex": 98,
               "Title": "Feature.cs",
               "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Models\\Feature.cs",
               "RelativeDocumentMoniker": "Models\\Feature.cs",
@@ -1409,11 +1712,12 @@
               "RelativeToolTip": "Models\\Feature.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T05:19:39.439Z"
+              "WhenOpened": "2024-12-25T05:19:39.439Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 85,
+              "DocumentIndex": 100,
               "Title": "Contact.cs",
               "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Models\\Contact.cs",
               "RelativeDocumentMoniker": "Models\\Contact.cs",
@@ -1421,11 +1725,12 @@
               "RelativeToolTip": "Models\\Contact.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T05:19:33.124Z"
+              "WhenOpened": "2024-12-25T05:19:33.124Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 84,
+              "DocumentIndex": 99,
               "Title": "ErrorViewModel.cs",
               "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Models\\ErrorViewModel.cs",
               "RelativeDocumentMoniker": "Models\\ErrorViewModel.cs",
@@ -1433,11 +1738,12 @@
               "RelativeToolTip": "Models\\ErrorViewModel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T05:14:47.262Z"
+              "WhenOpened": "2024-12-25T05:14:47.262Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 86,
+              "DocumentIndex": 101,
               "Title": "AdminUser.cs",
               "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\Models\\AdminUser.cs",
               "RelativeDocumentMoniker": "Models\\AdminUser.cs",
@@ -1445,19 +1751,8 @@
               "RelativeToolTip": "Models\\AdminUser.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T05:13:08.759Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 87,
-              "Title": "BackEnd_Camping.csproj",
-              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\BackEnd_Camping.csproj",
-              "RelativeDocumentMoniker": "BackEnd_Camping.csproj",
-              "ToolTip": "C:\\Users\\PC\\source\\repos\\BackEnd_Camping\\BackEnd_Camping.csproj",
-              "RelativeToolTip": "BackEnd_Camping.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAABjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-12-25T05:08:12.937Z"
+              "WhenOpened": "2024-12-25T05:13:08.759Z",
+              "EditorCaption": ""
             }
           ]
         }

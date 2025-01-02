@@ -49,8 +49,8 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
         // GET: Admin/UserCategorie/Create
         public IActionResult Create()
         {
-            ViewData["CAT_ID"] = new SelectList(_context.Category, "CAT_ID", "Name");
-            ViewData["USE_ID"] = new SelectList(_context.User, "USE_ID", "Name");
+            ViewData["CAT_ID"] = new SelectList(_context.Categorys, "CAT_ID", "Name");
+            ViewData["USE_ID"] = new SelectList(_context.Users, "USE_ID", "Name");
             return View();
         }
 
@@ -67,8 +67,8 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["CAT_ID"] = new SelectList(_context.Category, "CAT_ID", "Name", userCategories.CAT_ID);
-            ViewData["USE_ID"] = new SelectList(_context.User, "USE_ID", "Name", userCategories.USE_ID);
+            ViewData["CAT_ID"] = new SelectList(_context.Categorys, "CAT_ID", "Name", userCategories.CAT_ID);
+            ViewData["USE_ID"] = new SelectList(_context.Users, "USE_ID", "Name", userCategories.USE_ID);
             return View(userCategories);
         }
 
@@ -85,8 +85,8 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
             {
                 return NotFound();
             }
-            ViewData["CAT_ID"] = new SelectList(_context.Category, "CAT_ID", "Name", userCategories.CAT_ID);
-            ViewData["USE_ID"] = new SelectList(_context.User, "USE_ID", "Name", userCategories.USE_ID);
+            ViewData["CAT_ID"] = new SelectList(_context.Categorys, "CAT_ID", "Name", userCategories.CAT_ID);
+            ViewData["USE_ID"] = new SelectList(_context.Users, "USE_ID", "Name", userCategories.USE_ID);
             return View(userCategories);
         }
 
@@ -122,8 +122,8 @@ namespace BackEnd_Camping.Areas.Admin.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["CAT_ID"] = new SelectList(_context.Category, "CAT_ID", "Name", userCategories.CAT_ID);
-            ViewData["USE_ID"] = new SelectList(_context.User, "USE_ID", "Name", userCategories.USE_ID);
+            ViewData["CAT_ID"] = new SelectList(_context.Categorys, "CAT_ID", "Name", userCategories.CAT_ID);
+            ViewData["USE_ID"] = new SelectList(_context.Users, "USE_ID", "Name", userCategories.USE_ID);
             return View(userCategories);
         }
 
